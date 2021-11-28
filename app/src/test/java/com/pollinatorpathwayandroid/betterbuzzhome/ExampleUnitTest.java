@@ -1,4 +1,4 @@
-package com.pollinatorpathwayandroid.navigaiton;
+package com.pollinatorpathwayandroid.betterbuzzhome;
 
 import org.junit.Test;
 

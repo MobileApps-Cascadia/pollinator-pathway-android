@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">BetterBuzzHome</string>
+    <string name="title_Account">My Account</string>
+    <string name="title_discover">Discover Other Sites</string>
+    <string name="title_learn">Learn About Pollinators</string>
+</resources>

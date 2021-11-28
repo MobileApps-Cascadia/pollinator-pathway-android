@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.pollinatorpathwayandroid.navigaiton.ui.home.HomeFragment"
-        android:label="@string/title_home"
+        android:name="com.pollinatorpathwayandroid.betterbuzzhome.ui.home.HomeFragment"
+        android:label="@string/title_Account"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.pollinatorpathwayandroid.navigaiton.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
+        android:name="com.pollinatorpathwayandroid.betterbuzzhome.ui.dashboard.DashboardFragment"
+        android:label="@string/title_discover"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.pollinatorpathwayandroid.navigaiton.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
+        android:name="com.pollinatorpathwayandroid.betterbuzzhome.ui.notifications.NotificationsFragment"
+        android:label="@string/title_learn"
         tools:layout="@layout/fragment_notifications" />
 </navigation>
