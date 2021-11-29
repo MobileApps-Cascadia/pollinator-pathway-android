@@ -1,2 +1,2 @@
-# pollinator-pathway-android
+# Pollinator Pathway
 MoBAS Course Project
