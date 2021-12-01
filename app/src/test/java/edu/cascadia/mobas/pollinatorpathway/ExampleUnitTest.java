@@ -1,4 +1,4 @@
-package com.Poli.home;
+package edu.cascadia.mobas.pollinatorpathway;
 
 import org.junit.Test;
 

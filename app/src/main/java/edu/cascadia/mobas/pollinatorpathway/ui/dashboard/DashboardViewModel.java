@@ -1,4 +1,4 @@
-package com.Poli.home.ui.dashboard;
+package edu.cascadia.mobas.pollinatorpathway.ui.dashboard;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
