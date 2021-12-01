@@ -1,7 +1,8 @@
-package com.Poli.pollinatorpathway;
+package edu.cascadia.mobas.pollinatorpathway;
 
 import android.os.Bundle;
 
+import edu.cascadia.mobas.pollinatorpathway.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,7 +11,8 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.Poli.pollinatorpathway.databinding.ActivityMainBinding;
+import edu.cascadia.mobas.pollinatorpathway.databinding.ActivityMainBinding;
+
 
 public class MainActivity extends AppCompatActivity {
 

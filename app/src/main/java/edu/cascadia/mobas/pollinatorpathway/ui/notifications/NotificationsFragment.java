@@ -1,4 +1,4 @@
-package com.Poli.pollinatorpathway.ui.notifications;
+package edu.cascadia.mobas.pollinatorpathway.ui.notifications;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,7 +12,8 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.Poli.pollinatorpathway.databinding.FragmentNotificationsBinding;
+import edu.cascadia.mobas.pollinatorpathway.databinding.FragmentNotificationsBinding;
+
 
 public class NotificationsFragment extends Fragment {
 

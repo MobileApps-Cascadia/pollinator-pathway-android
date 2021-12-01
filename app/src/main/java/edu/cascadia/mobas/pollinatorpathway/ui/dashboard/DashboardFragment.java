@@ -1,4 +1,4 @@
-package com.Poli.pollinatorpathway.ui.dashboard;
+package edu.cascadia.mobas.pollinatorpathway.ui.dashboard;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,7 +12,8 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.Poli.pollinatorpathway.databinding.FragmentDashboardBinding;
+import edu.cascadia.mobas.pollinatorpathway.databinding.FragmentDashboardBinding;
+
 
 public class DashboardFragment extends Fragment {
 

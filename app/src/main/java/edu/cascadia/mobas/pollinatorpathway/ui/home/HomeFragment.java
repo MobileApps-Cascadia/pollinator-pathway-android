@@ -1,4 +1,4 @@
-package com.Poli.pollinatorpathway.ui.home;
+package edu.cascadia.mobas.pollinatorpathway.ui.home;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,7 +12,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.Poli.pollinatorpathway.databinding.FragmentHomeBinding;
+import edu.cascadia.mobas.pollinatorpathway.databinding.FragmentHomeBinding;
 
 public class HomeFragment extends Fragment {
 
