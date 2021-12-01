@@ -1,4 +1,4 @@
-package com.Poli.home.ui.home;
+package com.Poli.pollinatorpathway.ui.home;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
