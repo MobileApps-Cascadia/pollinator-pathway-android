@@ -22,4 +22,9 @@
         android:name="edu.cascadia.mobas.pollinatorpathway.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/mapsFragment2"
+        android:name="edu.cascadia.mobas.pollinatorpathway.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
 </navigation>
