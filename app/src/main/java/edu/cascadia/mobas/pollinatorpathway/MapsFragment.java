@@ -31,9 +31,23 @@ public class MapsFragment extends Fragment {
          */
         @Override
         public void onMapReady(GoogleMap googleMap) {
-            LatLng sydney = new LatLng(-34, 151);
-            googleMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-            googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+            // Existing pollinator coordinates
+            LatLng initialView = new LatLng(47.5, -122.125);
+            LatLng twentyOneAcres = new LatLng(47.44596, -122.09256);
+            LatLng songaia = new LatLng (47.47389, -122.10399);
+            LatLng coastal = new LatLng (47.75539016612721, -122.15313690518046);
+            LatLng hawthorn = new LatLng (47.46088, -122.06274);
+            LatLng redBarn = new LatLng (47.39252, -122.0345);
+            //Add markers on map for pollinators
+            googleMap.addMarker(new MarkerOptions().position(twentyOneAcres).title("21 Acres"));
+            googleMap.addMarker(new MarkerOptions().position(songaia)
+                    .title("Songaia Co-Housing Community"));
+            googleMap.addMarker(new MarkerOptions().position(coastal).title("Coastal Bank"));
+            googleMap.addMarker(new MarkerOptions().position(hawthorn).title("Hawthorn Farm"));
+            googleMap.addMarker(new MarkerOptions().position(redBarn).title("Red Barn Farm"));
+            //zoom level and initial animation
+            float zoomLevel = (float)9.8;
+            googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(initialView, zoomLevel));
         }
     };
 
