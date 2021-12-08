@@ -1,8 +1,8 @@
 package edu.cascadia.mobas.pollinatorpathway;
 
-import androidx.fragment.app.FragmentActivity;
-
 import android.os.Bundle;
+
+import androidx.fragment.app.FragmentActivity;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -44,9 +44,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        // 21 acres marker
+        LatLng twentyOneAcres = new LatLng(47.44596, -122.09256);
+        mMap.addMarker(new MarkerOptions().position(twentyOneAcres).title("21 Acres"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(twentyOneAcres));
     }
 }
