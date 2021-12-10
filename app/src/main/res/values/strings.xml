@@ -9,6 +9,6 @@
     <string name="welcome">Welcom to</string>
     <string name="title_activity_maps">MapsActivity</string>
     <string name="welcomepage1">Welcome to</string>
-    <string name="welcomepage2">The Samamish Valley</string>
-    <string name="welcomepage3">Pollinator Pathway!</string>
+    <string name="welcomepage2">The PNW Pollinator</string>
+    <string name="welcomepage3">Pathway!</string>
 </resources>
