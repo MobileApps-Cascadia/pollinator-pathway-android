@@ -9,12 +9,12 @@
     <item
         android:id="@+id/navigation_setup"
         android:icon="@drawable/ic_baseline_phonelink_setup_24"
-        android:title="setup" />
+        android:title="Set-Up" />
 
     <item
         android:id="@+id/navigation_login"
         android:icon="@drawable/ic_baseline_login_24"
-        android:title="login" />
+        android:title="Login" />
 
     <item
         android:id="@+id/mapsFragment2"

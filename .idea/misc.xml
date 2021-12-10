@@ -10,12 +10,15 @@
         <entry key="app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.17552083333333332" />
         <entry key="app/src/main/res/drawable/ic_map_black_24dp.xml" value="0.17552083333333332" />
         <entry key="app/src/main/res/font/font.xml" value="0.1625" />
+        <entry key="app/src/main/res/font/poppins.xml" value="0.19114583333333332" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.18704710144927536" />
         <entry key="app/src/main/res/layout/activity_maps.xml" value="0.1403985507246377" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.1403985507246377" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_maps.xml" value="0.1403985507246377" />
         <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.1403985507246377" />
+        <entry key="app/src/main/res/layout/fragment_setup.xml" value="0.13229166666666667" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
       </map>
     </option>
