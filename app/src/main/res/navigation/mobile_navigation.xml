@@ -12,16 +12,16 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="edu.cascadia.mobas.pollinatorpathway.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_setup"
+        android:name="edu.cascadia.mobas.pollinatorpathway.ui.SetUp.SetUpFragment"
+        android:label="@string/common_google_play_services_update_button"
+        tools:layout="@layout/fragment_setup" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="edu.cascadia.mobas.pollinatorpathway.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_login"
+        android:name="edu.cascadia.mobas.pollinatorpathway.ui.login.LoginFragment"
+        android:label="@string/login"
+        tools:layout="@layout/fragment_login" />
     <fragment
         android:id="@+id/mapsFragment2"
         android:name="edu.cascadia.mobas.pollinatorpathway.MapsFragment"
