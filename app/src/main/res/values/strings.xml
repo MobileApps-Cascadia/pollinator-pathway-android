@@ -1,14 +1,8 @@
 <resources>
     <string name="app_name">Home</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
-    <string name="register">REGISTER</string>
-    <string name="login">LOGIN</string>
-    <string name="aboutpolli">ABOUT POLLINATORS</string>
-    <string name="welcome">Welcom to</string>
     <string name="title_activity_maps">MapsActivity</string>
     <string name="welcomepage1">Welcome to</string>
-    <string name="welcomepage2">The Samamish Valley</string>
-    <string name="welcomepage3">Pollinator Pathway!</string>
+    <string name="welcomepage2">The PNW Pollinator</string>
+    <string name="welcomepage3">Pathway!</string>
 </resources>
