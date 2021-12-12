@@ -6,12 +6,12 @@
     <string name="welcomepage2">The PNW Pollinator</string>
     <string name="welcomepage3">Pathway!</string>
     <string name="congratulations">Congratulations!</string>
-    <string name="Register">TextView</string>
-    <string name="locate">TextView</string>
-    <string name="step2">TextView</string>
-    <string name="step3">TextView</string>
-    <string name="confirm">TextView</string>
-    <string name="newsite">TextView</string>
+    <string name="Register">Ready to register your</string>
+    <string name="locate">1. Locate the QR code inside your box</string>
+    <string name="step2">2. Click the button below to scan your QR code</string>
+    <string name="step3">3. Enter your information</string>
+    <string name="confirm">4. Confirm, and your done!</string>
+    <string name="newsite">new site?</string>
     <string name="scanQR">SCAN QR CODE</string>
 
 </resources>
