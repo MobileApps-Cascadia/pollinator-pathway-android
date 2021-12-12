@@ -13,5 +13,9 @@
     <string name="confirm">4. Confirm, and your done!</string>
     <string name="newsite">new site?</string>
     <string name="scanQR">SCAN QR CODE</string>
+    <string name="login">Login to Your Account</string>
+    <string name="email">Email:</string>
+    <string name="password">Password:</string>
+    <string name="submit">SUBMIT</string>
 
 </resources>
