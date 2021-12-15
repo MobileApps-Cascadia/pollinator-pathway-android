@@ -13,7 +13,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/main_icon"
-        android:label="PNW Pollinator Pathway"
+        android:label="PNWPP"
         android:roundIcon="@mipmap/main_icon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Home">
@@ -37,7 +37,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="PNWPP">
+            android:label="PNW Pollinator Pathway">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
