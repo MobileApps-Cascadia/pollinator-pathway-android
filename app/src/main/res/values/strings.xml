@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Home</string>
+    <string name="app_name">PNWPP</string>
     <string name="title_home">Home</string>
     <string name="title_activity_maps">MapsActivity</string>
     <string name="welcomepage1">Welcome to</string>
