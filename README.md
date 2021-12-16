@@ -1,6 +1,6 @@
 # Pollinator Pathway
 MoBAS Course Project
-# PNWPP 
+# 
 
 *App description as it would be listed in the Google Play Store*
 
@@ -85,15 +85,15 @@ Prioritized list of functional components that describe the implementation from 
 ## Screens
 Registering a New Site
 
-<a href="https://lh3.googleusercontent.com/EApiT4Lbn3gtC_RpwLafLW2o3T5eNAzlfBqdqz24vuBEiDfJuxZ9tl-4uyhvRU8UhvbW0yxIrXnARerWgQ6iWVCWSEoXSANM6ZkEGgJeCtDDbq5AxnI4Ewxpn7Q3NSzW3fqAR8JMfw=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/EApiT4Lbn3gtC_RpwLafLW2o3T5eNAzlfBqdqz24vuBEiDfJuxZ9tl-4uyhvRU8UhvbW0yxIrXnARerWgQ6iWVCWSEoXSANM6ZkEGgJeCtDDbq5AxnI4Ewxpn7Q3NSzW3fqAR8JMfw=w600-h315-p-k" /> </a>
+<a href="https://lh3.googleusercontent.com/a1Uk-cxkpgSspQjq4dgVnLAX4TBjksfWDF21K9Q_aUGd4uhCqTcxrWfyybC0iZtyLKLK54cnHWHa628v2JL8-_xsDvj-GDyF3EdXaGvnhMwGIxxkSWpDEOXpTPC-_-uXGiWTGSdjIA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/a1Uk-cxkpgSspQjq4dgVnLAX4TBjksfWDF21K9Q_aUGd4uhCqTcxrWfyybC0iZtyLKLK54cnHWHa628v2JL8-_xsDvj-GDyF3EdXaGvnhMwGIxxkSWpDEOXpTPC-_-uXGiWTGSdjIA=w440-h159-p-k" /> </a>
 
 Editing Site Information
 
-<a href="https://lh3.googleusercontent.com/JjPmqtMmHYmBGTkfnOxvqzluu3pgBxM6KdBWwQcXZD5tlX2A6daLR_fBIq5OqaPr1RimoIoM87zWalNrqc-fCO6EgNbZpep3TzkslBoEb-fBYJ3ZKCWk5f5nuKYazsKjZy3gOYVJFg=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/JjPmqtMmHYmBGTkfnOxvqzluu3pgBxM6KdBWwQcXZD5tlX2A6daLR_fBIq5OqaPr1RimoIoM87zWalNrqc-fCO6EgNbZpep3TzkslBoEb-fBYJ3ZKCWk5f5nuKYazsKjZy3gOYVJFg=w600-h284-p-k" /> </a>
+<a href="https://lh3.googleusercontent.com/KoZkGVl0fIQXEcxW_YjDQdkx52lPHzZPJ76byvih8Y2PotFZgRpCJG7SrCOhMAcvEc3Mzv4G-j-E9r5-Uycaqr7w1lvcsXoYIIDOPNGEnBKxJ4iJ4USMCX8oa_jgijSxa4m_RoEu5Q=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/KoZkGVl0fIQXEcxW_YjDQdkx52lPHzZPJ76byvih8Y2PotFZgRpCJG7SrCOhMAcvEc3Mzv4G-j-E9r5-Uycaqr7w1lvcsXoYIIDOPNGEnBKxJ4iJ4USMCX8oa_jgijSxa4m_RoEu5Q=w576-h159-p-k" /> </a>
 
 Viewing Other Sites
 
-<a href="https://lh3.googleusercontent.com/8wT_dpwHV6sASmt2bB74xLKn8kF_x8pQq0VW1YCJaK0q12hqoKjgoJupsGyHaTscR-EgC4ZSLCaLioVAWufUDezOss-nKgWyFzhDdKLADve1EWJTlgZCzjka-BCN6myMMsGr0KXzXQ=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/8wT_dpwHV6sASmt2bB74xLKn8kF_x8pQq0VW1YCJaK0q12hqoKjgoJupsGyHaTscR-EgC4ZSLCaLioVAWufUDezOss-nKgWyFzhDdKLADve1EWJTlgZCzjka-BCN6myMMsGr0KXzXQ=w402-h315-p-k" /> </a>
+<a href="https://lh3.googleusercontent.com/j_7GAR8yzdN2gE2J2eMibAEdHYEVJ3VH2qBaVACM9QN-C3cabBtU_eWT-xva_2-ZuG29wUTisKVfA9aHV0IkpNdno7S-7GqdQVHN1-CrESmLHOpq_sW13F7102QHKXQ-nSHi-irIcQ=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/j_7GAR8yzdN2gE2J2eMibAEdHYEVJ3VH2qBaVACM9QN-C3cabBtU_eWT-xva_2-ZuG29wUTisKVfA9aHV0IkpNdno7S-7GqdQVHN1-CrESmLHOpq_sW13F7102QHKXQ-nSHi-irIcQ=w188-h159-p-k" /> </a>
 
 ## Color
 * Primary color: #82BF45 
@@ -112,7 +112,7 @@ Viewing Other Sites
 ## App icon
 Logo - Spash Screen: 
 
-<a href="https://lh3.googleusercontent.com/F8dbjCzo98etLwr-0soa5lI27LAZNESxL1We5YSk63GmKpeTydduDTmkdXCcdQp8ERbpCIf2IdeEmp4K5EcN0DcPzLP6XIUAkq6_TyMaMrgCd1HT3ssiN5LhzJRpgmThWrQCTDURDg=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/F8dbjCzo98etLwr-0soa5lI27LAZNESxL1We5YSk63GmKpeTydduDTmkdXCcdQp8ERbpCIf2IdeEmp4K5EcN0DcPzLP6XIUAkq6_TyMaMrgCd1HT3ssiN5LhzJRpgmThWrQCTDURDg=w600-h315-p-k" /> </a> 
+<a href="https://lh3.googleusercontent.com/eXec4eo7vnG_6HyQJDfivuoOrs9Xh76ApRKIHGIJgM07sjdwQ2nxIKGaAdbwX8o2uLzISPzuGqOnpopC91HBShvhz1jgNpbFqUPAT7BIBve8DnDpikeevyVBVFOCLOq-c5e7TvrA8Q=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/eXec4eo7vnG_6HyQJDfivuoOrs9Xh76ApRKIHGIJgM07sjdwQ2nxIKGaAdbwX8o2uLzISPzuGqOnpopC91HBShvhz1jgNpbFqUPAT7BIBve8DnDpikeevyVBVFOCLOq-c5e7TvrA8Q=w300-h268-p-k" /> </a>
 
  Icon - Google Play Store:
 
