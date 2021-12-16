@@ -27,8 +27,47 @@ MoBAS Course Project
 
 
 # Competitive analysis
-*Strength, weaknesses, opportunities, threats*
-*Summary of top competitive apps*
+
+| Bumble Bee Watch| | 
+|-------|---------|
+| |Who?  Bee enthusiasts, conservationists, nature enthusiast|
+| |What? Helps users identify North American bumble bees and view maps of recent sightings                                              
+| |When? The user would use this app when identifying bees                                                                              
+| |Where? Users discover this app through conservation programs or the app store                                                        
+| |Why? Someone would use this app to identify different kinds of bees and to share sightings and to educate                            
+| |How? People like that they are helping scientists track bees, some reviewers were frustrated with errors when trying to upload a bee      sighting                                                                                                                             
+
+|PolliNation ID|  |
+|-----|----|
+| |Who? Users are Michigan residents who want to help raise awareness about pollinators by joining the university of Michigan’s PolliNation project
+| |What? The app helps users identify pollinators and learn more about their habitats
+| |When? Users would use the app to submit accounts of pollinators they find in their neighborhood
+| |Where? Users would find this app through the University of Michigan – Dearborn and their bee hotel program
+| |Why? Someone would use this app for educational purposes or in conjunction with the PolliNation pollinator hotel program
+| |How? Users use the app to identify pollinators.  User reviews indicate that it has limited use and is intended for members of the PolliNation program.
+
+|PolliNation Hotels|  |
+|----|---|
+| |Who? This app is for members of the PolliNation program through University of Michigan who have received a pollinator hotel.
+| |What? The app tracks hotel locations in southeast Michigan and allows users to view the types of pollinators visiting the hotels
+| |When? Users would use this app when tracking pollinators of the hotels.  Users without hotels have limited use and can only view the map and information about each point.
+| |Where? Users would find this app through the University of Michigan’s PolliNation hotel program.
+| |Why? Someone would use this app if they had a pollinator hotel through the PolliNation program and wanted to identify pollinators and track pollinators visiting various hotels in the program.
+| |How? Users are using this app for conservation and educational purposes.  Reviews indicate that has very limited use.
+
+
+|Strengths| Weaknesses|Opportunities |Threats|
+|----|----|---|---|
+|•	Smart search tool to identify bees|•	Limited use|•	Include more pollinators, hummingbirds, butterflies, etc.|•	Established users|
+|•	Educational|•	Bee focused|•	Expand to other areas|•	Identification tools are easy to use|
+|•	Sighting map|•	Glitches or “bugs” in the app|•	Could have more information about how to support pollinator habitats|•	Established Pollinator hotel program|
+|•	Illustrations and user submitted photos|•	PolliNation Hotels is primarily for members of the program, not useful for the general public| | |
+|•	Information about pollinator habits and habitats| | | |
+|•	Pollinator tracking| | | |
+
+
+
+
 
 # Implementation
 ## User stories
