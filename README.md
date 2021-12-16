@@ -83,7 +83,17 @@ Prioritized list of functional components that describe the implementation from 
 * https://www.figma.com/file/k91nrq7O2EDauWD3BhyXrk/final-Prototype?node-id=0%3A1 "High Fidelity Prototype"
 
 ## Screens
-*Images of key screens covering all the user stories*
+Registering a New Site
+
+<a href="https://lh3.googleusercontent.com/EApiT4Lbn3gtC_RpwLafLW2o3T5eNAzlfBqdqz24vuBEiDfJuxZ9tl-4uyhvRU8UhvbW0yxIrXnARerWgQ6iWVCWSEoXSANM6ZkEGgJeCtDDbq5AxnI4Ewxpn7Q3NSzW3fqAR8JMfw=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/EApiT4Lbn3gtC_RpwLafLW2o3T5eNAzlfBqdqz24vuBEiDfJuxZ9tl-4uyhvRU8UhvbW0yxIrXnARerWgQ6iWVCWSEoXSANM6ZkEGgJeCtDDbq5AxnI4Ewxpn7Q3NSzW3fqAR8JMfw=w600-h315-p-k" /> </a>
+
+Editing Site Information
+
+<a href="https://lh3.googleusercontent.com/JjPmqtMmHYmBGTkfnOxvqzluu3pgBxM6KdBWwQcXZD5tlX2A6daLR_fBIq5OqaPr1RimoIoM87zWalNrqc-fCO6EgNbZpep3TzkslBoEb-fBYJ3ZKCWk5f5nuKYazsKjZy3gOYVJFg=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/JjPmqtMmHYmBGTkfnOxvqzluu3pgBxM6KdBWwQcXZD5tlX2A6daLR_fBIq5OqaPr1RimoIoM87zWalNrqc-fCO6EgNbZpep3TzkslBoEb-fBYJ3ZKCWk5f5nuKYazsKjZy3gOYVJFg=w600-h284-p-k" /> </a>
+
+Viewing Other Sites
+
+<a href="https://lh3.googleusercontent.com/8wT_dpwHV6sASmt2bB74xLKn8kF_x8pQq0VW1YCJaK0q12hqoKjgoJupsGyHaTscR-EgC4ZSLCaLioVAWufUDezOss-nKgWyFzhDdKLADve1EWJTlgZCzjka-BCN6myMMsGr0KXzXQ=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/8wT_dpwHV6sASmt2bB74xLKn8kF_x8pQq0VW1YCJaK0q12hqoKjgoJupsGyHaTscR-EgC4ZSLCaLioVAWufUDezOss-nKgWyFzhDdKLADve1EWJTlgZCzjka-BCN6myMMsGr0KXzXQ=w402-h315-p-k" /> </a>
 
 ## Color
 * Primary color: *hex color*
