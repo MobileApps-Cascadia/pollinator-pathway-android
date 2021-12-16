@@ -96,10 +96,18 @@ Viewing Other Sites
 <a href="https://lh3.googleusercontent.com/8wT_dpwHV6sASmt2bB74xLKn8kF_x8pQq0VW1YCJaK0q12hqoKjgoJupsGyHaTscR-EgC4ZSLCaLioVAWufUDezOss-nKgWyFzhDdKLADve1EWJTlgZCzjka-BCN6myMMsGr0KXzXQ=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/8wT_dpwHV6sASmt2bB74xLKn8kF_x8pQq0VW1YCJaK0q12hqoKjgoJupsGyHaTscR-EgC4ZSLCaLioVAWufUDezOss-nKgWyFzhDdKLADve1EWJTlgZCzjka-BCN6myMMsGr0KXzXQ=w402-h315-p-k" /> </a>
 
 ## Color
-* Primary color: *hex color*
-* Secondary color: *hex color*
-* Primary text color: *hex color*
-* Secondary text color: *hex color*
+* Primary color: #82BF45 
+
+<a href="https://lh3.googleusercontent.com/_JAX_gNNrF-OshBzmm_ERP9i9UZ8C-yl0yxl_q147icDgUpas7wYwMBKYsAwcf3d7WHw8ouGy2KiadjTfRX2_lmBoX45RkOF4cXfQBKBhmU2qj9m8bGRZVI2Xnh6b1lu2GFxeXxmnw=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/_JAX_gNNrF-OshBzmm_ERP9i9UZ8C-yl0yxl_q147icDgUpas7wYwMBKYsAwcf3d7WHw8ouGy2KiadjTfRX2_lmBoX45RkOF4cXfQBKBhmU2qj9m8bGRZVI2Xnh6b1lu2GFxeXxmnw=w216-h144-p-k" /> </a>
+* Secondary color: #168C8C
+
+<a href="https://lh3.googleusercontent.com/cp7RNFsnjpBUY12JLR4SB8s7zCp7Dkd5rxdUpR2thJgiENGaUfwzYzhPPaH-TrPVgY5-U7DRe2H1UwEo7a1AvBZa4QD6sKfedkfhSlmve-qstR-FBCkcCiT0v5zzdzevIlbQcHHLUA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/cp7RNFsnjpBUY12JLR4SB8s7zCp7Dkd5rxdUpR2thJgiENGaUfwzYzhPPaH-TrPVgY5-U7DRe2H1UwEo7a1AvBZa4QD6sKfedkfhSlmve-qstR-FBCkcCiT0v5zzdzevIlbQcHHLUA=w216-h144-p-k" /> </a>
+* Primary text color: #000
+
+<a href="https://lh3.googleusercontent.com/6AwGyBSKQfNn4X85s5kquLKQyjPlH7DUSrEQQtU1O6xURAuRW24H1ieGD-i6oTc9rIa2Eo7Y_QTNhTy6OoYj-YgmjPxCA_7407ctrwNFWEmiknQ_SWvu81P0fuPmK6GAdlvAWpDoyQ=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/6AwGyBSKQfNn4X85s5kquLKQyjPlH7DUSrEQQtU1O6xURAuRW24H1ieGD-i6oTc9rIa2Eo7Y_QTNhTy6OoYj-YgmjPxCA_7407ctrwNFWEmiknQ_SWvu81P0fuPmK6GAdlvAWpDoyQ=w216-h144-p-k" /> </a>
+* Secondary text color: #0A403A
+
+<a href="https://lh3.googleusercontent.com/6xbVh7Vbl7aldeWAEW0ziUeCC51Y3TIBoCHu_oHUXCSItRszim_9xtN2pU1G7OZXjE6-Jd8mmX5IrV6Bn2pGh2geC5ThCfY_ZTkllNFpK2JYFQpTIFaedlTZGhAf1IRTgWe_aHsKCA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/6xbVh7Vbl7aldeWAEW0ziUeCC51Y3TIBoCHu_oHUXCSItRszim_9xtN2pU1G7OZXjE6-Jd8mmX5IrV6Bn2pGh2geC5ThCfY_ZTkllNFpK2JYFQpTIFaedlTZGhAf1IRTgWe_aHsKCA=w216-h144-p-k" /> </a>
 
 ## App icon
 Logo - Spash Screen: 
