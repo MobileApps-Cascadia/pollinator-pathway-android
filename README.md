@@ -116,7 +116,7 @@ Logo - Spash Screen:
 
  Icon - Google Play Store:
 
- <a href="https://lh3.googleusercontent.com/j63WefF6_C1qJ1TOkuRxJRqO7wZN71_IEkeOgWPuxGDIQIThfyi897czdmpie2X_KPiRImiRG_D2FbLY8UKBrb50aNx5ffenxkH3zuqFx0kJjiIzvjq9P9DCMrk3NeIf6d3SUwbRzA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/j63WefF6_C1qJ1TOkuRxJRqO7wZN71_IEkeOgWPuxGDIQIThfyi897czdmpie2X_KPiRImiRG_D2FbLY8UKBrb50aNx5ffenxkH3zuqFx0kJjiIzvjq9P9DCMrk3NeIf6d3SUwbRzA=w600-h315-p-k" /> </a>
+<a href="https://lh3.googleusercontent.com/G0FTQndTDx8a44fCmWSDBvDTM-813pNssDI3rvL87XS-zv9SI2FsQhZWJi6E34qWvJoeaPDTzYD29uP2ohfkdtabKQ15IRWo6nmh0c8K5FG7bNuauEpQMNIXgJyNaMDdt05V5vHPAQ=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/G0FTQndTDx8a44fCmWSDBvDTM-813pNssDI3rvL87XS-zv9SI2FsQhZWJi6E34qWvJoeaPDTzYD29uP2ohfkdtabKQ15IRWo6nmh0c8K5FG7bNuauEpQMNIXgJyNaMDdt05V5vHPAQ=w600-h315-p-k" /> </a>
 
 ## Integration
 *What external APIs or services do you have a dependency on? Google Maps, authentication providers, REST APIs?*
