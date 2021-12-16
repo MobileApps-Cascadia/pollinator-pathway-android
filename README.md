@@ -1,6 +1,6 @@
 # Pollinator Pathway
 MoBAS Course Project
-# App name 
+# PNWPP 
 
 *App description as it would be listed in the Google Play Store*
 
@@ -123,10 +123,12 @@ Logo - Spash Screen:
 
 # Future considerations
 ## Usability summary
-*Key learnings and takeaways that were applied from the last round of usability studies on the high fidelity prototype. Call out anything that hasn't been addressed in the design or app components to continue investigating in  the future*
+Based on the usability studies on the high-fidelity prototype added a welcome screen to the registration flow with directions for how to register a new site.  We also fixed spacing and alignment consistency issues.  We adjusted the navigation by removing buttons on the landing page and utilizing the android bottom navigation.  We changed less important buttons to outlined instead of filled based on material design and changed the text in some buttons for clarity.  We also adjusted the background to make text boxes clearer.
+
 
 ## Monetization 
-*Financial options for ongoing support and development*
+Ads, one-time download fees, subscriptions.
+
 
 ## Measuring engagement
 *Define active usage for your app, the actions over a day and month that indicates someone is a user of your app.*
