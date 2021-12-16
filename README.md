@@ -53,7 +53,13 @@ Prioritized list of functional components that describe the implementation from 
 * Secondary text color: *hex color*
 
 ## App icon
-*The icon that will be displayed in the app store and on the app splash screen.*
+Logo - Spash Screen: 
+
+<a href="https://lh3.googleusercontent.com/F8dbjCzo98etLwr-0soa5lI27LAZNESxL1We5YSk63GmKpeTydduDTmkdXCcdQp8ERbpCIf2IdeEmp4K5EcN0DcPzLP6XIUAkq6_TyMaMrgCd1HT3ssiN5LhzJRpgmThWrQCTDURDg=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/F8dbjCzo98etLwr-0soa5lI27LAZNESxL1We5YSk63GmKpeTydduDTmkdXCcdQp8ERbpCIf2IdeEmp4K5EcN0DcPzLP6XIUAkq6_TyMaMrgCd1HT3ssiN5LhzJRpgmThWrQCTDURDg=w600-h315-p-k" /> </a> 
+
+ Icon - Google Play Store:
+
+ <a href="https://lh3.googleusercontent.com/j63WefF6_C1qJ1TOkuRxJRqO7wZN71_IEkeOgWPuxGDIQIThfyi897czdmpie2X_KPiRImiRG_D2FbLY8UKBrb50aNx5ffenxkH3zuqFx0kJjiIzvjq9P9DCMrk3NeIf6d3SUwbRzA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/j63WefF6_C1qJ1TOkuRxJRqO7wZN71_IEkeOgWPuxGDIQIThfyi897czdmpie2X_KPiRImiRG_D2FbLY8UKBrb50aNx5ffenxkH3zuqFx0kJjiIzvjq9P9DCMrk3NeIf6d3SUwbRzA=w600-h315-p-k" /> </a>
 
 ## Integration
 *What external APIs or services do you have a dependency on? Google Maps, authentication providers, REST APIs?*
