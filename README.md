@@ -75,5 +75,7 @@ Logo - Spash Screen:
 *Define active usage for your app, the actions over a day and month that indicates someone is a user of your app.*
 
 ## Stretch features
-*Future experience considerations not yet explored and tested*
+We could potentially add in a feature that allows for users to keep track of pollinator stops that they can recieve updates for, and we could add in a method for users to add new information about pollinators on an about page for the pollinators so users could learn stuff about the pollinators
+
+A new security feature would be a great addition for the future since the current method of adding your pollinator box to the pathway doesn't do a great job at preventing doxing if they dont want their home address revealed
 
