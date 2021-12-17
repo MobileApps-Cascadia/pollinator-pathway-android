@@ -1,42 +1,41 @@
-# Pollinator Pathway
-MoBAS Course Project
-# App name 
+# The Pacific Northwest Pollinator Pathway (PNWPP)
+* The PNW Pollinator Pathway App is a robust registration and communication tool for new or existing pathway members.  Features include registering your new pollinator box via the included QR code, viewing existing pathway sites and their associated profiles, meeting and chatting with members, and a live map of the pathway!
 
-*App description as it would be listed in the Google Play Store*
+## Customers / Stakeholders
+* New / Incoming members
+* Existing members
+* Administrators / Owners / Volunteers
 
-*How to use template: replace all italicized text with described content*
-
-# Customers
 ## Personas
 * Matt has a farm and just joined the Pollinator Pathway. 
 * Amy’s a member of the PNW Pollinator Pathway and her pollinator garden has expanded.
 * Alex is the president of the PNW Pollinator Pathway.
 
-
 ## Pain points and user needs
-* Description of pain point or user need the app aims to address
 * Matt is unsure how to register his site with the pathway.
 * Amy is having difficulty updating her information for her site.
 * Alex does not currently have administrative access and control of accounts
 
 ## Scenarios
-* *Solution agnostic descriptions on how the app meets the personas needs*
 * Matt has a farm and just joined the pollinator pathway.  He wants to set up his site information with a name, description, photos, and a link to his website. 
 * Amy’s Pollinator garden has expanded and she can go on the app to edit her information.
 * Alex wants to have administrative access and control of accounts.
 
+## Competitive analysis
+* Pollination Network - App to connect beekeepers and growers, includes location / map, type of crop, bees needed, and price.  More of a marketplace tool than outreach product but closest thing to PNWPP.
 
-# Competitive analysis
-*Strength, weaknesses, opportunities, threats*
-*Summary of top competitive apps*
+* My Pollination - App to book professional pollination services for growers.  Again marketplace tool mainly, but includes some similar features like maps, listings, and different pollinators.
 
-# Implementation
+* Pollination Hotel - App for program and University of Michigan that distributes pollinator kits.  Apps features include map / location, types of pollinators, and various educational uses. Closest thing to our app and limited to UofM distributions.
+
+# IMPLEMENTATION
+
 ## User stories
-Prioritized list of functional components that describe the implementation from an end-user perspective.
-* *P0: User [action] description*
-*  P(0): Farmer Anna has just received her boxes in the mail and wants to set them up.  She sets the box with its QR code in its location, then scans the QR code to register the box with the Pollinator Pathway server to add the box to the pathways map.
-* P(0): Alex wants to have administrative access to approve new accounts and photos before they are published on the site.  She logs into the app and approves and denies new content and edits. P(0)
-* P(1): Liesl is a member of the Pollinator Pathway and wants to see other sites on the PNW Pollinator Pathway and view their information.  She uses the app to view other locations on the map and view their profiles.
+* SCALE: P0 (Most Important) - P2 (Least Important)
+
+* P0: Farmer Anna has just received her boxes in the mail and wants to set them up.  She sets the box with its QR code in its location, then scans the QR code to register the box with the Pollinator Pathway server to add the box to the pathways map.
+* P0: Alex wants to have administrative access to approve new accounts and photos before they are published on the site.  She logs into the app and approves and denies new content and edits.
+* P1: Liesl is a member of the Pollinator Pathway and wants to see other sites on the PNW Pollinator Pathway and view their information.  She uses the app to view other locations on the map and view their profiles.
 * P2: Bradley is walking by a site on the PNW Pollinator Pathway and wants to see the site information.  He opens the app on his phone, scans the QR code, and views the site's profile and information page.
 
 
@@ -62,20 +61,38 @@ Logo - Spash Screen:
  <a href="https://lh3.googleusercontent.com/j63WefF6_C1qJ1TOkuRxJRqO7wZN71_IEkeOgWPuxGDIQIThfyi897czdmpie2X_KPiRImiRG_D2FbLY8UKBrb50aNx5ffenxkH3zuqFx0kJjiIzvjq9P9DCMrk3NeIf6d3SUwbRzA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/j63WefF6_C1qJ1TOkuRxJRqO7wZN71_IEkeOgWPuxGDIQIThfyi897czdmpie2X_KPiRImiRG_D2FbLY8UKBrb50aNx5ffenxkH3zuqFx0kJjiIzvjq9P9DCMrk3NeIf6d3SUwbRzA=w600-h315-p-k" /> </a>
 
 ## Integration
-*What external APIs or services do you have a dependency on? Google Maps, authentication providers, REST APIs?*
 
-# Future considerations
+* Google Maps API
+* Google Vision API
+* Google Play Services API
+
+# FUTURE CONSIDERATIONS
+
 ## Usability summary
 *Key learnings and takeaways that were applied from the last round of usability studies on the high fidelity prototype. Call out anything that hasn't been addressed in the design or app components to continue investigating in  the future*
 
 ## Monetization 
-*Financial options for ongoing support and development*
 
-## Measuring engagement
-*Define active usage for your app, the actions over a day and month that indicates someone is a user of your app.*
+* Adding a storefront for farmers, community members, and other users to create listings and sell goods and services.
+* Creating affiliate opportunities for storefront
+* Creating referral bonuses for new members who set up a pollinator kit
+* Relevant advertising (local honey, pollinator tools / equipment, services)
+
+## MEASURING ENGAGEMENT
+
+* New Users: Initially scanning QR code upon receipt and setup of pollinator kit, creating a new profile, and viewing other pollinator locations, member profiles, and offerings through the app.
+* Existing Users: Using the app to communicate with other members, viewing other pollinator locations, editing profile information as needed, and interacting with administrators / owners / management
+* Owners / Admins / Volunteers: Approving all incoming requests by new users to be added to the pathway, editing/deleting profiles as needed, and general maintenance.
 
 ## Stretch features
 We could potentially add in a feature that allows for users to keep track of pollinator stops that they can recieve updates for, and we could add in a method for users to add new information about pollinators on an about page for the pollinators so users could learn stuff about the pollinators
 
 A new security feature would be a great addition for the future since the current method of adding your pollinator box to the pathway doesn't do a great job at preventing doxing if they dont want their home address revealed
+
+
+* Adding storefront for sale of pollinator related goods and services
+* Adding "blog" style board with new information and announcements
+* Adding volunteer opportunities
+* Adding Contact information
+
 
