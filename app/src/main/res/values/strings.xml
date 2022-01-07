@@ -20,5 +20,7 @@
     <string name="organization">Organization Name</string>
     <string name ="type">Organization Type</string>
     <string name="website">Website: https://www.betterbuzz.com</string>
+    <string name="edit">EDIT ACCOUNT</string>
+    <string name="cancel">CANCEL</string>
 
 </resources>
