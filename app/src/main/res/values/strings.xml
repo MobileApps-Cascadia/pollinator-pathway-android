@@ -22,5 +22,7 @@
     <string name="website">Website: https://www.betterbuzz.com</string>
     <string name="edit">EDIT ACCOUNT</string>
     <string name="cancel">CANCEL</string>
+    <string name="facebook">Facebook:</string>
+    <string name="insta">Instagram:</string>
 
 </resources>
