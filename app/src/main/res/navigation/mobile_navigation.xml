@@ -21,10 +21,19 @@
         android:id="@+id/navigation_login"
         android:name="edu.cascadia.mobas.pollinatorpathway.ui.login.LoginFragment"
         android:label="Login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_navigation_login_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
     <fragment
         android:id="@+id/mapsFragment2"
         android:name="edu.cascadia.mobas.pollinatorpathway.MapsFragment"
         android:label="Navigation Map"
         tools:layout="@layout/fragment_maps" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="edu.cascadia.mobas.pollinatorpathway.ui.login.profileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>
