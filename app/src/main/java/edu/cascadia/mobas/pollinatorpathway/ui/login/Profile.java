@@ -1,0 +1,83 @@
+package edu.cascadia.mobas.pollinatorpathway.ui.login;
+
+import androidx.annotation.NonNull;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.ForeignKey;
+import androidx.room.PrimaryKey;
+
+import static androidx.room.ForeignKey.CASCADE;
+
+
+@Entity(foreignKeys = @ForeignKey(entity = Planting.class, parentColumns = "PlantingId",
+        childColumns = "PlantingId", onDelete = CASCADE))
+public class Profile {
+
+    @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name = "userId")
+    private long userId;
+
+    @ColumnInfo(name = "firstname")
+    String firstname;
+
+    @ColumnInfo(name = "lastname")
+    String lastname;
+
+    @ColumnInfo(name = "username")
+    String username;
+
+    @ColumnInfo(name = "password")
+    String password;
+
+    @ColumnInfo(name = "PlantingId")
+    private long PlantingId;
+
+
+    public long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(long userId) {
+        this.userId = userId;
+    }
+
+    public String getFirstname() {
+        return firstname;
+    }
+
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
+    }
+
+    public String getLastname() {
+        return lastname;
+    }
+
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public long getPlantingId() {
+        return PlantingId;
+    }
+
+    public void setPlantingId(long plantingId) {
+        PlantingId = plantingId;
+    }
+}
