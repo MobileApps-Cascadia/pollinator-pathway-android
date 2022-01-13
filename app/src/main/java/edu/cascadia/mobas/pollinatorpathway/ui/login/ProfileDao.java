@@ -18,9 +18,6 @@ public interface ProfileDao {
     @Query("SELECT * FROM Profile WHERE firstname = :firstname")
     public Profile getProfileByText(String firstname);
 
-    @Query("SELECT * FROM Profile ORDER BY lastname COLLATE NOCASE")
-    public List<Profile> getProfile();
-
     @Query("SELECT * FROM Profile ORDER BY username DESC")
     public List<Profile> getProfileNewerFirst();
 

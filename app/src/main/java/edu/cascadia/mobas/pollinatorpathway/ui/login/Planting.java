@@ -1,15 +1,19 @@
 package edu.cascadia.mobas.pollinatorpathway.ui.login;
 
+import static androidx.room.ForeignKey.CASCADE;
+
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
 
 
-@Entity
+@Entity(foreignKeys = @ForeignKey(entity = Profile.class, parentColumns = "userId",
+        childColumns = "userId", onDelete = CASCADE))
 public class Planting {
 
     @PrimaryKey(autoGenerate = true)
-    @ColumnInfo(name = "PlantingId")
+    @ColumnInfo(name = "plantingId")
     private long plantingId;
 
     @ColumnInfo(name = "address")
@@ -20,6 +24,9 @@ public class Planting {
 
     @ColumnInfo(name = "description")
     String description;
+
+    @ColumnInfo(name = "userId")
+    private long userId;
 
 
     public long getPlantingId() {
@@ -52,5 +59,13 @@ public class Planting {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(long userId) {
+        this.userId = userId;
     }
 }

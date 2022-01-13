@@ -9,29 +9,29 @@ import androidx.room.PrimaryKey;
 import static androidx.room.ForeignKey.CASCADE;
 
 
-@Entity(foreignKeys = @ForeignKey(entity = Planting.class, parentColumns = "PlantingId",
-        childColumns = "PlantingId", onDelete = CASCADE))
+@Entity(foreignKeys = @ForeignKey(entity = Planting.class, parentColumns = "plantingId",
+        childColumns = "plantingId", onDelete = CASCADE))
 public class Box {
 
     @PrimaryKey(autoGenerate = true)
-    @ColumnInfo(name = "BoxId")
-    private long BoxId;
+    @ColumnInfo(name = "boxId")
+    private long boxId;
 
     @ColumnInfo(name = "gps")
-    private String gps;
+    String gps;
 
     @ColumnInfo(name = "qrCode")
-    private String qrCode;
+    String qrCode;
 
-    @ColumnInfo(name = "PlantingId")
-    private long PlantingId;
+    @ColumnInfo(name = "plantingId")
+    long plantingId;
 
     public long getBoxId() {
-        return BoxId;
+        return boxId;
     }
 
     public void setBoxId(long boxId) {
-        BoxId = boxId;
+        boxId = boxId;
     }
 
     public String getGps() {
@@ -48,5 +48,13 @@ public class Box {
 
     public void setQrCode(String qrCode) {
         this.qrCode = qrCode;
+    }
+
+    public long getPlantingId() {
+        return plantingId;
+    }
+
+    public void setPlantingId(long plantingId) {
+        this.plantingId = plantingId;
     }
 }

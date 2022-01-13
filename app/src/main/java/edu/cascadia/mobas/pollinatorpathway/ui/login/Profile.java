@@ -9,8 +9,7 @@ import androidx.room.PrimaryKey;
 import static androidx.room.ForeignKey.CASCADE;
 
 
-@Entity(foreignKeys = @ForeignKey(entity = Planting.class, parentColumns = "PlantingId",
-        childColumns = "PlantingId", onDelete = CASCADE))
+@Entity
 public class Profile {
 
     @PrimaryKey(autoGenerate = true)
@@ -20,17 +19,18 @@ public class Profile {
     @ColumnInfo(name = "firstname")
     String firstname;
 
+    @NonNull
     @ColumnInfo(name = "lastname")
     String lastname;
 
+    @NonNull
     @ColumnInfo(name = "username")
     String username;
 
+    @NonNull
     @ColumnInfo(name = "password")
     String password;
 
-    @ColumnInfo(name = "PlantingId")
-    private long PlantingId;
 
 
     public long getUserId() {
@@ -73,11 +73,4 @@ public class Profile {
         this.password = password;
     }
 
-    public long getPlantingId() {
-        return PlantingId;
-    }
-
-    public void setPlantingId(long plantingId) {
-        PlantingId = plantingId;
-    }
 }
