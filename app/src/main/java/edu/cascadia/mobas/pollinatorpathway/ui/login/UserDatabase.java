@@ -7,7 +7,7 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
 @Database(entities = {Profile.class, Planting.class, Box.class}, version = 1)
-public abstract class PnwppDatabase extends RoomDatabase {
+abstract class PnwppDatabase extends RoomDatabase {
 
     private static final String DATABASE_NAME = "user.db";
 
