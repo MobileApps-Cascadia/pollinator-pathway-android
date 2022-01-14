@@ -1,6 +1,5 @@
-package edu.cascadia.mobas.pollinatorpathway.ui.login;
+package edu.cascadia.mobas.pollinatorpathway.ui.Database;
 
-import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
