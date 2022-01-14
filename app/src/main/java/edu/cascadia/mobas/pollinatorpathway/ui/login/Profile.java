@@ -32,7 +32,6 @@ public class Profile {
     String password;
 
 
-
     public long getUserId() {
         return userId;
     }

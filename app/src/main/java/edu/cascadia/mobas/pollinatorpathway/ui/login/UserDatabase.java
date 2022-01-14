@@ -6,22 +6,30 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
-@Database(entities = {Profile.class}, version = 1)
-public abstract class UserDatabase extends RoomDatabase {
+@Database(entities = {Profile.class, Planting.class, Box.class}, version = 1)
+public abstract class PnwppDatabase extends RoomDatabase {
 
-    private static final String dbName = "user";
-    private static UserDatabase userDatabase;
+    private static final String DATABASE_NAME = "user.db";
 
-    public static synchronized UserDatabase getUserDatabase(Context context){
+    private static PnwppDatabase mPnwppDatabase;
 
-        if (userDatabase == null){
-            userDatabase = Room.databaseBuilder(context, UserDatabase.class, dbName)
-                    .fallbackToDestructiveMigration()
+    //Singleton
+    public static PnwppDatabase getInstance(Context context){
+        if (mPnwppDatabase == null){
+            mPnwppDatabase = Room.databaseBuilder(context, PnwppDatabase.class, DATABASE_NAME)
+                    .allowMainThreadQueries()
                     .build();
+            mPnwppDatabase.addStarterData();
         }
-
-        return userDatabase;
+        return mPnwppDatabase;
     }
 
     public abstract ProfileDao profileDao();
+    public abstract PlantingDao plantingDao();
+    public abstract BoxDao boxDao();
+
+    private void addStarterData() {
+        // Add a few users
+
+    }
 }

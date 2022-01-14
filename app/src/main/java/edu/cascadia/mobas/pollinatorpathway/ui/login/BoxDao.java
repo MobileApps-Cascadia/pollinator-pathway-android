@@ -13,9 +13,9 @@ import java.util.List;
 public interface BoxDao {
 
     @Query("SELECT * FROM Box WHERE boxId = :boxId")
-    public Planting getBox(long boxId);
+    public Box getBox(long boxId);
 
-    @Query("SELECT * FROM Box WHERE name = :qrCode")
+    @Query("SELECT * FROM Box WHERE qrCode = :qrCode")
     public Box getBoxByText(String qrCode);
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
