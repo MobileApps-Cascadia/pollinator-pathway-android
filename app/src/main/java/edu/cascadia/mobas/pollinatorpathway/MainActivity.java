@@ -12,11 +12,13 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import edu.cascadia.mobas.pollinatorpathway.databinding.ActivityMainBinding;
+import edu.cascadia.mobas.pollinatorpathway.ui.login.PnwppDb;
 
 
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
+    private PnwppDb mPnwppDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,5 +36,8 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
+
+
+        mPnwppDatabase = PnwppDb.getInstance(getApplicationContext());
     }
 }
