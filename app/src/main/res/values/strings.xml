@@ -29,10 +29,11 @@
     <string name="address">18345 Campus Way NE, Bothell</string>
     <string name="email2">BetterBuzz@gmail.com</string>
     <string name="profile">Profile</string>
-    <string name="addplantings">ADD PLANTING</string>
     <string name="planting_one">Planting One</string>
     <string name="planting_two">Planting Two</string>
     <string name="planting_three">Planting Three</string>
     <string name="planting_four">Planting Four</string>
     <string name="organization_description">Organization Description</string>
+    <string name="save_changes">SAVE CHANGES</string>
+    <string name="edit_plantings">EDIT PLANTINGS</string>
 </resources>
