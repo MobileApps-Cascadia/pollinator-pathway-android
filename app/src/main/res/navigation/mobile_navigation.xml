@@ -18,7 +18,7 @@
         tools:layout="@layout/fragment_setup" />
 
     <fragment
-        android:id="@+id/navigation_login"
+        android:id="@+id/navigation_account"
         android:name="edu.cascadia.mobas.pollinatorpathway.ui.login.LoginFragment"
         android:label="Login"
         tools:layout="@layout/fragment_login" >
@@ -33,7 +33,7 @@
         tools:layout="@layout/fragment_maps" />
     <fragment
         android:id="@+id/profileFragment"
-        android:name="edu.cascadia.mobas.pollinatorpathway.ui.login.profileFragment"
+        android:name="edu.cascadia.mobas.pollinatorpathway.ui.profile.profileFragment"
         android:label="Profile"
         tools:layout="@layout/fragment_profile" />
 </navigation>

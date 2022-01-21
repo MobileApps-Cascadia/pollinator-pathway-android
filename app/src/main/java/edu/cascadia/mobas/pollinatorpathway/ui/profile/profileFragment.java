@@ -1,15 +1,14 @@
-package edu.cascadia.mobas.pollinatorpathway.ui.login;
-
-import androidx.lifecycle.ViewModelProvider;
+package edu.cascadia.mobas.pollinatorpathway.ui.profile;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+import androidx.lifecycle.ViewModelProvider;
 
 import edu.cascadia.mobas.pollinatorpathway.R;
 
