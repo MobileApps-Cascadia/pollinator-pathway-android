@@ -18,7 +18,6 @@
     <string name="password">Password:</string>
     <string name="submit">SUBMIT</string>
     <string name="organization">Organization Name</string>
-    <string name="type">Organization Type</string>
     <string name="website">Website: https://www.betterbuzz.com</string>
     <string name="edit">EDIT ACCOUNT</string>
     <string name="cancel">CANCEL</string>
@@ -35,4 +34,5 @@
     <string name="planting_two">Planting Two</string>
     <string name="planting_three">Planting Three</string>
     <string name="planting_four">Planting Four</string>
+    <string name="organization_description">Organization Description</string>
 </resources>
