@@ -29,4 +29,8 @@ public interface ProfileDao {
 
     @Delete
     public void deleteProfile(Profile profile);
+
+    @Query("DELETE FROM Profile")
+    public void deleteAll();
+
 }
