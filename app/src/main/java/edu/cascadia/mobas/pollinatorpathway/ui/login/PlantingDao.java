@@ -21,6 +21,9 @@ public interface PlantingDao {
     @Query("SELECT * FROM Planting ORDER BY name ASC")
     List<Planting> getAllPlantings();
 
+    @Query("SELECT * FROM Planting WHERE userId = :userId ORDER BY name ASC")
+    List<Planting> getProfilePlantings(long userId);
+
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     public long insertPlanting(Planting planting);
 
