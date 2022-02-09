@@ -35,6 +35,8 @@ dependencies {
 
     implementation 'com.google.android.material:material:1.5.0-beta01'
     implementation 'androidx.appcompat:appcompat:1.4.0'
+    implementation 'androidx.room:room-runtime:2.4.0-rc01'
+    annotationProcessor 'androidx.room:room-compiler:2.4.0-rc01'
     implementation 'com.google.android.material:material:1.5.0-beta01'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.0'
