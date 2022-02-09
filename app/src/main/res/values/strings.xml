@@ -36,4 +36,6 @@
     <string name="organization_description">Organization Description</string>
     <string name="save_changes">SAVE CHANGES</string>
     <string name="edit_plantings">EDIT PLANTINGS</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
