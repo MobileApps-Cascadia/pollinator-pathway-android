@@ -39,6 +39,5 @@ public abstract class PnwppDb extends RoomDatabase {
         p.setUsername("fk");
         p.setPassword("king");
         profileDao().insertProfile(p);
-
     }
 }
