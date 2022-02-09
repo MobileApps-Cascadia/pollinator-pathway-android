@@ -6,6 +6,8 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
+import edu.cascadia.mobas.pollinatorpathway.AppExecutors;
+
 @Database(entities = {Profile.class, Planting.class, Box.class}, version = 1)
 public abstract class PnwppDb extends RoomDatabase {
 
@@ -14,14 +16,16 @@ public abstract class PnwppDb extends RoomDatabase {
     private static PnwppDb mPnwppDatabase;
 
 
+
     //Singleton
-    public static PnwppDb getInstance(Context context){
+    public static PnwppDb getInstance(Context context, AppExecutors mAppExecutor ){
+        mAppExecutor.mDiskIO.execute(() -> {
         if (mPnwppDatabase == null){
             mPnwppDatabase = Room.databaseBuilder(context, PnwppDb.class, DATABASE_NAME)
-                    .allowMainThreadQueries()
                     .build();
-            mPnwppDatabase.addStarterData();
-        }
+
+        }});
+        mPnwppDatabase.addStarterData();
         return mPnwppDatabase;
     }
 
