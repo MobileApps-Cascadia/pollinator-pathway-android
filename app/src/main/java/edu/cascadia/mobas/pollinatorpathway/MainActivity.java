@@ -11,7 +11,7 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import edu.cascadia.mobas.pollinatorpathway.databinding.ActivityMainBinding;
-import edu.cascadia.mobas.pollinatorpathway.ui.login.PnwppDb;
+import edu.cascadia.mobas.pollinatorpathway.ui.Database.PnwppDb;
 
 
 public class MainActivity extends AppCompatActivity {

@@ -28,12 +28,12 @@
     </fragment>
     <fragment
         android:id="@+id/mapsFragment2"
-        android:name="edu.cascadia.mobas.pollinatorpathway.MapsFragment"
+        android:name="edu.cascadia.mobas.pollinatorpathway.ui.Maps.MapsFragment"
         android:label="Navigation Map"
         tools:layout="@layout/fragment_maps" />
     <fragment
         android:id="@+id/profileFragment"
-        android:name="edu.cascadia.mobas.pollinatorpathway.ui.profile.profileFragment"
+        android:name="edu.cascadia.mobas.pollinatorpathway.ui.Profile.ProfileFragment"
         android:label="Profile"
         tools:layout="@layout/fragment_profile" />
 </navigation>

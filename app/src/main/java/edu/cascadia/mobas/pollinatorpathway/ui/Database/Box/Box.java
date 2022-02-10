@@ -1,12 +1,13 @@
-package edu.cascadia.mobas.pollinatorpathway.ui.login;
+package edu.cascadia.mobas.pollinatorpathway.ui.Database.Box;
 
-import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
 
 import static androidx.room.ForeignKey.CASCADE;
+
+import edu.cascadia.mobas.pollinatorpathway.ui.Database.Planting.Planting;
 
 
 @Entity(foreignKeys = @ForeignKey(entity = Planting.class, parentColumns = "plantingId",
