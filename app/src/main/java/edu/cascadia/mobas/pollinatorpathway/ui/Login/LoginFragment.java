@@ -20,7 +20,6 @@ public class LoginFragment extends Fragment {
     private LoginViewModel loginViewModel;
     private FragmentLoginBinding binding;
 
-    Button mlogin;
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         loginViewModel =
@@ -29,12 +28,13 @@ public class LoginFragment extends Fragment {
         binding = FragmentLoginBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        mlogin = (Button) root.findViewById(R.id.button2);
-
-        mlogin.setOnClickListener(v -> {
+        binding.button2.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.action_navigation_login_to_profileFragment);
         });
 
+        loginViewModel.getProfile().observe(this, profile -> {
+            binding.emailInput.setText(profile.getEmail());
+        });
         return root;
     }
 

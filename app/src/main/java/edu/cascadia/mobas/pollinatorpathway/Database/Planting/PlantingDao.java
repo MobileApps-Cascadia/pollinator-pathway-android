@@ -1,4 +1,4 @@
-package edu.cascadia.mobas.pollinatorpathway.ui.Database.Planting;
+package edu.cascadia.mobas.pollinatorpathway.Database.Planting;
 
 import androidx.room.Dao;
 import androidx.room.Delete;
@@ -7,8 +7,6 @@ import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 import androidx.room.Update;
 import java.util.List;
-
-import edu.cascadia.mobas.pollinatorpathway.ui.Database.Planting.Planting;
 
 
 @Dao

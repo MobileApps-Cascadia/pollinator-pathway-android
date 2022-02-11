@@ -1,4 +1,4 @@
-package edu.cascadia.mobas.pollinatorpathway.ui.Database.Profile;
+package edu.cascadia.mobas.pollinatorpathway.Database.Profile;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
@@ -7,23 +7,20 @@ import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 import androidx.room.Update;
-
 import java.util.List;
-
-import edu.cascadia.mobas.pollinatorpathway.ui.Database.Profile.Profile;
 
 
 @Dao
 public interface ProfileDao {
 
     @Query("SELECT * FROM Profile WHERE userId = :userId")
-    public Profile getProfiles(long userId);
+    public LiveData<Profile> getProfile(long userId);
 
     @Query("SELECT * FROM Profile WHERE firstname = :firstname")
-    public Profile getProfiles(String firstname);
+    public Profile getProfile(String firstname);
 
-    @Query("SELECT * FROM Profile ORDER BY username DESC")
-    public LiveData<List<Profile>> getProfiles();
+    @Query("SELECT * FROM Profile ORDER BY email DESC")
+    public List<Profile> getProfiles();
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     public long insertProfile(Profile profile);
@@ -33,4 +30,8 @@ public interface ProfileDao {
 
     @Delete
     public void deleteProfile(Profile profile);
+
+    @Query("DELETE FROM Profile")
+    public void deleteAll();
+
 }
