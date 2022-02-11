@@ -1,4 +1,4 @@
-package edu.cascadia.mobas.pollinatorpathway.ui.Database.Profile;
+package edu.cascadia.mobas.pollinatorpathway.Database.Profile;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
@@ -8,8 +8,6 @@ import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 import androidx.room.Update;
 import java.util.List;
-
-import edu.cascadia.mobas.pollinatorpathway.ui.Database.Profile.Profile;
 
 
 @Dao

@@ -5,7 +5,9 @@ import android.app.Application;
 
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
-import androidx.lifecycle.ViewModel;
+
+import edu.cascadia.mobas.pollinatorpathway.Database.PnwppDb;
+import edu.cascadia.mobas.pollinatorpathway.Database.Profile.Profile;
 
 public class LoginViewModel extends AndroidViewModel {
 
