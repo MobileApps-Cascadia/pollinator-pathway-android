@@ -1,4 +1,4 @@
-package edu.cascadia.mobas.pollinatorpathway.ui.login;
+package edu.cascadia.mobas.pollinatorpathway.ui.Database.Profile;
 
 import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;

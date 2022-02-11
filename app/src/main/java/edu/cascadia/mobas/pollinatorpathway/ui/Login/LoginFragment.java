@@ -1,18 +1,14 @@
-package edu.cascadia.mobas.pollinatorpathway.ui.login;
+package edu.cascadia.mobas.pollinatorpathway.ui.Login;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
 
 import androidx.navigation.Navigation;
-import androidx.navigation.fragment.NavHostFragment;
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import edu.cascadia.mobas.pollinatorpathway.R;
 import edu.cascadia.mobas.pollinatorpathway.databinding.FragmentLoginBinding;

@@ -1,4 +1,4 @@
-package edu.cascadia.mobas.pollinatorpathway;
+package edu.cascadia.mobas.pollinatorpathway.ui.Maps;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -15,6 +15,8 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+
+import edu.cascadia.mobas.pollinatorpathway.R;
 
 public class MapsFragment extends Fragment {
 
