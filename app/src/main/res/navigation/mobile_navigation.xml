@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="edu.cascadia.mobas.pollinatorpathway.ui.home.HomeFragment"
+        android:name="edu.cascadia.mobas.pollinatorpathway.ui.Home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/navigation_account"
-        android:name="edu.cascadia.mobas.pollinatorpathway.ui.login.LoginFragment"
+        android:name="edu.cascadia.mobas.pollinatorpathway.ui.Login.LoginFragment"
         android:label="Login"
         tools:layout="@layout/fragment_login" >
         <action
@@ -28,12 +28,12 @@
     </fragment>
     <fragment
         android:id="@+id/mapsFragment2"
-        android:name="edu.cascadia.mobas.pollinatorpathway.MapsFragment"
+        android:name="edu.cascadia.mobas.pollinatorpathway.ui.Maps.MapsFragment"
         android:label="Navigation Map"
         tools:layout="@layout/fragment_maps" />
     <fragment
         android:id="@+id/profileFragment"
-        android:name="edu.cascadia.mobas.pollinatorpathway.ui.profile.profileFragment"
+        android:name="edu.cascadia.mobas.pollinatorpathway.ui.Profile.ProfileFragment"
         android:label="Profile"
         tools:layout="@layout/fragment_profile" />
 </navigation>
