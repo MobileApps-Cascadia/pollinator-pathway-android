@@ -1,4 +1,4 @@
-package edu.cascadia.mobas.pollinatorpathway;
+package edu.cascadia.mobas.pollinatorpathway.ui.Profile;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,24 +10,26 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-public class qrcode extends Fragment {
+import edu.cascadia.mobas.pollinatorpathway.R;
 
-    private QrcodeViewModel mViewModel;
+public class ProfileFragment extends Fragment {
 
-    public static qrcode newInstance() {
-        return new qrcode();
+    private ProfileViewModel mViewModel;
+
+    public static ProfileFragment newInstance() {
+        return new ProfileFragment();
     }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.qrcode_fragment, container, false);
+        return inflater.inflate(R.layout.fragment_profile, container, false);
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(QrcodeViewModel.class);
+        mViewModel = new ViewModelProvider(this).get(ProfileViewModel.class);
         // TODO: Use the ViewModel
     }
 
