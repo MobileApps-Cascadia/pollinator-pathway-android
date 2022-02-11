@@ -2,7 +2,7 @@ package edu.cascadia.mobas.pollinatorpathway;
 
 import android.app.Application;
 
-import edu.cascadia.mobas.pollinatorpathway.ui.login.PnwppDb;
+import edu.cascadia.mobas.pollinatorpathway.Database.PnwppDb;
 
 public class PnwppApp extends Application {
     private AppExecutors mAppExecutors;

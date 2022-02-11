@@ -5,8 +5,8 @@ import androidx.lifecycle.LiveData;
 
 import java.util.List;
 
-import edu.cascadia.mobas.pollinatorpathway.ui.login.PnwppDb;
-import edu.cascadia.mobas.pollinatorpathway.ui.login.Profile;
+import edu.cascadia.mobas.pollinatorpathway.Database.PnwppDb;
+import edu.cascadia.mobas.pollinatorpathway.Database.Profile.Profile;
 
 public class DataRepository {
 
