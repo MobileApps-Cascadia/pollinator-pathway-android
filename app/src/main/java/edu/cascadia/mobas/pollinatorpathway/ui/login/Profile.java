@@ -23,8 +23,8 @@ public class Profile {
     String lastname;
 
     @NonNull
-    @ColumnInfo(name = "username")
-    String username;
+    @ColumnInfo(name = "email")
+    String email;
 
     @NonNull
     @ColumnInfo(name = "password")
@@ -55,12 +55,12 @@ public class Profile {
         this.lastname = lastname;
     }
 
-    public String getUsername() {
-        return username;
+    public String getEmail() {
+        return email;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getPassword() {

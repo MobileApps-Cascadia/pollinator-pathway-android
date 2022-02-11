@@ -1,5 +1,6 @@
 package edu.cascadia.mobas.pollinatorpathway.ui.login;
 
+import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
@@ -13,12 +14,12 @@ import java.util.List;
 public interface ProfileDao {
 
     @Query("SELECT * FROM Profile WHERE userId = :userId")
-    public Profile getProfiles(long userId);
+    public LiveData<Profile> getProfile(long userId);
 
     @Query("SELECT * FROM Profile WHERE firstname = :firstname")
-    public Profile getProfiles(String firstname);
+    public Profile getProfile(String firstname);
 
-    @Query("SELECT * FROM Profile ORDER BY username DESC")
+    @Query("SELECT * FROM Profile ORDER BY email DESC")
     public List<Profile> getProfiles();
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)

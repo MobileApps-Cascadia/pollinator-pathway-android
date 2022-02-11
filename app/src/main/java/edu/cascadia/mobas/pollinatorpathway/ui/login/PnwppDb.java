@@ -1,7 +1,5 @@
 package edu.cascadia.mobas.pollinatorpathway.ui.login;
 
-import static java.time.chrono.MinguoChronology.INSTANCE;
-
 import android.content.Context;
 
 import androidx.annotation.NonNull;
@@ -10,21 +8,25 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 @Database(entities = {Profile.class, Planting.class, Box.class}, version = 1)
 public abstract class PnwppDb extends RoomDatabase {
 
     private static final String DATABASE_NAME = "user.db";
+    private static volatile PnwppDb mPnwppDatabase;
 
-    private static PnwppDb mPnwppDatabase;
-
+    private static final ExecutorService dbExecutor = Executors.newSingleThreadExecutor();
 
     //Singleton
     public static PnwppDb getInstance(Context context){
         if (mPnwppDatabase == null){
-            mPnwppDatabase = Room.databaseBuilder(context, PnwppDb.class, DATABASE_NAME)
-                    .allowMainThreadQueries()
-                    .build();
-            mPnwppDatabase.addStarterData();
+            synchronized (PnwppDb.class) {
+                mPnwppDatabase = Room.databaseBuilder(context, PnwppDb.class, DATABASE_NAME)
+                        .addCallback(sRoomDatabaseCallback)
+                        .build();
+            }
         }
         return mPnwppDatabase;
     }
@@ -41,27 +43,20 @@ public abstract class PnwppDb extends RoomDatabase {
 
             // If you want to keep data through app restarts,
             // comment out the following block
-            databaseWriteExecutor.execute(() -> {
+            dbExecutor.execute(() -> {
                 // Populate the database in the background.
                 // If you want to start with more words, just add them.
-                WordDao dao = INSTANCE.wordDao();
-                dao.deleteAll();
+                ProfileDao profileDao = mPnwppDatabase.profileDao();
+                profileDao.deleteAll();
 
-                Word word = new Word("Hello");
-                dao.insert(word);
-                word = new Word("World");
-                dao.insert(word);
+                Profile p = new Profile();
+                p.setFirstname("Fabrice");
+                p.setLastname("Kalvin");
+                p.setEmail("example@email.com");
+                p.setPassword("king");
+                profileDao.insertProfile(p);
             });
         }
     };
 
-    private void addStarterData() {
-        // Add a few users
-        Profile p = new Profile();
-        p.setFirstname("Fabrice");
-        p.setLastname("Kalvin");
-        p.setUsername("fk");
-        p.setPassword("king");
-        profileDao().insertProfile(p);
-    }
 }
