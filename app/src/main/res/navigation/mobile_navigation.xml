@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="edu.cascadia.mobas.pollinatorpathway.ui.home.HomeFragment"
+        android:name="edu.cascadia.mobas.pollinatorpathway.ui.Home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/navigation_account"
-        android:name="edu.cascadia.mobas.pollinatorpathway.ui.login.LoginFragment"
+        android:name="edu.cascadia.mobas.pollinatorpathway.ui.Login.LoginFragment"
         android:label="Login"
         tools:layout="@layout/fragment_login" >
         <action
