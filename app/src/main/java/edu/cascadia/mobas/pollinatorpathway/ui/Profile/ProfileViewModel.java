@@ -1,4 +1,4 @@
-package edu.cascadia.mobas.pollinatorpathway.ui.Profile;
+package edu.cascadia.mobas.pollinatorpathway.ui.profile;
 
 import android.app.Application;
 
@@ -6,11 +6,9 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.ViewModel;
 
-import java.util.List;
-
 import edu.cascadia.mobas.pollinatorpathway.DataRepository;
+import edu.cascadia.mobas.pollinatorpathway.Database.Profile.Profile;
 import edu.cascadia.mobas.pollinatorpathway.PnwppApp;
-import edu.cascadia.mobas.pollinatorpathway.ui.login.Profile;
 
 public class ProfileViewModel extends ViewModel {
 
@@ -20,7 +18,7 @@ public class ProfileViewModel extends ViewModel {
         mRepository = ((PnwppApp) application).getRepository();
     }
 
-    public LiveData<List<Profile>> getProfiles() {
+    public LiveData<Profile> getProfiles() {
         return mRepository.getProfiles();
     }
 }
