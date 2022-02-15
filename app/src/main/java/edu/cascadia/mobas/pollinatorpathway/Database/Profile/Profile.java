@@ -27,6 +27,10 @@ public class Profile {
     String email;
 
     @NonNull
+    @ColumnInfo(name = "phone")
+    String phone;
+
+    @NonNull
     @ColumnInfo(name = "password")
     String password;
 
@@ -62,6 +66,10 @@ public class Profile {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    public String getPhone() { return phone; }
+
+    public void setPhone( String phone) { this.phone = phone; }
 
     public String getPassword() {
         return password;
