@@ -17,10 +17,10 @@ public interface ProfileDao {
     public LiveData<Profile> getProfile(long userId);
 
     @Query("SELECT * FROM Profile WHERE firstname = :firstname")
-    public Profile getProfile(String firstname);
+    public LiveData<Profile> getProfile(String firstname);
 
     @Query("SELECT * FROM Profile ORDER BY email DESC")
-    public List<Profile> getProfiles();
+    public LiveData<List<Profile>> getProfiles();
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     public long insertProfile(Profile profile);

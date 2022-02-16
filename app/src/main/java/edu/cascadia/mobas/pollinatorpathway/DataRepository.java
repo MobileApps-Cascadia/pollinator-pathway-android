@@ -3,6 +3,8 @@ package edu.cascadia.mobas.pollinatorpathway;
 
 import androidx.lifecycle.LiveData;
 
+import java.util.List;
+
 import edu.cascadia.mobas.pollinatorpathway.Database.PnwppDb;
 import edu.cascadia.mobas.pollinatorpathway.Database.Profile.Profile;
 
@@ -25,7 +27,11 @@ public class DataRepository {
         mDatabase = db;
     }
 
-    public LiveData<Profile> getProfiles() {
+    public LiveData<List<Profile>> getProfiles() {
         return mDatabase.profileDao().getProfiles();
+    }
+
+    public LiveData<Profile> getProfile(long mID) {
+        return mDatabase.profileDao().getProfile(mID);
     }
 }
