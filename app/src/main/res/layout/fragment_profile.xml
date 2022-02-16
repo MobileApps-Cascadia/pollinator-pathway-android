@@ -15,10 +15,12 @@
         android:layout_height="wrap_content"
         tools:context=".MainActivity">
 
+
         <EditText
             android:id="@+id/organization"
             android:layout_width="409dp"
             android:layout_height="101dp"
+            android:layout_marginStart="12dp"
             android:ems="10"
             android:importantForAutofill="no"
             android:inputType="textPersonName"
@@ -28,25 +30,25 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
             app:layout_constraintBottom_toTopOf="@+id/description"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="LabelFor" />
-
 
         <EditText
             android:id="@+id/description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
             android:ems="10"
             android:gravity="start|top"
             android:inputType="textMultiLine"
             android:minHeight="48dp"
             android:text="@string/organization_description"
+            app:layout_constraintBottom_toTopOf="@+id/website"
             app:layout_constraintStart_toStartOf="@id/organization"
-            tools:ignore="Autofill,LabelFor"
             app:layout_constraintTop_toBottomOf="@id/organization"
-            app:layout_constraintBottom_toTopOf="@+id/website"/>
+            tools:ignore="Autofill,LabelFor" />
 
         <EditText
             android:id="@+id/website"
@@ -57,10 +59,10 @@
             android:inputType="textPersonName"
             android:minHeight="50dp"
             android:text="@string/website"
-            tools:ignore="LabelFor"
+            app:layout_constraintBottom_toTopOf="@id/phone"
             app:layout_constraintStart_toStartOf="@id/description"
             app:layout_constraintTop_toBottomOf="@id/description"
-            app:layout_constraintBottom_toTopOf="@id/phone"/>
+            tools:ignore="LabelFor" />
 
         <EditText
             android:id="@+id/phone"
@@ -71,10 +73,10 @@
             android:inputType="phone"
             android:minHeight="48dp"
             android:text="@string/phone"
-            tools:ignore="LabelFor"
+            app:layout_constraintBottom_toTopOf="@id/email"
             app:layout_constraintStart_toStartOf="@id/website"
             app:layout_constraintTop_toBottomOf="@id/website"
-            app:layout_constraintBottom_toTopOf="@id/email"/>
+            tools:ignore="LabelFor" />
 
         <EditText
             android:id="@+id/email"
@@ -85,10 +87,10 @@
             android:inputType="textEmailAddress"
             android:minHeight="48dp"
             android:text="@string/email2"
-            tools:ignore="LabelFor"
+            app:layout_constraintBottom_toTopOf="@+id/facebook"
             app:layout_constraintStart_toStartOf="@id/phone"
             app:layout_constraintTop_toBottomOf="@id/phone"
-            app:layout_constraintBottom_toTopOf="@+id/facebook"/>
+            tools:ignore="LabelFor" />
 
         <EditText
             android:id="@+id/facebook"
@@ -99,23 +101,23 @@
             android:inputType="textPersonName"
             android:minHeight="48dp"
             android:text="@string/facebook"
-            tools:ignore="LabelFor"
+            app:layout_constraintBottom_toTopOf="@+id/insta"
             app:layout_constraintStart_toStartOf="@id/email"
             app:layout_constraintTop_toBottomOf="@id/email"
-            app:layout_constraintBottom_toTopOf="@+id/insta"/>
+            tools:ignore="LabelFor" />
 
         <EditText
             android:id="@+id/insta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:importantForAutofill="no"
             android:inputType="textPersonName"
             android:minHeight="48dp"
             android:text="@string/insta"
+            app:layout_constraintBottom_toTopOf="@id/Address"
             app:layout_constraintStart_toStartOf="@id/facebook"
             app:layout_constraintTop_toBottomOf="@+id/facebook"
-            app:layout_constraintBottom_toTopOf="@id/Address"
-            android:importantForAutofill="no"
             tools:ignore="LabelFor" />
 
         <EditText
@@ -126,10 +128,10 @@
             android:inputType="textMultiLine"
             android:minHeight="48dp"
             android:text="@string/address"
-            tools:ignore="LabelFor"
+            app:layout_constraintBottom_toTopOf="@id/gps"
             app:layout_constraintStart_toStartOf="@id/insta"
             app:layout_constraintTop_toBottomOf="@+id/insta"
-            app:layout_constraintBottom_toTopOf="@id/gps"/>
+            tools:ignore="LabelFor" />
 
         <EditText
             android:id="@+id/gps"
@@ -140,11 +142,11 @@
             android:inputType="textPersonName"
             android:minHeight="48dp"
             android:text="@string/gps"
-            tools:ignore="LabelFor,UnknownId"
-            tools:layout_editor_absoluteY="473dp"
+            app:layout_constraintBottom_toTopOf="@+id/Plantings"
             app:layout_constraintStart_toStartOf="@id/Address"
             app:layout_constraintTop_toBottomOf="@id/Address"
-            app:layout_constraintBottom_toTopOf="@+id/Plantings"/>
+            tools:ignore="LabelFor,UnknownId"
+            tools:layout_editor_absoluteY="473dp" />
 
         <CheckBox
             android:id="@+id/checkBox"
