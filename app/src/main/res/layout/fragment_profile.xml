@@ -223,40 +223,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cardview"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:clickable="true"
-                    android:focusable="true">
-
-
-                    <ImageView
-                        android:id="@+id/plantings_image"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_margin="10dp"
-                        android:src="@mipmap/main_icon" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_alignTop="@+id/plantings_image"
-                        android:layout_alignBottom="@+id/plantings_image"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/plantings_title"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="10dp"
-                            android:text="@string/planting_name"
-                            android:textColor="@color/black"
-                            android:textSize="20sp" />
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
 
             </androidx.recyclerview.widget.RecyclerView>
 
