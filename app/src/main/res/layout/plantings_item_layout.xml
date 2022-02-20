@@ -17,30 +17,14 @@
         android:padding="20dp"
         >
 
-        <ImageView
-            android:id="@+id/plantings_image"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="50dp"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:contentDescription="@string/planting_image"
-            android:src="@mipmap/main_icon" />
-
-
-
         <TextView
             android:id="@+id/plantings_title"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
             android:text="@string/planting_name"
+            android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="20sp" />
-
-
-
 
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
