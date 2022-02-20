@@ -10,8 +10,11 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import java.util.ArrayList;
+
 import edu.cascadia.mobas.pollinatorpathway.databinding.ActivityMainBinding;
 import edu.cascadia.mobas.pollinatorpathway.Database.PnwppDb;
+import edu.cascadia.mobas.pollinatorpathway.ui.Profile.PlantingItem;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -22,6 +25,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        ArrayList<PlantingItem> plantinglist = new ArrayList<>();
+        plantinglist.add(new PlantingItem("Planting Name One"));
+        plantinglist.add(new PlantingItem("Planting Name Two"));
+        plantinglist.add(new PlantingItem("Planting Name Three"));
 
         binding = ActivityMainBinding.inflate(getLayoutInflater()); 
         setContentView(binding.getRoot());
