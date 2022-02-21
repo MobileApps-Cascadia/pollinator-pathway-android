@@ -9,16 +9,22 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
 import edu.cascadia.mobas.pollinatorpathway.databinding.ActivityMainBinding;
 import edu.cascadia.mobas.pollinatorpathway.Database.PnwppDb;
 import edu.cascadia.mobas.pollinatorpathway.ui.Profile.PlantingItem;
+import edu.cascadia.mobas.pollinatorpathway.ui.Profile.PlantingsAdapter;
 
 
 public class MainActivity extends AppCompatActivity {
 
+    private RecyclerView mRecyclerView;
+    private RecyclerView.Adapter mAdapter;
+    private RecyclerView.LayoutManager mLayoutManager;
     private ActivityMainBinding binding;
     private PnwppDb mPnwppDatabase;
 
@@ -32,6 +38,14 @@ public class MainActivity extends AppCompatActivity {
         plantinglist.add(new PlantingItem("Coastal Bank"));
         plantinglist.add(new PlantingItem("Hawthorn Farm"));
         plantinglist.add(new PlantingItem("Red Barn Farm"));
+
+        mRecyclerView = findViewById(R.id.recyclerview);
+        mRecyclerView.setHasFixedSize(true);
+        mLayoutManager = new LinearLayoutManager(this);
+        mAdapter = new PlantingsAdapter(plantinglist);
+
+        mRecyclerView.setLayoutManager(mLayoutManager);
+        mRecyclerView.setAdapter(mAdapter);
 
         binding = ActivityMainBinding.inflate(getLayoutInflater()); 
         setContentView(binding.getRoot());
