@@ -27,9 +27,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         ArrayList<PlantingItem> plantinglist = new ArrayList<>();
-        plantinglist.add(new PlantingItem("Planting Name One"));
-        plantinglist.add(new PlantingItem("Planting Name Two"));
-        plantinglist.add(new PlantingItem("Planting Name Three"));
+        plantinglist.add(new PlantingItem("21 Acres"));
+        plantinglist.add(new PlantingItem("Songaia Co-House"));
+        plantinglist.add(new PlantingItem("Coastal Bank"));
+        plantinglist.add(new PlantingItem("Hawthorn Farm"));
+        plantinglist.add(new PlantingItem("Red Barn Farm"));
 
         binding = ActivityMainBinding.inflate(getLayoutInflater()); 
         setContentView(binding.getRoot());
