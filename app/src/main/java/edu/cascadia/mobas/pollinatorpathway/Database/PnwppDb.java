@@ -65,11 +65,11 @@ public abstract class PnwppDb extends RoomDatabase {
                 profileDao.insertProfile(p);
 
                 Profile w = new Profile();
-                p.setFirstname("Patricia");
-                p.setLastname("Newkirk");
-                p.setEmail("patricia.newkirk@gmail.com");
-                p.setPhone("206-902-8107");
-                p.setPassword("abcd");
+                w.setFirstname("Patricia");
+                w.setLastname("Newkirk");
+                w.setEmail("patricia.newkirk@gmail.com");
+                w.setPhone("206-902-8107");
+                w.setPassword("abcd");
                 profileDao.insertProfile(w);
             });
         }
