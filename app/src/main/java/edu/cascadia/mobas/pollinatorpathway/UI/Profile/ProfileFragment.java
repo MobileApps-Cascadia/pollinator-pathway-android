@@ -1,4 +1,4 @@
-package edu.cascadia.mobas.pollinatorpathway.ui.Profile;
+package edu.cascadia.mobas.pollinatorpathway.UI.Profile;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

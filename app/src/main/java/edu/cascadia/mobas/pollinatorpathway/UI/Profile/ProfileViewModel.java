@@ -1,4 +1,4 @@
-package edu.cascadia.mobas.pollinatorpathway.ui.Profile;
+package edu.cascadia.mobas.pollinatorpathway.UI.Profile;
 
 import androidx.lifecycle.ViewModel;
 

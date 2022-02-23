@@ -1,4 +1,4 @@
-package edu.cascadia.mobas.pollinatorpathway.ui.Profile;
+package edu.cascadia.mobas.pollinatorpathway.UI.Profile;
 
 public class PlantingItem {
     private String mPlantingText;

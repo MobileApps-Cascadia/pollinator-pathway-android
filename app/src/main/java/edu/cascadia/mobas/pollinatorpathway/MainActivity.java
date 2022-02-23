@@ -16,8 +16,8 @@ import java.util.ArrayList;
 
 import edu.cascadia.mobas.pollinatorpathway.databinding.ActivityMainBinding;
 import edu.cascadia.mobas.pollinatorpathway.Database.PnwppDb;
-import edu.cascadia.mobas.pollinatorpathway.ui.Profile.PlantingItem;
-import edu.cascadia.mobas.pollinatorpathway.ui.Profile.PlantingsAdapter;
+import edu.cascadia.mobas.pollinatorpathway.UI.Profile.PlantingItem;
+import edu.cascadia.mobas.pollinatorpathway.UI.Profile.PlantingsAdapter;
 
 
 public class MainActivity extends AppCompatActivity {
