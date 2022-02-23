@@ -9,11 +9,17 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
 
 import edu.cascadia.mobas.pollinatorpathway.R;
+import edu.cascadia.mobas.pollinatorpathway.databinding.FragmentProfileBinding;
 
 public class ProfileFragment extends Fragment {
-
+    private FragmentProfileBinding fragmentProfileBinding;
     private ProfileViewModel mViewModel;
 
     public static ProfileFragment newInstance() {
@@ -23,14 +29,26 @@ public class ProfileFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_profile, container, false);
-    }
+       fragmentProfileBinding = FragmentProfileBinding.inflate(inflater, container, false);
 
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
+        ArrayList<PlantingItem> plantinglist = new ArrayList<>();
+        plantinglist.add(new PlantingItem("21 Acres"));
+        plantinglist.add(new PlantingItem("Songaia Co-House"));
+        plantinglist.add(new PlantingItem("Coastal Bank"));
+        plantinglist.add(new PlantingItem("Hawthorn Farm"));
+        plantinglist.add(new PlantingItem("Red Barn Farm"));
+
+        RecyclerView mRecyclerView = fragmentProfileBinding.recyclerview;
+        mRecyclerView.setHasFixedSize(true);
+        RecyclerView.LayoutManager mLayoutManager= new GridLayoutManager(getContext(), 2);
+        RecyclerView.Adapter mAdapter= new PlantingsAdapter(plantinglist);
+
+        mRecyclerView.setLayoutManager(mLayoutManager);
+        mRecyclerView.setAdapter(mAdapter);
+
         mViewModel = new ViewModelProvider(this).get(ProfileViewModel.class);
         // TODO: Use the ViewModel
+        return fragmentProfileBinding.getRoot();
     }
 
 }

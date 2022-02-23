@@ -32,20 +32,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        ArrayList<PlantingItem> plantinglist = new ArrayList<>();
-        plantinglist.add(new PlantingItem("21 Acres"));
-        plantinglist.add(new PlantingItem("Songaia Co-House"));
-        plantinglist.add(new PlantingItem("Coastal Bank"));
-        plantinglist.add(new PlantingItem("Hawthorn Farm"));
-        plantinglist.add(new PlantingItem("Red Barn Farm"));
-
-        mRecyclerView = findViewById(R.id.recyclerview);
-        mRecyclerView.setHasFixedSize(true);
-        mLayoutManager = new LinearLayoutManager(this);
-        mAdapter = new PlantingsAdapter(plantinglist);
-
-        mRecyclerView.setLayoutManager(mLayoutManager);
-        mRecyclerView.setAdapter(mAdapter);
 
         binding = ActivityMainBinding.inflate(getLayoutInflater()); 
         setContentView(binding.getRoot());
