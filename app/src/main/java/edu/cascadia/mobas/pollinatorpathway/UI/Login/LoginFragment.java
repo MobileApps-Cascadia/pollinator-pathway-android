@@ -5,10 +5,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import androidx.navigation.Navigation;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.Navigation;
+
 import edu.cascadia.mobas.pollinatorpathway.R;
 import edu.cascadia.mobas.pollinatorpathway.databinding.FragmentLoginBinding;
 
@@ -31,7 +32,7 @@ public class LoginFragment extends Fragment {
             Navigation.findNavController(v).navigate(R.id.action_navigation_login_to_profileFragment);
         });
 
-        loginViewModel.getProfile().observe(this, profile -> {
+        loginViewModel.getProfile(1).observe(this, profile -> {
             binding.emailInput.setText(profile.getEmail());
         });
         return root;

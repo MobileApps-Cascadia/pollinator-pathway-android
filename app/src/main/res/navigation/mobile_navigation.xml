@@ -21,11 +21,10 @@
         android:id="@+id/navigation_account"
         android:name="edu.cascadia.mobas.pollinatorpathway.UI.Login.LoginFragment"
         android:label="Login"
-        tools:layout="@layout/fragment_login" >
+        tools:layout="@layout/fragment_login" />
         <action
             android:id="@+id/action_navigation_login_to_profileFragment"
             app:destination="@id/profileFragment" />
-    </fragment>
     <fragment
         android:id="@+id/mapsFragment2"
         android:name="edu.cascadia.mobas.pollinatorpathway.UI.Maps.MapsFragment"

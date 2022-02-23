@@ -6,21 +6,23 @@ import android.app.Application;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
-import edu.cascadia.mobas.pollinatorpathway.Database.PnwppDb;
+import java.util.List;
+
+import edu.cascadia.mobas.pollinatorpathway.DataRepository;
 import edu.cascadia.mobas.pollinatorpathway.Database.Profile.Profile;
+import edu.cascadia.mobas.pollinatorpathway.PnwppApp;
 
 public class LoginViewModel extends AndroidViewModel {
 
-    private final LiveData<Profile> mProfile;
+    private DataRepository mRepository;
 
     public LoginViewModel(Application application) {
         super(application);
-        PnwppDb db = PnwppDb.getInstance(application);
-
-        mProfile = db.profileDao().getProfile(1);
+        mRepository = ((PnwppApp) application).getRepository();
     }
 
-    LiveData<Profile> getProfile() {
-        return mProfile;
+    LiveData<List<Profile>> getProfiles() {
+        return mRepository.getProfiles();
     }
+    LiveData<Profile> getProfile(long mID) { return mRepository.getProfile(mID);}
 }
