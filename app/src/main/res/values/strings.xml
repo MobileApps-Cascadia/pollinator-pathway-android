@@ -22,20 +22,15 @@
     <string name="edit">EDIT ACCOUNT</string>
     <string name="cancel">CANCEL</string>
     <string name="facebook">Facebook:</string>
+    <string name="insta">Instagram:</string>
     <string name="gps">GPS</string>
     <string name="plantings">Plantings</string>
-    <string name="visible">visible</string>
+    <string name="visible">visible to public</string>
     <string name="phone">(206)000-0000</string>
     <string name="address">18345 Campus Way NE, Bothell</string>
     <string name="email2">BetterBuzz@gmail.com</string>
     <string name="profile">Profile</string>
-    <string name="planting_one">Planting One</string>
-    <string name="planting_two">Planting Two</string>
-    <string name="planting_three">Planting Three</string>
-    <string name="planting_four">Planting Four</string>
     <string name="organization_description">Organization Description</string>
     <string name="save_changes">SAVE CHANGES</string>
-    <string name="edit_plantings">EDIT PLANTINGS</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_photos">ADD PHOTOS</string>
 </resources>
