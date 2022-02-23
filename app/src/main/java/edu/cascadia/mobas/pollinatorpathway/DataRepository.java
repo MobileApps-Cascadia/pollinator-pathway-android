@@ -15,14 +15,14 @@ public class DataRepository {
 
 
 
-    public static DataRepository getInstance(final PnwppDb db) {
+    public static DataRepository getInstance(PnwppDb db) {
         if (sInstance == null) {
             synchronized (DataRepository.class) {
                 sInstance = new DataRepository(db);
             }
         }
         return sInstance;
-    };
+    }
     private DataRepository(PnwppDb db) {
         mDatabase = db;
     }
