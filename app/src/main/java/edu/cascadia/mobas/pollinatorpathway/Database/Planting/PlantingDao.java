@@ -33,4 +33,6 @@ public interface PlantingDao {
 
     @Delete
     public void deletePlanting(Planting planting);
+
+
 }
