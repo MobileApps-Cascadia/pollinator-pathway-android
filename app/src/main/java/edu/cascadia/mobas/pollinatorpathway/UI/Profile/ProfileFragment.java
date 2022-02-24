@@ -51,7 +51,7 @@ public class ProfileFragment extends Fragment {
         RecyclerView mRecyclerView = fragmentProfileBinding.recyclerview;
         mRecyclerView.setHasFixedSize(true);
         RecyclerView.LayoutManager mLayoutManager= new GridLayoutManager(getContext(), 2);
-        RecyclerView.Adapter mAdapter= new PlantingsAdapter(Planting);
+        RecyclerView.Adapter mAdapter= new PlantingsAdapter(plantinglist);
 
         mRecyclerView.setLayoutManager(mLayoutManager);
         mRecyclerView.setAdapter(mAdapter);
