@@ -7,17 +7,12 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import java.util.ArrayList;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import edu.cascadia.mobas.pollinatorpathway.databinding.ActivityMainBinding;
 import edu.cascadia.mobas.pollinatorpathway.Database.PnwppDb;
-import edu.cascadia.mobas.pollinatorpathway.UI.Profile.PlantingItem;
-import edu.cascadia.mobas.pollinatorpathway.UI.Profile.PlantingsAdapter;
 
 
 public class MainActivity extends AppCompatActivity {

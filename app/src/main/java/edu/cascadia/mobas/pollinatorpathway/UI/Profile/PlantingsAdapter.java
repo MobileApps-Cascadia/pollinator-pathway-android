@@ -4,15 +4,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import edu.cascadia.mobas.pollinatorpathway.Database.Planting.Planting;
 import edu.cascadia.mobas.pollinatorpathway.R;
 
 import androidx.annotation.NonNull;
+import androidx.lifecycle.LiveData;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
 public class PlantingsAdapter extends RecyclerView.Adapter<PlantingsAdapter.PlantingsViewHolder> {
- private ArrayList<PlantingItem> mPlantingsList;
+ private LiveData<Planting> mPlantingsList;
 
     public static class PlantingsViewHolder extends RecyclerView.ViewHolder{
     public TextView mTextView;
@@ -22,7 +25,7 @@ public class PlantingsAdapter extends RecyclerView.Adapter<PlantingsAdapter.Plan
         }
     }
 
-    public PlantingsAdapter(ArrayList<PlantingItem> plantingslist){
+    public PlantingsAdapter(LiveData<Planting> plantingslist){
         mPlantingsList = plantingslist;
     }
     @Override
@@ -34,9 +37,9 @@ public class PlantingsAdapter extends RecyclerView.Adapter<PlantingsAdapter.Plan
 
     @Override
     public void onBindViewHolder(@NonNull PlantingsViewHolder holder, int position) {
-        PlantingItem currentItem = mPlantingsList.get(position);
+        Planting currentItem = mPlantingsList.get(position);
 
-        holder.mTextView.setText(currentItem.getPlantingText());
+        holder.mTextView.setText(currentItem.getName());
     }
 
     @Override

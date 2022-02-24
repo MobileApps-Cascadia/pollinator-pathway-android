@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.LiveData;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -15,8 +16,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
+import edu.cascadia.mobas.pollinatorpathway.Database.Planting.Planting;
 import edu.cascadia.mobas.pollinatorpathway.R;
 import edu.cascadia.mobas.pollinatorpathway.databinding.FragmentProfileBinding;
+import edu.cascadia.mobas.pollinatorpathway.databinding.PlantingsItemLayoutBinding;
 
 public class ProfileFragment extends Fragment {
     private FragmentProfileBinding fragmentProfileBinding;
@@ -31,17 +34,24 @@ public class ProfileFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
        fragmentProfileBinding = FragmentProfileBinding.inflate(inflater, container, false);
 
-        ArrayList<PlantingItem> plantinglist = new ArrayList<>();
-        plantinglist.add(new PlantingItem("21 Acres"));
-        plantinglist.add(new PlantingItem("Songaia Co-House"));
-        plantinglist.add(new PlantingItem("Coastal Bank"));
-        plantinglist.add(new PlantingItem("Hawthorn Farm"));
-        plantinglist.add(new PlantingItem("Red Barn Farm"));
+        LiveData<Planting> plantinglist = new LiveData<Planting>() {
+            @Override
+            protected void setValue(Planting value) {
+                super.setValue(value);
+            }
+
+            @Nullable
+            @Override
+            public Planting getValue() {
+                return super.getValue();
+            }
+        };
+
 
         RecyclerView mRecyclerView = fragmentProfileBinding.recyclerview;
         mRecyclerView.setHasFixedSize(true);
         RecyclerView.LayoutManager mLayoutManager= new GridLayoutManager(getContext(), 2);
-        RecyclerView.Adapter mAdapter= new PlantingsAdapter(plantinglist);
+        RecyclerView.Adapter mAdapter= new PlantingsAdapter(Planting);
 
         mRecyclerView.setLayoutManager(mLayoutManager);
         mRecyclerView.setAdapter(mAdapter);

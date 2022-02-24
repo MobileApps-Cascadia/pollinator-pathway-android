@@ -34,4 +34,5 @@ public class DataRepository {
     public LiveData<Profile> getProfile(long mID) {
         return mDatabase.profileDao().getProfile(mID);
     }
+
 }
