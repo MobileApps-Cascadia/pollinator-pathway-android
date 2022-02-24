@@ -11,9 +11,8 @@ import androidx.sqlite.db.SupportSQLiteDatabase;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+import edu.cascadia.mobas.pollinatorpathway.AppExecutors;
 import edu.cascadia.mobas.pollinatorpathway.Database.Box.Box;
-import edu.cascadia.mobas.pollinatorpathway.Database.Planting.PlantingDao;
-import edu.cascadia.mobas.pollinatorpathway.Database.Box.BoxDao;
 import edu.cascadia.mobas.pollinatorpathway.Database.Planting.Planting;
 import edu.cascadia.mobas.pollinatorpathway.Database.Profile.Profile;
 import edu.cascadia.mobas.pollinatorpathway.Database.Profile.ProfileDao;
@@ -26,10 +25,12 @@ public abstract class PnwppDb extends RoomDatabase {
 
     private static final ExecutorService dbExecutor = Executors.newSingleThreadExecutor();
 
+
     //Singleton
-    public static PnwppDb getInstance(Context context){
+    public static PnwppDb getInstance(Context context, AppExecutors mAppExecutor){
         if (mPnwppDatabase == null){
             synchronized (PnwppDb.class) {
+
                 mPnwppDatabase = Room.databaseBuilder(context, PnwppDb.class, DATABASE_NAME)
                         .addCallback(sRoomDatabaseCallback)
                         .build();
@@ -40,10 +41,10 @@ public abstract class PnwppDb extends RoomDatabase {
 
 
     public abstract ProfileDao profileDao();
-    public abstract PlantingDao plantingDao();
-    public abstract BoxDao boxDao();
+    //public abstract PlantingDao plantingDao();
+    //public abstract BoxDao boxDao();
 
-    private static RoomDatabase.Callback sRoomDatabaseCallback = new RoomDatabase.Callback() {
+    private static final RoomDatabase.Callback sRoomDatabaseCallback = new RoomDatabase.Callback() {
         @Override
         public void onCreate(@NonNull SupportSQLiteDatabase db) {
             super.onCreate(db);

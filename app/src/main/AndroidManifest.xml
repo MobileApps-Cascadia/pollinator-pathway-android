@@ -16,6 +16,7 @@
         android:label="PNW Pollinator Pathway"
         android:roundIcon="@mipmap/main_icon_round"
         android:supportsRtl="true"
+        android:name=".PnwppApp"
         android:theme="@style/Theme.Home">
 
         <!--
