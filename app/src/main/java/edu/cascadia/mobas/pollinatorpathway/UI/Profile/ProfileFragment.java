@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 import edu.cascadia.mobas.pollinatorpathway.Database.Planting.Planting;
+import edu.cascadia.mobas.pollinatorpathway.Database.PnwppDb;
 import edu.cascadia.mobas.pollinatorpathway.R;
 import edu.cascadia.mobas.pollinatorpathway.databinding.FragmentProfileBinding;
 import edu.cascadia.mobas.pollinatorpathway.databinding.PlantingsItemLayoutBinding;
@@ -60,5 +61,4 @@ public class ProfileFragment extends Fragment {
         // TODO: Use the ViewModel
         return fragmentProfileBinding.getRoot();
     }
-
 }

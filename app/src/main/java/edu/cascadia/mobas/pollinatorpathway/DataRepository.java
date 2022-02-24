@@ -5,8 +5,10 @@ import androidx.lifecycle.LiveData;
 
 import java.util.List;
 
+import edu.cascadia.mobas.pollinatorpathway.Database.Planting.Planting;
 import edu.cascadia.mobas.pollinatorpathway.Database.PnwppDb;
 import edu.cascadia.mobas.pollinatorpathway.Database.Profile.Profile;
+
 
 public class DataRepository {
 
@@ -35,4 +37,5 @@ public class DataRepository {
         return mDatabase.profileDao().getProfile(mID);
     }
 
+    public LiveData<List<Planting>> getPlantings() { return mDatabase.plantingDao();}
 }

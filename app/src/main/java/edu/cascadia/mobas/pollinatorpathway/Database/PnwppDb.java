@@ -14,6 +14,7 @@ import java.util.concurrent.Executors;
 import edu.cascadia.mobas.pollinatorpathway.AppExecutors;
 import edu.cascadia.mobas.pollinatorpathway.Database.Box.Box;
 import edu.cascadia.mobas.pollinatorpathway.Database.Planting.Planting;
+import edu.cascadia.mobas.pollinatorpathway.Database.Planting.PlantingDao;
 import edu.cascadia.mobas.pollinatorpathway.Database.Profile.Profile;
 import edu.cascadia.mobas.pollinatorpathway.Database.Profile.ProfileDao;
 
@@ -41,7 +42,7 @@ public abstract class PnwppDb extends RoomDatabase {
 
 
     public abstract ProfileDao profileDao();
-    //public abstract PlantingDao plantingDao();
+    public abstract PlantingDao plantingDao();
     //public abstract BoxDao boxDao();
 
     private static final RoomDatabase.Callback sRoomDatabaseCallback = new RoomDatabase.Callback() {

@@ -1,5 +1,6 @@
 package edu.cascadia.mobas.pollinatorpathway.Database.Planting;
 
+import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
@@ -13,16 +14,16 @@ import java.util.List;
 public interface PlantingDao {
 
     @Query("SELECT * FROM Planting WHERE plantingId = :plantingId")
-    public Planting getPlanting(long plantingId);
+    LiveData<Planting> getPlanting (long plantingId);
 
     @Query("SELECT * FROM Planting WHERE name = :name")
-    public Planting getPlantingByText(String name);
+    LiveData<Planting> getPlantingByText(String name);
 
     @Query("SELECT * FROM Planting ORDER BY name ASC")
-    List<Planting> getAllPlantings();
+    LiveData<List<Planting>> getAllPlantings();
 
     @Query("SELECT * FROM Planting WHERE userId = :userId ORDER BY name ASC")
-    List<Planting> getProfilePlantings(long userId);
+    LiveData<List<Planting>> getProfilePlantings(long userId);
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     public long insertPlanting(Planting planting);
