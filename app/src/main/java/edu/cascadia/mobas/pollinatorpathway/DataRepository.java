@@ -37,5 +37,5 @@ public class DataRepository {
         return mDatabase.profileDao().getProfile(mID);
     }
 
-    public LiveData<List<Planting>> getPlanting() { return mDatabase.plantingDao().getPlantingByText();}
+    public LiveData<List<Planting>> getProfilePlantings(long mID) { return mDatabase.plantingDao().getProfilePlantings(mID);}
 }

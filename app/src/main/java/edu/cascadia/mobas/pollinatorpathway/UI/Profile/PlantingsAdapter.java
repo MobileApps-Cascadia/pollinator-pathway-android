@@ -38,8 +38,9 @@ public class PlantingsAdapter extends RecyclerView.Adapter<PlantingsAdapter.Plan
 
     @Override
     public void onBindViewHolder(@NonNull PlantingsViewHolder holder, int position) {
-        Planting currentItem = mPlantingsList.get(position);
+        Planting currentItem = mPlantingsList.getValue();
 
+        assert currentItem != null;
         holder.mTextView.setText(currentItem.getName());
     }
 
