@@ -41,7 +41,7 @@ public class PlantingsAdapter extends RecyclerView.Adapter<PlantingsAdapter.Plan
         Planting currentItem = mPlantingsList.getValue();
 
         assert currentItem != null;
-        holder.mTextView.setText(currentItem.getName());
+        holder.mTextView.setText(currentItem.getPlantingsByText());
     }
 
     @Override
