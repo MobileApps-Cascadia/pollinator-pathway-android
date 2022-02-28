@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import edu.cascadia.mobas.pollinatorpathway.Database.Planting.Planting;
 import edu.cascadia.mobas.pollinatorpathway.Database.PnwppDb;
@@ -34,30 +35,20 @@ public class ProfileFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
        fragmentProfileBinding = FragmentProfileBinding.inflate(inflater, container, false);
-
-        LiveData<Planting> plantinglist = new LiveData<Planting>() {
-            @Override
-            protected void setValue(Planting value) {
-                super.setValue(value);
-            }
-
-            @Nullable
-            @Override
-            public Planting getValue() {
-                return super.getValue();
-            }
-        };
-
-
+       mViewModel = new ViewModelProvider(this).get(ProfileViewModel.class);
+        LiveData<List<Planting>> plantinglist = mViewModel.getAllPlantings();
         RecyclerView mRecyclerView = fragmentProfileBinding.recyclerview;
-        mRecyclerView.setHasFixedSize(true);
         RecyclerView.LayoutManager mLayoutManager= new GridLayoutManager(getContext(), 2);
-        RecyclerView.Adapter mAdapter= new PlantingsAdapter(plantinglist);
+
+        PlantingsAdapter mAdapter= new PlantingsAdapter(plantinglist.getValue());
 
         mRecyclerView.setLayoutManager(mLayoutManager);
         mRecyclerView.setAdapter(mAdapter);
+        //checking to see if data has been changed
+        plantinglist.observe(getViewLifecycleOwner(), plantings -> {
+           if (plantings != null) mAdapter.updatePlantings(plantings);
+        });
 
-        mViewModel = new ViewModelProvider(this).get(ProfileViewModel.class);
         // TODO: Use the ViewModel
         return fragmentProfileBinding.getRoot();
     }

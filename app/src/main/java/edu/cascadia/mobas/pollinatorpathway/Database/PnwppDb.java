@@ -66,6 +66,16 @@ public abstract class PnwppDb extends RoomDatabase {
                 p.setPassword("1234");
                 profileDao.insertProfile(p);
             });
+
+            dbExecutor.execute(() -> {
+                PlantingDao plantingDao = mPnwppDatabase.plantingDao();
+
+                Planting planting = new Planting();
+                planting.setName("meadow garden");
+                planting.setPlantingId(1);
+                plantingDao.insertPlanting(planting);
+
+            });
         }
     };
 

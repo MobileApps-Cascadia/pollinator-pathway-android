@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PlantingsAdapter extends RecyclerView.Adapter<PlantingsAdapter.PlantingsViewHolder> {
- private LiveData<Planting> mPlantingsList;
+ private List<Planting> mPlantingsList;
 
     public static class PlantingsViewHolder extends RecyclerView.ViewHolder{
     public TextView mTextView;
@@ -26,9 +26,15 @@ public class PlantingsAdapter extends RecyclerView.Adapter<PlantingsAdapter.Plan
         }
     }
 
-    public PlantingsAdapter(LiveData<Planting> plantingslist){
+    public void updatePlantings(List<Planting> plantinglist) {
+        mPlantingsList = plantinglist;
+        notifyDataSetChanged();
+    }
+
+    public PlantingsAdapter(List<Planting> plantingslist){
         mPlantingsList = plantingslist;
     }
+
     @Override
     public PlantingsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
       View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.plantings_item_layout, parent, false);
@@ -38,14 +44,15 @@ public class PlantingsAdapter extends RecyclerView.Adapter<PlantingsAdapter.Plan
 
     @Override
     public void onBindViewHolder(@NonNull PlantingsViewHolder holder, int position) {
-        Planting currentItem = mPlantingsList.getValue();
+        Planting currentItem = mPlantingsList.get(position);
 
         assert currentItem != null;
-        holder.mTextView.setText(currentItem.getPlantingsByText());
+        holder.mTextView.setText(currentItem.getName());
     }
 
     @Override
     public int getItemCount() {
-        return mPlantingsList.size();
+       if (mPlantingsList != null) return mPlantingsList.size();
+       else return 0;
     }
 }

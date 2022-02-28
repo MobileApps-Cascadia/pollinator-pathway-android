@@ -26,5 +26,5 @@ public class ProfileViewModel extends AndroidViewModel {
     public LiveData<List<Profile>> getProfiles() {
         return mRepository.getProfiles();
     }
-    public LiveData<List<Planting>> getProfilePlantings(long mID) {return mRepository.getProfilePlantings(mID);}
+    public LiveData<List<Planting>> getAllPlantings() {return mRepository.getAllPlantings();}
 }
