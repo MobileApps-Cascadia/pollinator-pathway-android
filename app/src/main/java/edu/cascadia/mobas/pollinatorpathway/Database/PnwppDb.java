@@ -14,6 +14,7 @@ import java.util.concurrent.Executors;
 import edu.cascadia.mobas.pollinatorpathway.AppExecutors;
 import edu.cascadia.mobas.pollinatorpathway.Database.Box.Box;
 import edu.cascadia.mobas.pollinatorpathway.Database.Planting.Planting;
+import edu.cascadia.mobas.pollinatorpathway.Database.Planting.PlantingDao;
 import edu.cascadia.mobas.pollinatorpathway.Database.Profile.Profile;
 import edu.cascadia.mobas.pollinatorpathway.Database.Profile.ProfileDao;
 
@@ -41,7 +42,7 @@ public abstract class PnwppDb extends RoomDatabase {
 
 
     public abstract ProfileDao profileDao();
-    //public abstract PlantingDao plantingDao();
+    public abstract PlantingDao plantingDao();
     //public abstract BoxDao boxDao();
 
     private static final RoomDatabase.Callback sRoomDatabaseCallback = new RoomDatabase.Callback() {
@@ -72,6 +73,23 @@ public abstract class PnwppDb extends RoomDatabase {
                 w.setPhone("206-902-8107");
                 w.setPassword("abcd");
                 profileDao.insertProfile(w);
+            });
+
+            dbExecutor.execute(() -> {
+                PlantingDao plantingDao = mPnwppDatabase.plantingDao();
+
+                Planting planting = new Planting();
+                planting.setName("21 Acres");
+                planting.setUserId(1);
+                planting.setDescription("Organization");
+                plantingDao.insertPlanting(planting);
+
+                Planting planting2 = new Planting();
+                planting.setName("Songaia Co-House");
+                planting.setUserId(2);
+                planting.setDescription("Co-Housing");
+                plantingDao.insertPlanting(planting2);
+
             });
         }
     };
