@@ -33,8 +33,8 @@ import java.util.concurrent.ExecutionException;
 
 import edu.cascadia.mobas.pollinatorpathway.MainActivity;
 import edu.cascadia.mobas.pollinatorpathway.R;
-import edu.cascadia.mobas.pollinatorpathway.ui.QRCodeFoundListener;
-import edu.cascadia.mobas.pollinatorpathway.ui.QRCodeImageAnalyzer;
+import edu.cascadia.mobas.pollinatorpathway.ui.QRcode.QRcodeFoundListener;
+import edu.cascadia.mobas.pollinatorpathway.ui.QRcode.QRcodeImageAnalyzer;
 
 public class QRcode extends AppCompatActivity {
     private static final int PERMISSION_REQUEST_CAMERA = 0;
