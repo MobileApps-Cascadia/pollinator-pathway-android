@@ -58,21 +58,44 @@ public abstract class PnwppDb extends RoomDatabase {
                 ProfileDao profileDao = mPnwppDatabase.profileDao();
                 profileDao.deleteAll();
 
-                Profile p = new Profile();
-                p.setFirstname("Robin");
-                p.setLastname("Crowder");
-                p.setEmail("rbcrowder@21acres.org");
-                p.setPhone("326-224-7220");
-                p.setPassword("1234");
-                profileDao.insertProfile(p);
+                Profile one = new Profile();
+                one.setFirstname("Robin");
+                one.setLastname("Crowder");
+                one.setEmail("rbcrowder@21acres.org");
+                one.setPhone("326-224-7220");
+                one.setPassword("1234");
+                profileDao.insertProfile(one);
 
-                Profile w = new Profile();
-                w.setFirstname("Patricia");
-                w.setLastname("Newkirk");
-                w.setEmail("patricia.newkirk@gmail.com");
-                w.setPhone("206-902-8107");
-                w.setPassword("abcd");
-                profileDao.insertProfile(w);
+                Profile two = new Profile();
+                two.setFirstname("Patricia");
+                two.setLastname("Newkirk");
+                two.setEmail("patricia.newkirk@gmail.com");
+                two.setPhone("206-902-8107");
+                two.setPassword("abcd");
+                profileDao.insertProfile(two);
+
+                Profile three = new Profile();
+                three.setFirstname("Kristi");
+                three.setLastname("Bolles");
+                three.setEmail("kbolles@coastalbank.com");
+                three.setPhone("425-482-3103");
+                three.setPassword("3333");
+                profileDao.insertProfile(three);
+
+                Profile four = new Profile();
+                four.setFirstname("Alexia");
+                four.setLastname("Allen");
+                four.setEmail("alexiaallen@hotmail.com");
+                four.setPhone("425-286-5640");
+                four.setPassword("4444");
+                profileDao.insertProfile(four);
+
+                Profile five = new Profile();
+                five.setFirstname("Cameron");
+                five.setLastname("Graves");
+                five.setPhone("206-949-3333");
+                five.setPassword("5555");
+                profileDao.insertProfile(five);
             });
 
             dbExecutor.execute(() -> {
