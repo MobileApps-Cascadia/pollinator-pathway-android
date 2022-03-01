@@ -71,7 +71,7 @@ public class QRcode extends AppCompatActivity {
             startCamera();
         } else {
             if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.CAMERA)) {
-                ActivityCompat.requestPermissions(qrcode.this, new String[]{Manifest.permission.CAMERA}, PERMISSION_REQUEST_CAMERA);
+                ActivityCompat.requestPermissions(QRcode.this, new String[]{Manifest.permission.CAMERA}, PERMISSION_REQUEST_CAMERA);
             } else {
                 ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA}, PERMISSION_REQUEST_CAMERA);
             }
@@ -119,7 +119,7 @@ public class QRcode extends AppCompatActivity {
                         .setBackpressureStrategy(ImageAnalysis.STRATEGY_KEEP_ONLY_LATEST)
                         .build();
 
-        imageAnalysis.setAnalyzer(ContextCompat.getMainExecutor(this), new QRCodeImageAnalyzer(new QRCodeFoundListener() {
+        imageAnalysis.setAnalyzer(ContextCompat.getMainExecutor(this), new QRcodeImageAnalyzer(new QRcodeFoundListener() {
             @Override
             public void onQRCodeFound(String _qrCode) {
                 qrCode = _qrCode;
