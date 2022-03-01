@@ -36,6 +36,9 @@ public class Planting {
     @ColumnInfo(name = "dateJoined")
     String dateJoined;
 
+    @ColumnInfo(name = "gpsLocation")
+    String gpsLocation;
+
     @ColumnInfo(name = "userId")
     private long userId;
 
@@ -83,6 +86,10 @@ public class Planting {
     public String getWebsite() { return website; }
 
     public void setWebsite(String website) { this.website = website; }
+
+    public String getGpsLocation() { return gpsLocation; }
+
+    public void setGpsLocation(String gpsLocation) { this.gpsLocation = gpsLocation; }
 
     public String getAddress() {
         return address;

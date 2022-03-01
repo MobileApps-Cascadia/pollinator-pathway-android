@@ -104,15 +104,53 @@ public abstract class PnwppDb extends RoomDatabase {
                 Planting one = new Planting();
                 one.setName("21 Acres");
                 one.setUserId(1);
-                one.setDescription("Organization");
+                one.setType("Organization");
+                one.setDateJoined("11/2021");
+                one.setWebsite("https://21acres.org/?s=beevesting");
+                one.setDescription("The 21 Acres Center for Local Food & Sustainable " +
+                        "living is a global leader in sustainable & regenerative practices, " +
+                        "serving as a living laboratory & learning center for conscious consumers " +
+                        "who want to learn new, more sustainable ways of living.");
                 plantingDao.insertPlanting(one);
 
+
                 Planting two = new Planting();
-                one.setName("Songaia Co-House");
-                one.setUserId(2);
-                one.setDescription("Co-Housing");
+                two.setName("Songaia Co-Housing Community");
+                two.setUserId(2);
+                two.setType("Co-housing");
+                two.setDateJoined("11/2021");
+                two.setWebsite("http://www.songaia.com/the-garden1.html");
                 plantingDao.insertPlanting(two);
 
+
+                Planting three = new Planting();
+                three.setName("Coastal Bank");
+                three.setUserId(3);
+                three.setType("Company");
+                three.setDateJoined("11/2021");
+                three.setWebsite("https://www.coastalbank.com/about/join-us.html?gclid=CjwKCAiAnO2MBhApEiwA8q0HYTDhC4cKlHjx6VVf52wPoXj9IhTt5ejBtoCshnDEf2jtPYJVjLc0SxoCTOMQAvD_BwE");
+                three.setDescription("Coastal Community Bank");
+                plantingDao.insertPlanting(three);
+
+
+                Planting four = new Planting();
+                four.setName("Hawthorn Farm");
+                four.setUserId(4);
+                four.setType("Farm");
+                four.setDateJoined("11/2021");
+                four.setWebsite("https://www.coastalbank.com/about/join-us.html?gclid=CjwKCAiAnO2MBhApEiwA8q0HYTDhC4cKlHjx6VVf52wPoXj9IhTt5ejBtoCshnDEf2jtPYJVjLc0SxoCTOMQAvD_BwE");
+                four.setDescription("A suburban homestead where happy humans are integrated " +
+                        "into the ecological system. We love to teach.");
+                plantingDao.insertPlanting(four);
+
+
+                Planting five = new Planting();
+                five.setName("Red Barn Farm");
+                five.setUserId(5);
+                five.setType("Farm");
+                five.setDateJoined("11/2021");
+                five.setWebsite("https://redbarnfarm.com/");
+                plantingDao.insertPlanting(five);
             });
         }
     };
