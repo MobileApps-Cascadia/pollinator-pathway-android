@@ -71,8 +71,9 @@ public abstract class PnwppDb extends RoomDatabase {
                 PlantingDao plantingDao = mPnwppDatabase.plantingDao();
 
                 Planting planting = new Planting();
-                planting.setName("meadow garden");
-                planting.setPlantingId(1);
+                planting.setName("21 Acres");
+                planting.setUserId(1);
+                planting.setDescription("Organization");
                 plantingDao.insertPlanting(planting);
 
             });

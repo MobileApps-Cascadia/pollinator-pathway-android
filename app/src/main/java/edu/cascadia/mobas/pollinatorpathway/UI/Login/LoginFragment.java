@@ -32,10 +32,6 @@ public class LoginFragment extends Fragment {
             Navigation.findNavController(v).navigate(R.id.action_navigation_login_to_profileFragment);
         });
 
-        loginViewModel.getProfile(1).observe(getViewLifecycleOwner(), profile -> {
-            if (profile != null)
-                binding.emailInput.setText(profile.getEmail());
-        });
         return root;
     }
 
