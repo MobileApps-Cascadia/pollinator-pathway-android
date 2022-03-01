@@ -1,6 +1,8 @@
 package edu.cascadia.mobas.pollinatorpathway;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
@@ -12,6 +14,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import edu.cascadia.mobas.pollinatorpathway.databinding.ActivityMainBinding;
 import edu.cascadia.mobas.pollinatorpathway.Database.PnwppDb;
+import edu.cascadia.mobas.pollinatorpathway.ui.QRcode.QRcode;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -37,4 +40,7 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(binding.navView, navController);
 
     }
+    public void qrScanner(View view){
+        Intent intent = new Intent(this, QRcode.class);
+        startActivity(intent);
 }
