@@ -76,6 +76,12 @@ public abstract class PnwppDb extends RoomDatabase {
                 planting.setDescription("Organization");
                 plantingDao.insertPlanting(planting);
 
+                Planting planting2 = new Planting();
+                planting.setName("Songaia Co-House");
+                planting.setUserId(2);
+                planting.setDescription("Co-Housing");
+                plantingDao.insertPlanting(planting2);
+
             });
         }
     };
