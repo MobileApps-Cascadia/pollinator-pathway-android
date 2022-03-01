@@ -20,9 +20,12 @@ public class PlantingsAdapter extends RecyclerView.Adapter<PlantingsAdapter.Plan
 
     public static class PlantingsViewHolder extends RecyclerView.ViewHolder{
     public TextView mTextView;
+    public TextView mTextView2;
         public PlantingsViewHolder(@NonNull View itemView) {
             super(itemView);
-            mTextView = itemView.findViewById((R.id.plantings_title));
+            mTextView = itemView.findViewById(R.id.plantings_title);
+            mTextView2 = itemView.findViewById((R.id.plantings_description));
+
         }
     }
 
@@ -48,6 +51,7 @@ public class PlantingsAdapter extends RecyclerView.Adapter<PlantingsAdapter.Plan
 
         assert currentItem != null;
         holder.mTextView.setText(currentItem.getName());
+        holder.mTextView2.setText(currentItem.getDescription());
     }
 
     @Override
