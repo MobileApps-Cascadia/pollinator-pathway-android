@@ -76,12 +76,43 @@ public abstract class PnwppDb extends RoomDatabase {
                 planting.setDescription("Organization");
                 plantingDao.insertPlanting(planting);
 
+            });
+            dbExecutor.execute(() -> {
+                PlantingDao plantingDao = mPnwppDatabase.plantingDao();
                 Planting planting2 = new Planting();
                 planting2.setName("Songaia Co-House");
                 planting2.setUserId(2);
                 planting2.setDescription("Co-Housing");
                 plantingDao.insertPlanting(planting2);
+            });
 
+            dbExecutor.execute(() -> {
+                PlantingDao plantingDao = mPnwppDatabase.plantingDao();
+
+                Planting planting3 = new Planting();
+                planting3.setName("Coastal Bank");
+                planting3.setUserId(3);
+                planting3.setDescription("Company");
+                plantingDao.insertPlanting(planting3);
+            });
+
+            dbExecutor.execute(() -> {
+                PlantingDao plantingDao = mPnwppDatabase.plantingDao();
+
+                Planting planting4 = new Planting();
+                planting4.setName("Hawthorn Farm");
+                planting4.setUserId(4);
+                planting4.setDescription("Farm");
+                plantingDao.insertPlanting(planting4);
+            });
+
+            dbExecutor.execute(() -> {
+                PlantingDao plantingDao = mPnwppDatabase.plantingDao();
+                Planting planting5 = new Planting();
+                planting5.setName("Red Barn Farm");
+                planting5.setUserId(5);
+                planting5.setDescription("Farm");
+                plantingDao.insertPlanting(planting5);
             });
         }
     };
