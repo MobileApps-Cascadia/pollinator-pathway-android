@@ -1,36 +1,138 @@
 package edu.cascadia.mobas.pollinatorpathway.ui.QRcode;
 
+import android.Manifest;
+import android.app.Activity;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.util.Log;
+import android.util.Size;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.camera.core.Camera;
+import androidx.camera.core.CameraSelector;
+import androidx.camera.core.ImageAnalysis;
+import androidx.camera.core.Preview;
+import androidx.camera.lifecycle.ProcessCameraProvider;
+import androidx.camera.view.PreviewView;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.LifecycleOwner;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.google.common.util.concurrent.ListenableFuture;
+
+import java.util.concurrent.ExecutionException;
+
+import edu.cascadia.mobas.pollinatorpathway.MainActivity;
 import edu.cascadia.mobas.pollinatorpathway.R;
+import edu.cascadia.mobas.pollinatorpathway.ui.QRCodeFoundListener;
+import edu.cascadia.mobas.pollinatorpathway.ui.QRCodeImageAnalyzer;
 
-public class QRcode extends Fragment {
+public class QRcode extends AppCompatActivity {
+    private static final int PERMISSION_REQUEST_CAMERA = 0;
 
-    private QRcodeViewModel mViewModel;
+    private PreviewView previewView;
+    private ListenableFuture<ProcessCameraProvider> cameraProviderFuture;
 
-    public static QRcode newInstance() {
-        return new QRcode();
+    private Button qrCodeFoundButton;
+    private String qrCode;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.qrcode_fragment);
+
+        previewView = findViewById(R.id.qrcode_previewView);
+
+        qrCodeFoundButton = findViewById(R.id.activity_main_qrCodeFoundButton);
+        qrCodeFoundButton.setVisibility(View.INVISIBLE);
+        qrCodeFoundButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), qrCode, Toast.LENGTH_SHORT).show();
+                Log.i(MainActivity.class.getSimpleName(), "QR Code Found: " + qrCode);
+            }
+        });
+
+        cameraProviderFuture = ProcessCameraProvider.getInstance(this);
+        requestCamera();
+    }
+
+    private void requestCamera() {
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
+            startCamera();
+        } else {
+            if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.CAMERA)) {
+                ActivityCompat.requestPermissions(qrcode.this, new String[]{Manifest.permission.CAMERA}, PERMISSION_REQUEST_CAMERA);
+            } else {
+                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA}, PERMISSION_REQUEST_CAMERA);
+            }
+        }
     }
 
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
-                             @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.qrcode_fragment, container, false);
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == PERMISSION_REQUEST_CAMERA) {
+            if (grantResults.length == 1 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                startCamera();
+            } else {
+                Toast.makeText(this, "Camera Permission Denied", Toast.LENGTH_SHORT).show();
+            }
+        }
     }
 
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(QRcodeViewModel.class);
-        // TODO: Use the ViewModel
+    private void startCamera() {
+        cameraProviderFuture.addListener(() -> {
+            try {
+                ProcessCameraProvider cameraProvider = cameraProviderFuture.get();
+                bindCameraPreview(cameraProvider);
+            } catch (ExecutionException | InterruptedException e) {
+                Toast.makeText(this, "Error starting camera " + e.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        }, ContextCompat.getMainExecutor(this));
+    }
+
+    private void bindCameraPreview(@NonNull ProcessCameraProvider cameraProvider) {
+        previewView.setImplementationMode(PreviewView.ImplementationMode.PERFORMANCE);
+
+        Preview preview = new Preview.Builder()
+                .build();
+
+        CameraSelector cameraSelector = new CameraSelector.Builder()
+                .requireLensFacing(CameraSelector.LENS_FACING_BACK)
+                .build();
+
+        preview.setSurfaceProvider(previewView.getSurfaceProvider());
+
+        ImageAnalysis imageAnalysis =
+                new ImageAnalysis.Builder()
+                        .setTargetResolution(new Size(1280, 720))
+                        .setBackpressureStrategy(ImageAnalysis.STRATEGY_KEEP_ONLY_LATEST)
+                        .build();
+
+        imageAnalysis.setAnalyzer(ContextCompat.getMainExecutor(this), new QRCodeImageAnalyzer(new QRCodeFoundListener() {
+            @Override
+            public void onQRCodeFound(String _qrCode) {
+                qrCode = _qrCode;
+                qrCodeFoundButton.setVisibility(View.VISIBLE);
+            }
+
+            @Override
+            public void qrCodeNotFound() {
+                qrCodeFoundButton.setVisibility(View.INVISIBLE);
+            }
+        }));
+
+        Camera camera = cameraProvider.bindToLifecycle((LifecycleOwner)this, cameraSelector, imageAnalysis, preview);
     }
 
 }
