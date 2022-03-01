@@ -50,9 +50,9 @@ public class QRcode extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.qrcode_fragment);
 
-        previewView = findViewById(R.id.qrcode_previewView);
+        previewView = findViewById(R.id.QRcode_previewView);
 
-        qrCodeFoundButton = findViewById(R.id.activity_main_qrCodeFoundButton);
+        qrCodeFoundButton = findViewById(R.id.QRcodeFoundButton);
         qrCodeFoundButton.setVisibility(View.INVISIBLE);
         qrCodeFoundButton.setOnClickListener(new View.OnClickListener() {
             @Override
