@@ -1,4 +1,4 @@
-package edu.cascadia.mobas.pollinatorpathway.ui.Login;
+package edu.cascadia.mobas.pollinatorpathway.UI.Login;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -32,9 +32,6 @@ public class LoginFragment extends Fragment {
             Navigation.findNavController(v).navigate(R.id.action_navigation_login_to_profileFragment);
         });
 
-        loginViewModel.getProfile(1).observe(this, profile -> {
-            binding.emailInput.setText(profile.getEmail());
-        });
         return root;
     }
 

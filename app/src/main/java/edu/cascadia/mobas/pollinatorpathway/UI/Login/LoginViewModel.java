@@ -1,4 +1,4 @@
-package edu.cascadia.mobas.pollinatorpathway.ui.Login;
+package edu.cascadia.mobas.pollinatorpathway.UI.Login;
 
 
 import android.app.Application;

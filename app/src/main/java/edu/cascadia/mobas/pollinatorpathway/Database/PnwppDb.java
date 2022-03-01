@@ -14,6 +14,7 @@ import java.util.concurrent.Executors;
 import edu.cascadia.mobas.pollinatorpathway.AppExecutors;
 import edu.cascadia.mobas.pollinatorpathway.Database.Box.Box;
 import edu.cascadia.mobas.pollinatorpathway.Database.Planting.Planting;
+import edu.cascadia.mobas.pollinatorpathway.Database.Planting.PlantingDao;
 import edu.cascadia.mobas.pollinatorpathway.Database.Profile.Profile;
 import edu.cascadia.mobas.pollinatorpathway.Database.Profile.ProfileDao;
 
@@ -41,7 +42,7 @@ public abstract class PnwppDb extends RoomDatabase {
 
 
     public abstract ProfileDao profileDao();
-    //public abstract PlantingDao plantingDao();
+    public abstract PlantingDao plantingDao();
     //public abstract BoxDao boxDao();
 
     private static final RoomDatabase.Callback sRoomDatabaseCallback = new RoomDatabase.Callback() {
@@ -57,15 +58,100 @@ public abstract class PnwppDb extends RoomDatabase {
                 ProfileDao profileDao = mPnwppDatabase.profileDao();
                 profileDao.deleteAll();
 
-                Profile p = new Profile();
-                p.setFirstname("Robin");
-                p.setLastname("Crowder");
-                p.setEmail("rbcrowder@21acres.org");
-                p.setPhone("326-224-7220");
-                p.setPassword("1234");
-                profileDao.insertProfile(p);
+                Profile one = new Profile();
+                one.setFirstname("Robin");
+                one.setLastname("Crowder");
+                one.setEmail("rbcrowder@21acres.org");
+                one.setPhone("326-224-7220");
+                one.setPassword("1234");
+                profileDao.insertProfile(one);
+
+                Profile two = new Profile();
+                two.setFirstname("Patricia");
+                two.setLastname("Newkirk");
+                two.setEmail("patricia.newkirk@gmail.com");
+                two.setPhone("206-902-8107");
+                two.setPassword("abcd");
+                profileDao.insertProfile(two);
+
+                Profile three = new Profile();
+                three.setFirstname("Kristi");
+                three.setLastname("Bolles");
+                three.setEmail("kbolles@coastalbank.com");
+                three.setPhone("425-482-3103");
+                three.setPassword("3333");
+                profileDao.insertProfile(three);
+
+                Profile four = new Profile();
+                four.setFirstname("Alexia");
+                four.setLastname("Allen");
+                four.setEmail("alexiaallen@hotmail.com");
+                four.setPhone("425-286-5640");
+                four.setPassword("4444");
+                profileDao.insertProfile(four);
+
+                Profile five = new Profile();
+                five.setFirstname("Cameron");
+                five.setLastname("Graves");
+                five.setPhone("206-949-3333");
+                five.setPassword("5555");
+                profileDao.insertProfile(five);
+            });
+
+            dbExecutor.execute(() -> {
+                PlantingDao plantingDao = mPnwppDatabase.plantingDao();
+
+                Planting one = new Planting();
+                one.setName("21 Acres");
+                one.setUserId(1);
+                one.setType("Organization");
+                one.setDateJoined("11/2021");
+                one.setWebsite("https://21acres.org/?s=beevesting");
+                one.setDescription("The 21 Acres Center for Local Food & Sustainable " +
+                        "living is a global leader in sustainable & regenerative practices, " +
+                        "serving as a living laboratory & learning center for conscious consumers " +
+                        "who want to learn new, more sustainable ways of living.");
+                plantingDao.insertPlanting(one);
+
+
+                Planting two = new Planting();
+                two.setName("Songaia Co-Housing Community");
+                two.setUserId(2);
+                two.setType("Co-housing");
+                two.setDateJoined("11/2021");
+                two.setWebsite("http://www.songaia.com/the-garden1.html");
+                plantingDao.insertPlanting(two);
+
+
+                Planting three = new Planting();
+                three.setName("Coastal Bank");
+                three.setUserId(3);
+                three.setType("Company");
+                three.setDateJoined("11/2021");
+                three.setWebsite("https://www.coastalbank.com/about/join-us.html?gclid=CjwKCAiAnO2MBhApEiwA8q0HYTDhC4cKlHjx6VVf52wPoXj9IhTt5ejBtoCshnDEf2jtPYJVjLc0SxoCTOMQAvD_BwE");
+                three.setDescription("Coastal Community Bank");
+                plantingDao.insertPlanting(three);
+
+
+                Planting four = new Planting();
+                four.setName("Hawthorn Farm");
+                four.setUserId(4);
+                four.setType("Farm");
+                four.setDateJoined("11/2021");
+                four.setWebsite("https://www.coastalbank.com/about/join-us.html?gclid=CjwKCAiAnO2MBhApEiwA8q0HYTDhC4cKlHjx6VVf52wPoXj9IhTt5ejBtoCshnDEf2jtPYJVjLc0SxoCTOMQAvD_BwE");
+                four.setDescription("A suburban homestead where happy humans are integrated " +
+                        "into the ecological system. We love to teach.");
+                plantingDao.insertPlanting(four);
+
+
+                Planting five = new Planting();
+                five.setName("Red Barn Farm");
+                five.setUserId(5);
+                five.setType("Farm");
+                five.setDateJoined("11/2021");
+                five.setWebsite("https://redbarnfarm.com/");
+                plantingDao.insertPlanting(five);
             });
         }
     };
-
 }
