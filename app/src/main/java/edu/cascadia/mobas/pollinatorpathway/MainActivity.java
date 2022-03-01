@@ -40,7 +40,8 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(binding.navView, navController);
 
     }
-    public void qrScanner(View view){
+    public void qrScanner(View view) {
         Intent intent = new Intent(this, QRcode.class);
         startActivity(intent);
+    }
 }
