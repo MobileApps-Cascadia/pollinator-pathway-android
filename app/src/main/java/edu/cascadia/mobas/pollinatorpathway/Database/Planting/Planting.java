@@ -27,8 +27,25 @@ public class Planting {
     @ColumnInfo(name = "description")
     String description;
 
+    @ColumnInfo(name = "type")
+    String type;
+
+    @ColumnInfo(name = "website")
+    String website;
+
+    @ColumnInfo(name = "dateJoined")
+    String dateJoined;
+
     @ColumnInfo(name = "userId")
     private long userId;
+
+
+
+
+
+
+
+
 
 
     public long getPlantingId() {
@@ -39,14 +56,6 @@ public class Planting {
         this.plantingId = plantingId;
     }
 
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
     public String getName() {
         return name;
     }
@@ -55,12 +64,32 @@ public class Planting {
         this.name = name;
     }
 
+    public String getType() { return type; }
+
+    public void setType(String type) { this.type = type; }
+
+    public String getDateJoined() { return dateJoined; }
+
+    public void setDateJoined(String dateJoined) { this.dateJoined = dateJoined; }
+
     public String getDescription() {
         return description;
     }
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getWebsite() { return website; }
+
+    public void setWebsite(String website) { this.website = website; }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public long getUserId() {
