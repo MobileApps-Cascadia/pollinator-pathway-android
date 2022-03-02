@@ -28,6 +28,9 @@ public interface PlantingDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     public long insertPlanting(Planting planting);
 
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    public void insertPlantingALL(List<Planting> planting);
+
     @Update
     public void updatePlanting(Planting planting);
 

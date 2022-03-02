@@ -8,6 +8,8 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -58,100 +60,61 @@ public abstract class PnwppDb extends RoomDatabase {
                 ProfileDao profileDao = mPnwppDatabase.profileDao();
                 profileDao.deleteAll();
 
-                Profile one = new Profile();
-                one.setFirstname("Robin");
-                one.setLastname("Crowder");
-                one.setEmail("rbcrowder@21acres.org");
-                one.setPhone("326-224-7220");
-                one.setPassword("1234");
-                profileDao.insertProfile(one);
-
-                Profile two = new Profile();
-                two.setFirstname("Patricia");
-                two.setLastname("Newkirk");
-                two.setEmail("patricia.newkirk@gmail.com");
-                two.setPhone("206-902-8107");
-                two.setPassword("abcd");
-                profileDao.insertProfile(two);
-
-                Profile three = new Profile();
-                three.setFirstname("Kristi");
-                three.setLastname("Bolles");
-                three.setEmail("kbolles@coastalbank.com");
-                three.setPhone("425-482-3103");
-                three.setPassword("3333");
-                profileDao.insertProfile(three);
-
-                Profile four = new Profile();
-                four.setFirstname("Alexia");
-                four.setLastname("Allen");
-                four.setEmail("alexiaallen@hotmail.com");
-                four.setPhone("425-286-5640");
-                four.setPassword("4444");
-                profileDao.insertProfile(four);
-
-                Profile five = new Profile();
-                five.setFirstname("Cameron");
-                five.setLastname("Graves");
-                five.setPhone("206-949-3333");
-                five.setPassword("5555");
-                profileDao.insertProfile(five);
+                Profile p = new Profile();
+                p.setFirstname("Robin");
+                p.setLastname("Crowder");
+                p.setEmail("rbcrowder@21acres.org");
+                p.setPhone("326-224-7220");
+                p.setPassword("1234");
+                profileDao.insertProfile(p);
             });
 
             dbExecutor.execute(() -> {
                 PlantingDao plantingDao = mPnwppDatabase.plantingDao();
+                List<Planting> plantings = new ArrayList<Planting>();
 
-                Planting one = new Planting();
-                one.setName("21 Acres");
-                one.setUserId(1);
-                one.setType("Organization");
-                one.setDateJoined("11/2021");
-                one.setWebsite("https://21acres.org/?s=beevesting");
-                one.setDescription("The 21 Acres Center for Local Food & Sustainable " +
-                        "living is a global leader in sustainable & regenerative practices, " +
-                        "serving as a living laboratory & learning center for conscious consumers " +
-                        "who want to learn new, more sustainable ways of living.");
-                plantingDao.insertPlanting(one);
+                Planting planting = new Planting();
+                planting.setName("21 Acres");
+                planting.setUserId(1);
+                planting.setDescription("Organization");
+                planting.setDateJoined("11/2021");
+                planting.setWebsite("https://21acres.org/?s=beevesting");
+                plantings.add(planting);
 
+                Planting planting2 = new Planting();
+                planting2.setName("Songaia Co-House");
+                planting2.setUserId(1);
+                planting2.setDescription("Co-Housing");
+                planting2.setDateJoined("11/2021");
+                planting2.setWebsite("http://www.songaia.com/the-garden1.html");
+                plantings.add(planting2);
 
-                Planting two = new Planting();
-                two.setName("Songaia Co-Housing Community");
-                two.setUserId(2);
-                two.setType("Co-housing");
-                two.setDateJoined("11/2021");
-                two.setWebsite("http://www.songaia.com/the-garden1.html");
-                plantingDao.insertPlanting(two);
+                Planting planting3 = new Planting();
+                planting3.setName("Coastal Bank");
+                planting3.setUserId(1);
+                planting3.setDescription("Company");
+                planting3.setDateJoined("11/2021");
+                planting3.setWebsite("https://www.coastalbank.com/about/join-us.html?gclid=CjwKCAiAnO2MBhApEiwA8q0HYTDhC4cKlHjx6VVf52wPoXj9IhTt5ejBtoCshnDEf2jtPYJVjLc0SxoCTOMQAvD_BwE");
+                plantings.add(planting3);
 
+                Planting planting4 = new Planting();
+                planting4.setName("Hawthorn Farm");
+                planting4.setUserId(1);
+                planting4.setDescription("Farm");
+                planting4.setDateJoined("11/2021");
+                planting4.setWebsite("https://www.coastalbank.com/about/join-us.html?gclid=CjwKCAiAnO2MBhApEiwA8q0HYTDhC4cKlHjx6VVf52wPoXj9IhTt5ejBtoCshnDEf2jtPYJVjLc0SxoCTOMQAvD_BwE");
+                plantings.add(planting4);
 
-                Planting three = new Planting();
-                three.setName("Coastal Bank");
-                three.setUserId(3);
-                three.setType("Company");
-                three.setDateJoined("11/2021");
-                three.setWebsite("https://www.coastalbank.com/about/join-us.html?gclid=CjwKCAiAnO2MBhApEiwA8q0HYTDhC4cKlHjx6VVf52wPoXj9IhTt5ejBtoCshnDEf2jtPYJVjLc0SxoCTOMQAvD_BwE");
-                three.setDescription("Coastal Community Bank");
-                plantingDao.insertPlanting(three);
-
-
-                Planting four = new Planting();
-                four.setName("Hawthorn Farm");
-                four.setUserId(4);
-                four.setType("Farm");
-                four.setDateJoined("11/2021");
-                four.setWebsite("https://www.coastalbank.com/about/join-us.html?gclid=CjwKCAiAnO2MBhApEiwA8q0HYTDhC4cKlHjx6VVf52wPoXj9IhTt5ejBtoCshnDEf2jtPYJVjLc0SxoCTOMQAvD_BwE");
-                four.setDescription("A suburban homestead where happy humans are integrated " +
-                        "into the ecological system. We love to teach.");
-                plantingDao.insertPlanting(four);
-
-
-                Planting five = new Planting();
-                five.setName("Red Barn Farm");
-                five.setUserId(5);
-                five.setType("Farm");
-                five.setDateJoined("11/2021");
-                five.setWebsite("https://redbarnfarm.com/");
-                plantingDao.insertPlanting(five);
+                Planting planting5 = new Planting();
+                planting5.setName("Red Barn Farm");
+                planting5.setUserId(1);
+                planting5.setDescription("Farm");
+                plantings.add(planting5);
+                planting5.setDateJoined("11/2021");
+                planting5.setWebsite("https://redbarnfarm.com/");
+                plantingDao.insertPlantingALL(plantings);
             });
         }
     };
+
 }
