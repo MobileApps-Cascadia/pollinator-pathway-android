@@ -77,7 +77,8 @@ public abstract class PnwppDb extends RoomDatabase {
                 planting.setName("21 Acres");
                 planting.setUserId(1);
                 planting.setDescription("Organization");
-
+                planting.setDateJoined("11/2021");
+                planting.setWebsite("https://21acres.org/?s=beevesting");
                 plantings.add(planting);
 
                 Planting planting2 = new Planting();
