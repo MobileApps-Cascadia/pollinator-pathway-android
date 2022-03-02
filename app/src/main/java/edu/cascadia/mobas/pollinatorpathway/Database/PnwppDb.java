@@ -77,6 +77,8 @@ public abstract class PnwppDb extends RoomDatabase {
                 planting.setName("21 Acres");
                 planting.setUserId(1);
                 planting.setDescription("Organization");
+                planting.setDateJoined("11/2021");
+                planting.setWebsite("http://www.songaia.com/the-garden1.html");
                 plantings.add(planting);
 
                 Planting planting2 = new Planting();
