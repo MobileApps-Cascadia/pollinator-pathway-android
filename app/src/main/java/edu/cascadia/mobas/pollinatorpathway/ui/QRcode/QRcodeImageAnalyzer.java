@@ -1,4 +1,4 @@
-package edu.cascadia.mobas.pollinatorpathway.ui.QRcode;
+package edu.cascadia.mobas.pollinatorpathway.UI.QRcode;
 
 import androidx.annotation.NonNull;
 import androidx.camera.core.ImageAnalysis;
