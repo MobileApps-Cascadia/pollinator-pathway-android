@@ -9,22 +9,27 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import edu.cascadia.mobas.pollinatorpathway.databinding.ActivityMainBinding;
 import edu.cascadia.mobas.pollinatorpathway.Database.PnwppDb;
-import edu.cascadia.mobas.pollinatorpathway.ui.QRcode.QRcode;
+import edu.cascadia.mobas.pollinatorpathway.UI.QRcode.QRcode;
 
 
 public class MainActivity extends AppCompatActivity {
 
+    private RecyclerView mRecyclerView;
+    private RecyclerView.Adapter mAdapter;
+    private RecyclerView.LayoutManager mLayoutManager;
     private ActivityMainBinding binding;
     private PnwppDb mPnwppDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
 
         binding = ActivityMainBinding.inflate(getLayoutInflater()); 
         setContentView(binding.getRoot());
@@ -38,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
+
 
     }
     public void qrScanner(View view) {

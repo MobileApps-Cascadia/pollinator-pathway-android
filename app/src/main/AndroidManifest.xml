@@ -36,11 +36,11 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".ui.Maps.MapsActivity"
+            android:name=".UI.Maps.MapsActivity"
             android:exported="false"
             android:label="Pollinator Box Locations" />
         <activity
-            android:name=".ui.QRcode.QRcode"
+            android:name=".UI.QRcode.QRcode"
             android:exported="false"
             android:label="QR Code Scanner" />
         <activity
