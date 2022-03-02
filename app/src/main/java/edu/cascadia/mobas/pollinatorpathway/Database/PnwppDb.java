@@ -94,7 +94,7 @@ public abstract class PnwppDb extends RoomDatabase {
                 planting3.setUserId(1);
                 planting3.setDescription("Company");
                 planting3.setDateJoined("11/2021");
-                planting3.setWebsite("https://www.coastalbank.com/about/join-us.html?gclid=CjwKCAiAnO2MBhApEiwA
+                planting3.setWebsite("https://www.coastalbank.com/about/join-us.html?gclid=CjwKCAiAnO2MBhApEiwA8q0HYTDhC4cKlHjx6VVf52wPoXj9IhTt5ejBtoCshnDEf2jtPYJVjLc0SxoCTOMQAvD_BwE");
                 plantings.add(planting3);
 
                 Planting planting4 = new Planting();
