@@ -101,6 +101,8 @@ public abstract class PnwppDb extends RoomDatabase {
                 planting4.setName("Hawthorn Farm");
                 planting4.setUserId(1);
                 planting4.setDescription("Farm");
+                planting4.setDateJoined("11/2021");
+                planting4.setWebsite("https://www.coastalbank.com/about/join-us.html?gclid=CjwKCAiAnO2MBhApEiwA8q0HYTDhC4cKlHjx6VVf52wPoXj9IhTt5ejBtoCshnDEf2jtPYJVjLc0SxoCTOMQAvD_BwE");
                 plantings.add(planting4);
 
                 Planting planting5 = new Planting();
