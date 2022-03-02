@@ -117,12 +117,16 @@ public abstract class PnwppDb extends RoomDatabase {
                 plantingDao.insertPlantingALL(plantings);
             });
 
-            /*dbExecutor.execute(() -> {
+            dbExecutor.execute(() -> {
                 BoxDao boxDao = mPnwppDatabase.boxDao();
                 List<Box> boxes = new ArrayList<Box>();
 
+                Box box1 = new Box();
+                box1.setBoxId(001);
+                box1.setGPS()
 
-        });*/
+
+        });
 
 
         }

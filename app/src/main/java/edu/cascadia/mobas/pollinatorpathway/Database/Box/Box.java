@@ -1,11 +1,11 @@
 package edu.cascadia.mobas.pollinatorpathway.Database.Box;
 
+import static androidx.room.ForeignKey.CASCADE;
+
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
-
-import static androidx.room.ForeignKey.CASCADE;
 
 import edu.cascadia.mobas.pollinatorpathway.Database.Planting.Planting;
 
@@ -19,29 +19,27 @@ public class Box {
     private long boxId;
 
     @ColumnInfo(name = "gps")
-    String gps;
+    private long gps;
 
     @ColumnInfo(name = "qrCode")
-    String qrCode;
+    private String qrCode;
 
     @ColumnInfo(name = "plantingId")
-    long plantingId;
+    private long plantingId;
 
     public long getBoxId() {
         return boxId;
     }
 
     public void setBoxId(long boxId) {
-        boxId = boxId;
+        this.boxId = boxId;
     }
 
-    public String getGps() {
+    public long getGps() {
         return gps;
     }
 
-    public void setGps(String gps) {
-        this.gps = gps;
-    }
+    public void setGps(long gps) { this.gps = gps; }
 
     public String getQrCode() {
         return qrCode;

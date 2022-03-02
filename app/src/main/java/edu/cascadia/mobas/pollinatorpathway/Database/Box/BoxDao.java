@@ -20,7 +20,7 @@ public interface BoxDao {
     @Query("SELECT * FROM Box WHERE qrCode = :qrCode")
     LiveData<Box> getBoxByText(String qrCode);
 
-    @Query("SELECT * FROM Box ORDER BY boxId ASC")
+    @Query("SELECT * FROM Box ORDER BY PlantingId ASC")
     LiveData<List<Box>> getBoxes();
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
