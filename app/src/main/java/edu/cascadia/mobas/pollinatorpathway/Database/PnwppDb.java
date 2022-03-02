@@ -8,6 +8,8 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -69,36 +71,39 @@ public abstract class PnwppDb extends RoomDatabase {
 
             dbExecutor.execute(() -> {
                 PlantingDao plantingDao = mPnwppDatabase.plantingDao();
+                List<Planting> plantings = new ArrayList<Planting>();
 
                 Planting planting = new Planting();
                 planting.setName("21 Acres");
                 planting.setUserId(1);
                 planting.setDescription("Organization");
-                plantingDao.insertPlanting(planting);
+                plantings.add(planting);
 
                 Planting planting2 = new Planting();
                 planting2.setName("Songaia Co-House");
-                planting2.setUserId(2);
+                planting2.setUserId(1);
                 planting2.setDescription("Co-Housing");
-                plantingDao.insertPlanting(planting2);
+                plantings.add(planting2);
 
                 Planting planting3 = new Planting();
                 planting3.setName("Coastal Bank");
-                planting3.setUserId(3);
+                planting3.setUserId(1);
                 planting3.setDescription("Company");
-                plantingDao.insertPlanting(planting3);
+                plantings.add(planting3);
 
                 Planting planting4 = new Planting();
                 planting4.setName("Hawthorn Farm");
-                planting4.setUserId(4);
+                planting4.setUserId(1);
                 planting4.setDescription("Farm");
-                plantingDao.insertPlanting(planting4);
+                plantings.add(planting4);
 
                 Planting planting5 = new Planting();
                 planting5.setName("Red Barn Farm");
-                planting5.setUserId(5);
+                planting5.setUserId(1);
                 planting5.setDescription("Farm");
-                plantingDao.insertPlanting(planting5);
+                plantings.add(planting5);
+
+                plantingDao.insertPlantingALL(plantings);
             });
         }
     };
