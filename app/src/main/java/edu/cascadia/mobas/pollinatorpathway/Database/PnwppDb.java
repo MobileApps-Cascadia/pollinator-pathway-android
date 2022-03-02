@@ -110,7 +110,8 @@ public abstract class PnwppDb extends RoomDatabase {
                 planting5.setUserId(1);
                 planting5.setDescription("Farm");
                 plantings.add(planting5);
-
+                planting5.setDateJoined("11/2021");
+                planting5.setWebsite("https://redbarnfarm.com/");
                 plantingDao.insertPlantingALL(plantings);
             });
         }
