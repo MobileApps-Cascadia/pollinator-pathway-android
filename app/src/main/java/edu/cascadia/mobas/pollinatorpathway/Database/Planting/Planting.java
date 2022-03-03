@@ -58,17 +58,15 @@ public class Planting {
         this.description = description;
     }
 
-
     public String getGpsLocation() { return gpsLocation; }
 
     public void setGpsLocation(String gpsLocation) { this.gpsLocation = gpsLocation; }
 
-
-    public long getUserId() {
-        return userId;
+   public long getUserId() {
+       return userId;
     }
 
     public void setUserId(long userId) {
         this.userId = userId;
-    }
+   }
 }

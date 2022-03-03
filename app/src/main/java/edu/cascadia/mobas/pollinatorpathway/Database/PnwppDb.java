@@ -70,8 +70,6 @@ public abstract class PnwppDb extends RoomDatabase {
                 p.setProfDescription("Organization");
                 p.setDateJoined("11/2021");
                 p.setWebsite("https://21acres.org/?s=beevesting");
-                p.setDateJoined("11/2021");
-                p.setWebsite("https://21acres.org/?s=beevesting");
                 profileDao.insertProfile(p);
             });
 
@@ -81,21 +79,23 @@ public abstract class PnwppDb extends RoomDatabase {
 
                 Planting planting = new Planting();
                 planting.setName("Permaculture Vegetable Garden");
-                planting.setUserId(2);
+                planting.setUserId(1);
+                planting.setPlantingId(1);
                 planting.setDescription("First planted in 1978, the vegegable garden has evolved into a .6 acre permaculture garden providing veggies to the 40+ members of Songaia CoHousing Community.  ");
-
                 plantings.add(planting);
 
                 Planting planting2 = new Planting();
                 planting2.setName("Herbal Gerbil Garden");
                 planting2.setUserId(1);
-                planting2.setDescription("The members of the Herbal Gerbils at Songaia began turning one corner of the vegetable garden into a perennial planting of medicinal herbs. ");
+                planting2.setPlantingId(2);
+                planting2.setDescription("Vegetable and medicinal herb garden");
                 plantings.add(planting2);
 
                 Planting planting3 = new Planting();
                 planting3.setName("Native Garden");
                 planting3.setUserId(1);
-                planting3.setDescription("The Native Garden is the latest addition to the Songaia landscape.  Funded in part by the NRCS under it's \"cultural planting\" iniative, it consists of a large variety of plants that are significant to the Coast Salish tribes.   ");
+                planting3.setPlantingId(3);
+                planting3.setDescription("Features a large variety of plants that are significant to the Coast Salish tribes.   ");
                 plantings.add(planting3);
 
             });
