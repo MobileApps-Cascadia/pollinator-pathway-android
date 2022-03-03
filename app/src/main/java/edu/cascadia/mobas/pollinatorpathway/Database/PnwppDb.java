@@ -98,6 +98,8 @@ public abstract class PnwppDb extends RoomDatabase {
                 planting3.setDescription("Features a large variety of plants that are significant to the Coast Salish tribes.   ");
                 plantings.add(planting3);
 
+                plantingDao.insertPlantingALL(plantings);
+
             });
         }
     };
