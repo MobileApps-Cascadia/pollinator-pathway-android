@@ -29,6 +29,22 @@ public class Profile {
     @ColumnInfo(name = "email")
     String email;
 
+    @ColumnInfo(name = "website")
+    String website;
+
+    @ColumnInfo(name = "dateJoined")
+    String dateJoined;
+
+    @ColumnInfo(name = "address")
+    String address;
+
+    @ColumnInfo(name = "type")
+    String type;
+
+    @ColumnInfo(name = "ProfDescription")
+    String ProfDescription;
+
+
     @NonNull
     @ColumnInfo(name = "phone")
     String phone;
@@ -85,6 +101,33 @@ public class Profile {
     public String getOrgName() {return orgName;}
 
     public void setOrgName(String orgName){this.orgName = orgName;}
+
+    public String getProfDescription() {
+        return ProfDescription; }
+
+    public void setProfDescription(String Profdescription) {
+        this.ProfDescription = ProfDescription; }
+
+    public String getType() { return type; }
+
+    public void setType(String type) { this.type = type; }
+
+    public String getDateJoined() { return dateJoined; }
+
+    public void setDateJoined(String dateJoined) { this.dateJoined = dateJoined; }
+
+    public String getWebsite() { return website; }
+
+    public void setWebsite(String website) { this.website = website; }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
 
 }
 

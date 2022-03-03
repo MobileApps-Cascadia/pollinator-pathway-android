@@ -63,9 +63,15 @@ public abstract class PnwppDb extends RoomDatabase {
                 Profile p = new Profile();
                 p.setFirstname("Robin");
                 p.setLastname("Crowder");
+                p.setOrgName("21 Acres");
                 p.setEmail("rbcrowder@21acres.org");
                 p.setPhone("326-224-7220");
                 p.setPassword("1234");
+                p.setProfDescription("Organization");
+                p.setDateJoined("11/2021");
+                p.setWebsite("https://21acres.org/?s=beevesting");
+                p.setDateJoined("11/2021");
+                p.setWebsite("https://21acres.org/?s=beevesting");
                 profileDao.insertProfile(p);
             });
 
@@ -74,45 +80,24 @@ public abstract class PnwppDb extends RoomDatabase {
                 List<Planting> plantings = new ArrayList<Planting>();
 
                 Planting planting = new Planting();
-                planting.setName("21 Acres");
-                planting.setUserId(1);
-                planting.setDescription("Organization");
-                planting.setDateJoined("11/2021");
-                planting.setWebsite("https://21acres.org/?s=beevesting");
+                planting.setName("Permaculture Vegetable Garden");
+                planting.setUserId(2);
+                planting.setDescription("First planted in 1978, the vegegable garden has evolved into a .6 acre permaculture garden providing veggies to the 40+ members of Songaia CoHousing Community.  ");
+
                 plantings.add(planting);
 
                 Planting planting2 = new Planting();
-                planting2.setName("Songaia Co-House");
+                planting2.setName("Herbal Gerbil Garden");
                 planting2.setUserId(1);
-                planting2.setDescription("Co-Housing");
-                planting2.setDateJoined("11/2021");
-                planting2.setWebsite("http://www.songaia.com/the-garden1.html");
+                planting2.setDescription("The members of the Herbal Gerbils at Songaia began turning one corner of the vegetable garden into a perennial planting of medicinal herbs. ");
                 plantings.add(planting2);
 
                 Planting planting3 = new Planting();
-                planting3.setName("Coastal Bank");
+                planting3.setName("Native Garden");
                 planting3.setUserId(1);
-                planting3.setDescription("Company");
-                planting3.setDateJoined("11/2021");
-                planting3.setWebsite("https://www.coastalbank.com/about/join-us.html?gclid=CjwKCAiAnO2MBhApEiwA8q0HYTDhC4cKlHjx6VVf52wPoXj9IhTt5ejBtoCshnDEf2jtPYJVjLc0SxoCTOMQAvD_BwE");
+                planting3.setDescription("The Native Garden is the latest addition to the Songaia landscape.  Funded in part by the NRCS under it's \"cultural planting\" iniative, it consists of a large variety of plants that are significant to the Coast Salish tribes.   ");
                 plantings.add(planting3);
 
-                Planting planting4 = new Planting();
-                planting4.setName("Hawthorn Farm");
-                planting4.setUserId(1);
-                planting4.setDescription("Farm");
-                planting4.setDateJoined("11/2021");
-                planting4.setWebsite("https://www.coastalbank.com/about/join-us.html?gclid=CjwKCAiAnO2MBhApEiwA8q0HYTDhC4cKlHjx6VVf52wPoXj9IhTt5ejBtoCshnDEf2jtPYJVjLc0SxoCTOMQAvD_BwE");
-                plantings.add(planting4);
-
-                Planting planting5 = new Planting();
-                planting5.setName("Red Barn Farm");
-                planting5.setUserId(1);
-                planting5.setDescription("Farm");
-                plantings.add(planting5);
-                planting5.setDateJoined("11/2021");
-                planting5.setWebsite("https://redbarnfarm.com/");
-                plantingDao.insertPlantingALL(plantings);
             });
         }
     };
