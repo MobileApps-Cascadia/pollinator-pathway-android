@@ -61,14 +61,17 @@ public abstract class PnwppDb extends RoomDatabase {
                 Profile one = new Profile();
                 one.setFirstname("Robin");
                 one.setLastname("Crowder");
+                one.setOrgName("21 Acres");
                 one.setEmail("rbcrowder@21acres.org");
                 one.setPhone("326-224-7220");
                 one.setPassword("1234");
+                one.setUserId(1);
                 profileDao.insertProfile(one);
 
                 Profile two = new Profile();
                 two.setFirstname("Patricia");
                 two.setLastname("Newkirk");
+                two.setOrgName("Songaia Co-Housing Community");
                 two.setEmail("patricia.newkirk@gmail.com");
                 two.setPhone("206-902-8107");
                 two.setPassword("abcd");
@@ -77,6 +80,7 @@ public abstract class PnwppDb extends RoomDatabase {
                 Profile three = new Profile();
                 three.setFirstname("Kristi");
                 three.setLastname("Bolles");
+                three.setOrgName("Coastal Bank");
                 three.setEmail("kbolles@coastalbank.com");
                 three.setPhone("425-482-3103");
                 three.setPassword("3333");
@@ -85,6 +89,7 @@ public abstract class PnwppDb extends RoomDatabase {
                 Profile four = new Profile();
                 four.setFirstname("Alexia");
                 four.setLastname("Allen");
+                four.setOrgName("Hawthorn Farm");
                 four.setEmail("alexiaallen@hotmail.com");
                 four.setPhone("425-286-5640");
                 four.setPassword("4444");
@@ -93,6 +98,7 @@ public abstract class PnwppDb extends RoomDatabase {
                 Profile five = new Profile();
                 five.setFirstname("Cameron");
                 five.setLastname("Graves");
+                five.setOrgName("Red Barn Farm");
                 five.setPhone("206-949-3333");
                 five.setPassword("5555");
                 profileDao.insertProfile(five);
@@ -115,7 +121,7 @@ public abstract class PnwppDb extends RoomDatabase {
 
 
                 Planting two = new Planting();
-                two.setName("Songaia Co-Housing Community");
+                two.setName("Permaculture Vegetable Garden");
                 two.setUserId(2);
                 two.setType("Co-housing");
                 two.setDateJoined("11/2021");
@@ -125,7 +131,7 @@ public abstract class PnwppDb extends RoomDatabase {
 
                 Planting three = new Planting();
                 three.setName("Coastal Bank");
-                three.setUserId(3);
+                three.setUserId(2);
                 three.setType("Company");
                 three.setDateJoined("11/2021");
                 three.setWebsite("https://www.coastalbank.com/about/join-us.html?gclid=CjwKCAiAnO2MBhApEiwA8q0HYTDhC4cKlHjx6VVf52wPoXj9IhTt5ejBtoCshnDEf2jtPYJVjLc0SxoCTOMQAvD_BwE");
@@ -135,7 +141,7 @@ public abstract class PnwppDb extends RoomDatabase {
 
                 Planting four = new Planting();
                 four.setName("Hawthorn Farm");
-                four.setUserId(4);
+                four.setUserId(2);
                 four.setType("Farm");
                 four.setDateJoined("11/2021");
                 four.setWebsite("https://www.coastalbank.com/about/join-us.html?gclid=CjwKCAiAnO2MBhApEiwA8q0HYTDhC4cKlHjx6VVf52wPoXj9IhTt5ejBtoCshnDEf2jtPYJVjLc0SxoCTOMQAvD_BwE");
@@ -146,7 +152,7 @@ public abstract class PnwppDb extends RoomDatabase {
 
                 Planting five = new Planting();
                 five.setName("Red Barn Farm");
-                five.setUserId(5);
+                five.setUserId(2);
                 five.setType("Farm");
                 five.setDateJoined("11/2021");
                 five.setWebsite("https://redbarnfarm.com/");

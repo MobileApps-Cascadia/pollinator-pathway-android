@@ -22,6 +22,10 @@ public class Profile {
     String lastname;
 
     @NonNull
+    @ColumnInfo(name = "organizationName")
+    String orgName;
+
+    @NonNull
     @ColumnInfo(name = "email")
     String email;
 
@@ -77,6 +81,10 @@ public class Profile {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public String getOrgName() {return orgName;}
+
+    public void setOrgName(String orgName){this.orgName = orgName;}
 
 }
 

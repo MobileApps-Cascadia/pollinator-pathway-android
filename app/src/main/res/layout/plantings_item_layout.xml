@@ -24,8 +24,7 @@
             android:text="@string/planting_name"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="20sp"
-            />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/plantings_description"
