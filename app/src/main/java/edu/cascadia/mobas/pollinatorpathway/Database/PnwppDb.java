@@ -136,7 +136,7 @@ public abstract class PnwppDb extends RoomDatabase {
                 planting.setName("Permaculture Vegetable Garden");
                 planting.setUserId(1);
                 planting.setPlantingId(1);
-                planting.setDescription("First planted in 1978, the vegegable garden has evolved into a .6 acre permaculture garden providing veggies to the 40+ members of Songaia CoHousing Community.  ");
+                planting.setDescription("First planted in 1978, the vegetable garden provides veggies to the 40+ members of Songaia CoHousing Community.  ");
                 plantings.add(planting);
 
                 Planting planting2 = new Planting();
