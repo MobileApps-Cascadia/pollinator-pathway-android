@@ -38,8 +38,6 @@ public class ProfileFragment extends Fragment {
        mViewModel = new ViewModelProvider(this).get(ProfileViewModel.class);
 
         LiveData<List<Planting>> plantinglist = mViewModel.getAllPlantings();
-        //int[] images = {R.drawable.bee1_2, R.drawable.bee2_2, R.drawable.bee3_2, R.drawable.bee4_2png, R.drawable.butterfly1_2, R.drawable.butterfly3_2, R.drawable.hummingbird1_2};
-
 
         RecyclerView mRecyclerView = fragmentProfileBinding.recyclerview;
         RecyclerView.LayoutManager mLayoutManager= new GridLayoutManager(getContext(), 2);

@@ -55,6 +55,7 @@ public class PlantingsAdapter extends RecyclerView.Adapter<PlantingsAdapter.Plan
         assert currentItem != null;
         holder.mTextView.setText(currentItem.getName());
         holder.mTextView2.setText(currentItem.getDescription());
+        holder.mImageView.setImageResource(currentItem.getImage());
     }
 
     @Override

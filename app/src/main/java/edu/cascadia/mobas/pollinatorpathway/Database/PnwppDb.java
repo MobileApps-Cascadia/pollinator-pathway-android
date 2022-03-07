@@ -1,6 +1,7 @@
 package edu.cascadia.mobas.pollinatorpathway.Database;
 
 import android.content.Context;
+import android.media.Image;
 
 import androidx.annotation.NonNull;
 import androidx.room.Database;
@@ -19,6 +20,7 @@ import edu.cascadia.mobas.pollinatorpathway.Database.Planting.Planting;
 import edu.cascadia.mobas.pollinatorpathway.Database.Planting.PlantingDao;
 import edu.cascadia.mobas.pollinatorpathway.Database.Profile.Profile;
 import edu.cascadia.mobas.pollinatorpathway.Database.Profile.ProfileDao;
+import edu.cascadia.mobas.pollinatorpathway.R;
 
 @Database(entities = {Profile.class, Planting.class, Box.class}, version = 1)
 public abstract class PnwppDb extends RoomDatabase {
@@ -137,6 +139,7 @@ public abstract class PnwppDb extends RoomDatabase {
                 planting.setUserId(1);
                 planting.setPlantingId(1);
                 planting.setDescription("First planted in 1978, the vegetable garden provides veggies to the 40+ members of Songaia CoHousing Community.  ");
+                planting.setImage(R.drawable.hummingbird1_2);
                 plantings.add(planting);
 
                 Planting planting2 = new Planting();
@@ -144,6 +147,7 @@ public abstract class PnwppDb extends RoomDatabase {
                 planting2.setUserId(1);
                 planting2.setPlantingId(2);
                 planting2.setDescription("Vegetable and medicinal herb garden");
+                planting2.setImage(R.drawable.bee3_2);
                 plantings.add(planting2);
 
                 Planting planting3 = new Planting();
@@ -151,6 +155,7 @@ public abstract class PnwppDb extends RoomDatabase {
                 planting3.setUserId(1);
                 planting3.setPlantingId(3);
                 planting3.setDescription("Features a large variety of plants that are significant to the Coast Salish tribes.   ");
+                planting3.setImage(R.drawable.butterfly1_2);
                 plantings.add(planting3);
 
                 plantingDao.insertPlantingALL(plantings);

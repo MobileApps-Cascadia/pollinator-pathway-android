@@ -2,7 +2,6 @@ package edu.cascadia.mobas.pollinatorpathway.Database.Planting;
 
 import static androidx.room.ForeignKey.CASCADE;
 
-import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
@@ -37,7 +36,6 @@ public class Planting {
     private int image;
 
     public int getImage(){return image;}
-
     public void setImage(){this.image = image;}
 
     public long getPlantingId() {
