@@ -97,12 +97,13 @@ Viewing Other Sites
 <a href="https://lh3.googleusercontent.com/j_7GAR8yzdN2gE2J2eMibAEdHYEVJ3VH2qBaVACM9QN-C3cabBtU_eWT-xva_2-ZuG29wUTisKVfA9aHV0IkpNdno7S-7GqdQVHN1-CrESmLHOpq_sW13F7102QHKXQ-nSHi-irIcQ=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/j_7GAR8yzdN2gE2J2eMibAEdHYEVJ3VH2qBaVACM9QN-C3cabBtU_eWT-xva_2-ZuG29wUTisKVfA9aHV0IkpNdno7S-7GqdQVHN1-CrESmLHOpq_sW13F7102QHKXQ-nSHi-irIcQ=w188-h159-p-k" /> </a>
 
 ## Color
-* Primary color: #82BF45 
-
-<a href="https://lh3.googleusercontent.com/_JAX_gNNrF-OshBzmm_ERP9i9UZ8C-yl0yxl_q147icDgUpas7wYwMBKYsAwcf3d7WHw8ouGy2KiadjTfRX2_lmBoX45RkOF4cXfQBKBhmU2qj9m8bGRZVI2Xnh6b1lu2GFxeXxmnw=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/_JAX_gNNrF-OshBzmm_ERP9i9UZ8C-yl0yxl_q147icDgUpas7wYwMBKYsAwcf3d7WHw8ouGy2KiadjTfRX2_lmBoX45RkOF4cXfQBKBhmU2qj9m8bGRZVI2Xnh6b1lu2GFxeXxmnw=w216-h144-p-k" /> </a>
-* Secondary color: #168C8C
+* Primary color:#168C8C
 
 <a href="https://lh3.googleusercontent.com/cp7RNFsnjpBUY12JLR4SB8s7zCp7Dkd5rxdUpR2thJgiENGaUfwzYzhPPaH-TrPVgY5-U7DRe2H1UwEo7a1AvBZa4QD6sKfedkfhSlmve-qstR-FBCkcCiT0v5zzdzevIlbQcHHLUA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/cp7RNFsnjpBUY12JLR4SB8s7zCp7Dkd5rxdUpR2thJgiENGaUfwzYzhPPaH-TrPVgY5-U7DRe2H1UwEo7a1AvBZa4QD6sKfedkfhSlmve-qstR-FBCkcCiT0v5zzdzevIlbQcHHLUA=w216-h144-p-k" /> </a>
+* Secondary color: #82BF45
+
+<a href="https://lh3.googleusercontent.com/_JAX_gNNrF-OshBzmm_ERP9i9UZ8C-yl0yxl_q147icDgUpas7wYwMBKYsAwcf3d7WHw8ouGy2KiadjTfRX2_lmBoX45RkOF4cXfQBKBhmU2qj9m8bGRZVI2Xnh6b1lu2GFxeXxmnw=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/_JAX_gNNrF-OshBzmm_ERP9i9UZ8C-yl0yxl_q147icDgUpas7wYwMBKYsAwcf3d7WHw8ouGy2KiadjTfRX2_lmBoX45RkOF4cXfQBKBhmU2qj9m8bGRZVI2Xnh6b1lu2GFxeXxmnw=w216-h144-p-k" /> </a>
+
 * Primary text color: #000
 
 <a href="https://lh3.googleusercontent.com/6AwGyBSKQfNn4X85s5kquLKQyjPlH7DUSrEQQtU1O6xURAuRW24H1ieGD-i6oTc9rIa2Eo7Y_QTNhTy6OoYj-YgmjPxCA_7407ctrwNFWEmiknQ_SWvu81P0fuPmK6GAdlvAWpDoyQ=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/6AwGyBSKQfNn4X85s5kquLKQyjPlH7DUSrEQQtU1O6xURAuRW24H1ieGD-i6oTc9rIa2Eo7Y_QTNhTy6OoYj-YgmjPxCA_7407ctrwNFWEmiknQ_SWvu81P0fuPmK6GAdlvAWpDoyQ=w216-h144-p-k" /> </a>
@@ -111,7 +112,7 @@ Viewing Other Sites
 <a href="https://lh3.googleusercontent.com/6xbVh7Vbl7aldeWAEW0ziUeCC51Y3TIBoCHu_oHUXCSItRszim_9xtN2pU1G7OZXjE6-Jd8mmX5IrV6Bn2pGh2geC5ThCfY_ZTkllNFpK2JYFQpTIFaedlTZGhAf1IRTgWe_aHsKCA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/6xbVh7Vbl7aldeWAEW0ziUeCC51Y3TIBoCHu_oHUXCSItRszim_9xtN2pU1G7OZXjE6-Jd8mmX5IrV6Bn2pGh2geC5ThCfY_ZTkllNFpK2JYFQpTIFaedlTZGhAf1IRTgWe_aHsKCA=w216-h144-p-k" /> </a>
 
 ## App icon
-Logo - Spash Screen: 
+Logo - Splash Screen: 
 
 <a href="https://lh3.googleusercontent.com/eXec4eo7vnG_6HyQJDfivuoOrs9Xh76ApRKIHGIJgM07sjdwQ2nxIKGaAdbwX8o2uLzISPzuGqOnpopC91HBShvhz1jgNpbFqUPAT7BIBve8DnDpikeevyVBVFOCLOq-c5e7TvrA8Q=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/eXec4eo7vnG_6HyQJDfivuoOrs9Xh76ApRKIHGIJgM07sjdwQ2nxIKGaAdbwX8o2uLzISPzuGqOnpopC91HBShvhz1jgNpbFqUPAT7BIBve8DnDpikeevyVBVFOCLOq-c5e7TvrA8Q=w300-h268-p-k" /> </a>
 
