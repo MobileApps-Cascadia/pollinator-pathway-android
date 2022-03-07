@@ -33,6 +33,12 @@ public class Planting {
     @ColumnInfo(name = "userId")
     private long userId;
 
+    @ColumnInfo(name = "image")
+    private int image;
+
+    public int getImage(){return image;}
+
+    public void setImage(){this.image = image;}
 
     public long getPlantingId() {
         return plantingId;
