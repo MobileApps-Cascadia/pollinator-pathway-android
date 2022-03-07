@@ -35,4 +35,5 @@
     <string name="add_photos">ADD PHOTOS</string>
     <string name="planting_name">Planting Name</string>
     <string name="planting_image">TODO</string>
+    <string name="cardbackground">cardBackground</string>
 </resources>
