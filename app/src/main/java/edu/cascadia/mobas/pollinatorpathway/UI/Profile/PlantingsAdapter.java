@@ -3,6 +3,7 @@ package edu.cascadia.mobas.pollinatorpathway.UI.Profile;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import edu.cascadia.mobas.pollinatorpathway.Database.Planting.Planting;
@@ -21,11 +22,13 @@ public class PlantingsAdapter extends RecyclerView.Adapter<PlantingsAdapter.Plan
     public static class PlantingsViewHolder extends RecyclerView.ViewHolder{
     public TextView mTextView;
     public TextView mTextView2;
+    public ImageView mImageView;
+
         public PlantingsViewHolder(@NonNull View itemView) {
             super(itemView);
             mTextView = itemView.findViewById(R.id.plantings_title);
-            mTextView2 = itemView.findViewById((R.id.plantings_description));
-
+            mTextView2 = itemView.findViewById(R.id.plantings_description);
+            mImageView = itemView.findViewById(R.id.cardViewImage);
         }
     }
 
