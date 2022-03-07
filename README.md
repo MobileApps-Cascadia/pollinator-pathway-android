@@ -146,7 +146,7 @@ Based on the usability studies on the high-fidelity prototype added a welcome sc
 ## Stretch features
 
 * Adding storefront for sale of pollinator related goods and services.
-* Adding "blog" style board with new information and announcements.
+* Adding blog style board with new information and announcements.
 * Adding volunteer opportunities.
 * Adding Contact information.
 * Add informational pages about various pollinators.
