@@ -21,7 +21,6 @@ import edu.cascadia.mobas.pollinatorpathway.databinding.FragmentProfileBinding;
 
 public class ProfileFragment extends Fragment {
     private FragmentProfileBinding fragmentProfileBinding;
-    private FragmentProfileBinding fragmentProfileBindingBox;
     private ProfileViewModel mViewModel;
     private ProfileViewModel mBoxViewModel;
 
@@ -34,11 +33,11 @@ public class ProfileFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
         //inflate planting and box fragments
        fragmentProfileBinding = FragmentProfileBinding.inflate(inflater, container, false);
-       fragmentProfileBindingBox = FragmentProfileBinding.inflate(inflater, container, false);
+       //fragmentProfileBindingBox = FragmentProfileBinding.inflate(inflater, container, false);
 
         //create planting and box view models
         mViewModel = new ViewModelProvider(this).get(ProfileViewModel.class);
-        mBoxViewModel = new ViewModelProvider(this).get(ProfileViewModel.class);
+        //mBoxViewModel = new ViewModelProvider(this).get(ProfileViewModel.class);
 
         //populate planting and box viewModel via list
         LiveData<List<Planting>> plantinglist = mViewModel.getAllPlantings();
@@ -46,7 +45,7 @@ public class ProfileFragment extends Fragment {
 
         //create planting and box recycler views
         RecyclerView mRecyclerView = fragmentProfileBinding.recyclerview;
-        RecyclerView mBoxRecyclerView = fragmentProfileBindingBox.recyclerview;
+        RecyclerView mBoxRecyclerView = fragmentProfileBinding.recyclerview;
 
         //create grid layout for planting and box views
         RecyclerView.LayoutManager mLayoutManager= new GridLayoutManager(getContext(), 2);
