@@ -21,12 +21,6 @@ public class Box {
     @ColumnInfo(name = "name")
     private String boxName;
 
-    @ColumnInfo(name = "lat")
-    private double lat;
-
-    @ColumnInfo(name = "lon")
-    private double lon;
-
     @ColumnInfo(name = "gps")
     private String gps;
 
@@ -40,19 +34,16 @@ public class Box {
         return boxId;
     }
 
-    public String getName() { return boxName; }
+    public String getBoxName() { return boxName; }
 
-    public void setName(String boxName) { this.boxName = boxName; }
+    public void setBoxName(String boxName) { this.boxName = boxName; }
 
     public void setBoxId(long boxId) { this.boxId = boxId; }
 
-    public String getGPS() { return gps; }
+    public String getGps() { return gps; }
 
-    public void setGps(double lat, double lon) {
-        String gps;
-        this.lat = lat;
-        this.lon = lon;
-        gps = lat + ", " + lon;
+    public void setGps(String gps) {
+        this.gps = gps;
     }
 
     public String getQrCode() { return qrCode; }

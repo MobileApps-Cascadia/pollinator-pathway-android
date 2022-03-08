@@ -42,15 +42,6 @@ public class Planting {
     @ColumnInfo(name = "userId")
     private long userId;
 
-
-
-
-
-
-
-
-
-
     public long getPlantingId() {
         return plantingId;
     }

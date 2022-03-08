@@ -37,4 +37,5 @@
     <string name="planting_image">TODO</string>
     <string name="boxes">Active BeeBoxes</string>
     <string name="box_name">Box Name</string>
+    <string name="box_Id">Box ID</string>
 </resources>

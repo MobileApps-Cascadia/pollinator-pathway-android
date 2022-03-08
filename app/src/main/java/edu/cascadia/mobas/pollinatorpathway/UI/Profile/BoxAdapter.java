@@ -23,12 +23,12 @@ public class BoxAdapter extends RecyclerView.Adapter<BoxAdapter.BoxViewHolder> {
         public BoxViewHolder(@NonNull View itemView) {
             super(itemView);
             mTextView = itemView.findViewById((R.id.box_title));
-            mTextView2 = itemView.findViewById((R.id.box_description));
+            mTextView2 = itemView.findViewById((R.id.box_gps));
 
         }
     }
 
-    public void updatePlantings(List<Box> BoxList) {
+    public void updateBoxes(List<Box> BoxList) {
         mBoxList = BoxList;
         notifyDataSetChanged();
     }
@@ -40,8 +40,8 @@ public class BoxAdapter extends RecyclerView.Adapter<BoxAdapter.BoxViewHolder> {
     @Override
     public BoxViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.box_item_layout, parent, false);
-        BoxViewHolder pvh = new BoxViewHolder(v);
-        return pvh;
+        BoxViewHolder bvh = new BoxViewHolder(v);
+        return bvh;
     }
 
     @Override
@@ -49,8 +49,8 @@ public class BoxAdapter extends RecyclerView.Adapter<BoxAdapter.BoxViewHolder> {
         Box currentItem = mBoxList.get(position);
 
         assert currentItem != null;
-        holder.mTextView.setText(currentItem.getName());
-        holder.mTextView2.setText((int) currentItem.getBoxId());
+        holder.mTextView.setText(currentItem.getBoxName());
+        holder.mTextView2.setText(currentItem.getGps());
     }
 
     @Override

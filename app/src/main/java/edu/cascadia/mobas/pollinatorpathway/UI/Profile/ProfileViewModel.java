@@ -9,6 +9,7 @@ import androidx.lifecycle.LiveData;
 import java.util.List;
 
 import edu.cascadia.mobas.pollinatorpathway.DataRepository;
+import edu.cascadia.mobas.pollinatorpathway.Database.Box.Box;
 import edu.cascadia.mobas.pollinatorpathway.Database.Planting.Planting;
 import edu.cascadia.mobas.pollinatorpathway.Database.Profile.Profile;
 import edu.cascadia.mobas.pollinatorpathway.PnwppApp;
@@ -27,4 +28,5 @@ public class ProfileViewModel extends AndroidViewModel {
         return mRepository.getProfiles();
     }
     public LiveData<List<Planting>> getAllPlantings() {return mRepository.getAllPlantings();}
+    public LiveData<List<Box>> getBoxes() {return mRepository.getBoxes();}
 }

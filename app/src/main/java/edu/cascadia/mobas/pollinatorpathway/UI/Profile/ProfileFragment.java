@@ -11,21 +11,19 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.ArrayList;
 import java.util.List;
 
+import edu.cascadia.mobas.pollinatorpathway.Database.Box.Box;
 import edu.cascadia.mobas.pollinatorpathway.Database.Planting.Planting;
-import edu.cascadia.mobas.pollinatorpathway.Database.PnwppDb;
-import edu.cascadia.mobas.pollinatorpathway.R;
 import edu.cascadia.mobas.pollinatorpathway.databinding.FragmentProfileBinding;
-import edu.cascadia.mobas.pollinatorpathway.databinding.PlantingsItemLayoutBinding;
 
 public class ProfileFragment extends Fragment {
     private FragmentProfileBinding fragmentProfileBinding;
+    private FragmentProfileBinding fragmentProfileBindingBox;
     private ProfileViewModel mViewModel;
+    private ProfileViewModel mBoxViewModel;
 
     public static ProfileFragment newInstance() {
         return new ProfileFragment();
@@ -34,22 +32,49 @@ public class ProfileFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
+        //inflate planting and box fragments
        fragmentProfileBinding = FragmentProfileBinding.inflate(inflater, container, false);
-       mViewModel = new ViewModelProvider(this).get(ProfileViewModel.class);
+       fragmentProfileBindingBox = FragmentProfileBinding.inflate(inflater, container, false);
+
+        //create planting and box view models
+        mViewModel = new ViewModelProvider(this).get(ProfileViewModel.class);
+        mBoxViewModel = new ViewModelProvider(this).get(ProfileViewModel.class);
+
+        //populate planting and box viewModel via list
         LiveData<List<Planting>> plantinglist = mViewModel.getAllPlantings();
+        LiveData<List<Box>> boxList = mBoxViewModel.getBoxes();
+
+        //create planting and box recycler views
         RecyclerView mRecyclerView = fragmentProfileBinding.recyclerview;
+        RecyclerView mBoxRecyclerView = fragmentProfileBindingBox.recyclerview;
+
+        //create grid layout for planting and box views
         RecyclerView.LayoutManager mLayoutManager= new GridLayoutManager(getContext(), 2);
+        RecyclerView.LayoutManager mBoxLayoutManager = new GridLayoutManager(getContext(), 2);
 
+        //instantiate planting and box adapters
         PlantingsAdapter mAdapter= new PlantingsAdapter(plantinglist.getValue());
+        BoxAdapter mBoxAdapter = new BoxAdapter(boxList.getValue());
 
+        //set planting and box layout managers
         mRecyclerView.setLayoutManager(mLayoutManager);
+        mBoxRecyclerView.setLayoutManager(mBoxLayoutManager);
+
+        //set planting and box adapters
+        mBoxRecyclerView.setAdapter(mBoxAdapter);
         mRecyclerView.setAdapter(mAdapter);
-        //checking to see if data has been changed
+
+        //checking to see if planting data has been changed
         plantinglist.observe(getViewLifecycleOwner(), plantings -> {
            if (plantings != null) mAdapter.updatePlantings(plantings);
         });
 
-        // TODO: Use the ViewModel
+        //Live data updater for list of boxes
+        boxList.observe(getViewLifecycleOwner(), boxes -> {
+            if (boxes != null)
+                mBoxAdapter.updateBoxes(boxes);
+                });
+
         return fragmentProfileBinding.getRoot();
     }
 }

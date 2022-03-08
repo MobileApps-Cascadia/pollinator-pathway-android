@@ -21,8 +21,8 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.18704710144927536" />
         <entry key="app/src/main/res/layout/activity_maps.xml" value="0.1403985507246377" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.1515625" />
-        <entry key="app/src/main/res/layout/box_item_layout.xml" value="0.5558548314935666" />
-        <entry key="app/src/main/res/layout/box_recycler_view_item.xml" value="9.940311458357217" />
+        <entry key="app/src/main/res/layout/box_item_layout.xml" value="0.10146030617408021" />
+        <entry key="app/src/main/res/layout/box_recycler_view_item.xml" value="0.21256250083176043" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.1403985507246377" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.165" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.1" />
@@ -33,7 +33,7 @@
         <entry key="app/src/main/res/layout/fragment_setup.xml" value="0.13229166666666667" />
         <entry key="app/src/main/res/layout/plantings_item_layout.xml" value="0.426667430739707" />
         <entry key="app/src/main/res/layout/profile_fragment.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/recycler_view_item.xml" value="0.14583333333333334" />
+        <entry key="app/src/main/res/layout/recycler_view_item.xml" value="0.16176613229664089" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.10037014687340436" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/PNWPP_Icon.xml" value="0.17552083333333332" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/PNWPP_Icon_round.xml" value="0.13333333333333333" />
