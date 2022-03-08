@@ -12,7 +12,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 import edu.cascadia.mobas.pollinatorpathway.Database.Box.Box;
-import edu.cascadia.mobas.pollinatorpathway.Database.Planting.Planting;
 import edu.cascadia.mobas.pollinatorpathway.R;
 
 public class BoxAdapter extends RecyclerView.Adapter<BoxAdapter.BoxViewHolder> {
@@ -23,8 +22,8 @@ public class BoxAdapter extends RecyclerView.Adapter<BoxAdapter.BoxViewHolder> {
         public TextView mTextView2;
         public BoxViewHolder(@NonNull View itemView) {
             super(itemView);
-            mTextView = itemView.findViewById((R.id));
-            mTextView2 = itemView.findViewById((R.id.plantings_description));
+            mTextView = itemView.findViewById((R.id.box_title));
+            mTextView2 = itemView.findViewById((R.id.box_description));
 
         }
     }
@@ -40,7 +39,7 @@ public class BoxAdapter extends RecyclerView.Adapter<BoxAdapter.BoxViewHolder> {
 
     @Override
     public BoxViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.plantings_item_layout, parent, false);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.box_item_layout, parent, false);
         BoxViewHolder pvh = new BoxViewHolder(v);
         return pvh;
     }
@@ -51,7 +50,7 @@ public class BoxAdapter extends RecyclerView.Adapter<BoxAdapter.BoxViewHolder> {
 
         assert currentItem != null;
         holder.mTextView.setText(currentItem.getName());
-        holder.mTextView2.setText(currentItem.getDescription());
+        holder.mTextView2.setText((int) currentItem.getBoxId());
     }
 
     @Override

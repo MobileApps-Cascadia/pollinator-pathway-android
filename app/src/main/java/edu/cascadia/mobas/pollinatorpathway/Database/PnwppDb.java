@@ -122,8 +122,11 @@ public abstract class PnwppDb extends RoomDatabase {
                 List<Box> boxes = new ArrayList<Box>();
 
                 Box box1 = new Box();
-                box1.setBoxId(001);
-                box1.setGPS()
+                box1.setBoxId(0000001);
+                box1.setGps(-122.335167, 47.608013);
+                box1.setName("Test Box 1");
+                box1.setQrCode("x01x01x01");
+                boxDao.insertBox(box1);
 
 
         });

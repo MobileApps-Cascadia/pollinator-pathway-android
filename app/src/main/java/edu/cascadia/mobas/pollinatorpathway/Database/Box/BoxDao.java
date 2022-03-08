@@ -23,6 +23,9 @@ public interface BoxDao {
     @Query("SELECT * FROM Box ORDER BY PlantingId ASC")
     LiveData<List<Box>> getBoxes();
 
+    @Query("SELECT * FROM Box WHERE gps = :gps")
+    LiveData<Box> getBoxByGps(String gps);
+
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     public long insertBox(Box box);
 
