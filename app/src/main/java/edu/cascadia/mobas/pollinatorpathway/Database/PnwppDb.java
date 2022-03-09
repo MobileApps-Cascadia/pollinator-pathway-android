@@ -1,6 +1,7 @@
 package edu.cascadia.mobas.pollinatorpathway.Database;
 
 import android.content.Context;
+import android.media.Image;
 
 import androidx.annotation.NonNull;
 import androidx.room.Database;
@@ -20,6 +21,7 @@ import edu.cascadia.mobas.pollinatorpathway.Database.Planting.Planting;
 import edu.cascadia.mobas.pollinatorpathway.Database.Planting.PlantingDao;
 import edu.cascadia.mobas.pollinatorpathway.Database.Profile.Profile;
 import edu.cascadia.mobas.pollinatorpathway.Database.Profile.ProfileDao;
+import edu.cascadia.mobas.pollinatorpathway.R;
 
 @Database(entities = {Profile.class, Planting.class, Box.class}, version = 1)
 public abstract class PnwppDb extends RoomDatabase {
@@ -65,10 +67,70 @@ public abstract class PnwppDb extends RoomDatabase {
                 Profile p = new Profile();
                 p.setFirstname("Robin");
                 p.setLastname("Crowder");
+                p.setOrgName("21 Acres");
                 p.setEmail("rbcrowder@21acres.org");
                 p.setPhone("326-224-7220");
                 p.setPassword("1234");
+                p.setType("Organization");
+                p.setProfDescription("The 21 Acres Center for Local Food & Sustainable living is a global leader in sustainable & regenerative practices, serving as a living laboratory & learning center for conscious consumers who want to learn new, more sustainable ways of living.");
+                p.setDateJoined("11/2021");
+                p.setWebsite("https://21acres.org/?s=beevesting");
                 profileDao.insertProfile(p);
+
+                Profile p2 = new Profile();
+                p2.setFirstname("Patricia");
+                p2.setLastname("Newkirk");
+                p2.setOrgName("Songaia Co-Housing Community");
+                p2.setType("Co-Housing");
+                p2.setEmail("patricia.newkirk@gmail.com");
+                p2.setPhone("206.902.8107");
+                p2.setPassword("1234");
+                p2.setDateJoined("11.2021");
+                p2.setWebsite("http://www.songaia.com/the-garden1.html");
+                profileDao.insertProfile(p2);
+
+                Profile p3 = new Profile();
+                p3.setFirstname("Kristi");
+                p3.setLastname("Bolles");
+                p3.setOrgName("Coastal Bank");
+                p3.setEmail("kbolles@coastalbank.com");
+                p3.setPhone("425.482.3103");
+                p3.setPassword("1234");
+                p3.setType("Company");
+                p3.setProfDescription("Coastal Community Bank");
+                p3.setDateJoined("11/2021");
+                p3.setWebsite("kbolles@coastalbank.com");
+                profileDao.insertProfile(p3);
+
+                Profile p4 = new Profile();
+                p4.setFirstname("Alexia");
+                p4.setLastname("Allen");
+                p4.setOrgName("Hawthorn Farm");
+                p4.setEmail("alexiaallen@hotmail.com");
+                p4.setPhone("425.286.5640");
+                p4.setPassword("1234");
+                p4.setType("Farm");
+                p4.setProfDescription("A suburban homestead where happy humans are integrated into the ecological system. We love to teach.");
+                p4.setDateJoined("11/2021");
+                p4.setWebsite("https://www.facebook.com/hawthornfarmheals");
+                profileDao.insertProfile(p4);
+
+                Profile p5 = new Profile();
+                p5.setFirstname("Cameron");
+                p5.setLastname("Graves");
+                p5.setOrgName("Red Barn Farm");
+                p5.setPhone("206.949.3333");
+                p5.setPassword("1234");
+                p5.setType("Farm");
+                p5.setEmail("dummy@gmail.com");
+                p5.setProfDescription("Almost 100 years old and recently restored for the 21st century, The Red Barn Farm is currently raising hens, ducks, goats, honey bees, and harvesting seasonal produce and flowers (green house coming for year-round harvesting!). We’re also a full service venue ready to be host to your next special event, and our small craft whiskey distillery and tasting room is coming soon!");
+                p5.setDateJoined("11/2021");
+                p5.setWebsite("https://redbarnfarm.com/");
+                profileDao.insertProfile(p5);
+
+
+
+
             });
 
             dbExecutor.execute(() -> {
@@ -76,45 +138,31 @@ public abstract class PnwppDb extends RoomDatabase {
                 List<Planting> plantings = new ArrayList<Planting>();
 
                 Planting planting = new Planting();
-                planting.setName("21 Acres");
+                planting.setName("Permaculture Vegetable Garden");
                 planting.setUserId(1);
-                planting.setDescription("Organization");
-                planting.setDateJoined("11/2021");
-                planting.setWebsite("https://21acres.org/?s=beevesting");
+                planting.setPlantingId(1);
+                //planting.setDescription("First planted in 1978, the vegetable garden provides veggies to the 40+ members of Songaia CoHousing Community.  ");
+                planting.setImage(R.drawable.hummingbird1_2);
                 plantings.add(planting);
 
                 Planting planting2 = new Planting();
-                planting2.setName("Songaia Co-House");
+                planting2.setName("Herbal Gerbil Garden");
                 planting2.setUserId(1);
-                planting2.setDescription("Co-Housing");
-                planting2.setDateJoined("11/2021");
-                planting2.setWebsite("http://www.songaia.com/the-garden1.html");
+                planting2.setPlantingId(2);
+               // planting2.setDescription("Vegetable and medicinal herb garden");
+                planting2.setImage(R.drawable.bee2_2);
                 plantings.add(planting2);
 
                 Planting planting3 = new Planting();
-                planting3.setName("Coastal Bank");
+                planting3.setName("Native Garden");
                 planting3.setUserId(1);
-                planting3.setDescription("Company");
-                planting3.setDateJoined("11/2021");
-                planting3.setWebsite("https://www.coastalbank.com/about/join-us.html?gclid=CjwKCAiAnO2MBhApEiwA8q0HYTDhC4cKlHjx6VVf52wPoXj9IhTt5ejBtoCshnDEf2jtPYJVjLc0SxoCTOMQAvD_BwE");
+                planting3.setPlantingId(3);
+                //planting3.setDescription("Features a large variety of plants that are significant to the Coast Salish tribes.   ");
+                planting3.setImage(R.drawable.bee4_2png);
                 plantings.add(planting3);
 
-                Planting planting4 = new Planting();
-                planting4.setName("Hawthorn Farm");
-                planting4.setUserId(1);
-                planting4.setDescription("Farm");
-                planting4.setDateJoined("11/2021");
-                planting4.setWebsite("https://www.coastalbank.com/about/join-us.html?gclid=CjwKCAiAnO2MBhApEiwA8q0HYTDhC4cKlHjx6VVf52wPoXj9IhTt5ejBtoCshnDEf2jtPYJVjLc0SxoCTOMQAvD_BwE");
-                plantings.add(planting4);
-
-                Planting planting5 = new Planting();
-                planting5.setName("Red Barn Farm");
-                planting5.setUserId(1);
-                planting5.setDescription("Farm");
-                plantings.add(planting5);
-                planting5.setDateJoined("11/2021");
-                planting5.setWebsite("https://redbarnfarm.com/");
                 plantingDao.insertPlantingALL(plantings);
+
             });
 
             /*dbExecutor.execute(() -> {

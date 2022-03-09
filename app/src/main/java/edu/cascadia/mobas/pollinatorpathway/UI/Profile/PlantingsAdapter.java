@@ -1,14 +1,17 @@
 package edu.cascadia.mobas.pollinatorpathway.UI.Profile;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import edu.cascadia.mobas.pollinatorpathway.Database.Planting.Planting;
 import edu.cascadia.mobas.pollinatorpathway.R;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.content.res.AppCompatResources;
 import androidx.lifecycle.LiveData;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -17,15 +20,16 @@ import java.util.List;
 
 public class PlantingsAdapter extends RecyclerView.Adapter<PlantingsAdapter.PlantingsViewHolder> {
  private List<Planting> mPlantingsList;
+private Context context;
 
     public static class PlantingsViewHolder extends RecyclerView.ViewHolder{
     public TextView mTextView;
-    public TextView mTextView2;
+    public ImageView mImageView;
+
         public PlantingsViewHolder(@NonNull View itemView) {
             super(itemView);
             mTextView = itemView.findViewById(R.id.plantings_title);
-            mTextView2 = itemView.findViewById((R.id.plantings_description));
-
+            mImageView = itemView.findViewById(R.id.cardViewImage);
         }
     }
 
@@ -34,8 +38,9 @@ public class PlantingsAdapter extends RecyclerView.Adapter<PlantingsAdapter.Plan
         notifyDataSetChanged();
     }
 
-    public PlantingsAdapter(List<Planting> plantingslist){
+    public PlantingsAdapter(android.content.Context context, List<Planting> plantingslist){
         mPlantingsList = plantingslist;
+        this.context = context;
     }
 
     @Override
@@ -49,9 +54,11 @@ public class PlantingsAdapter extends RecyclerView.Adapter<PlantingsAdapter.Plan
     public void onBindViewHolder(@NonNull PlantingsViewHolder holder, int position) {
         Planting currentItem = mPlantingsList.get(position);
 
-        assert currentItem != null;
-        holder.mTextView.setText(currentItem.getName());
-        holder.mTextView2.setText(currentItem.getDescription());
+        if (currentItem != null)
+        {
+            holder.mTextView.setText(currentItem.getName());
+            holder.mImageView.setBackground(AppCompatResources.getDrawable(context, currentItem.getImage()));
+        }
     }
 
     @Override
