@@ -1,4 +1,4 @@
-package edu.cascadia.mobas.pollinatorpathway.ui.Profile;
+package edu.cascadia.mobas.pollinatorpathway.UI.Profile;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,7 +14,7 @@ import edu.cascadia.mobas.pollinatorpathway.R;
 
 public class ProfileFragment extends Fragment {
 
-    private edu.cascadia.mobas.pollinatorpathway.ui.Profile.ProfileViewModel mViewModel;
+    private edu.cascadia.mobas.pollinatorpathway.UI.Profile.ProfileViewModel mViewModel;
 
     public static ProfileFragment newInstance() {
         return new ProfileFragment();
@@ -29,7 +29,7 @@ public class ProfileFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(edu.cascadia.mobas.pollinatorpathway.ui.Profile.ProfileViewModel.class);
+        mViewModel = new ViewModelProvider(this).get(edu.cascadia.mobas.pollinatorpathway.UI.Profile.ProfileViewModel.class);
         // TODO: Use the ViewModel
     }
 

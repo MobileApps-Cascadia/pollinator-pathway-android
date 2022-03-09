@@ -14,7 +14,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import edu.cascadia.mobas.pollinatorpathway.databinding.ActivityMainBinding;
 import edu.cascadia.mobas.pollinatorpathway.Database.PnwppDb;
-import edu.cascadia.mobas.pollinatorpathway.ui.QRcode.QRcode;
+import edu.cascadia.mobas.pollinatorpathway.UI.QRcode.QRcode;
 
 
 public class MainActivity extends AppCompatActivity {

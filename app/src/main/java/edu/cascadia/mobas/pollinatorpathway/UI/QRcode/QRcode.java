@@ -1,19 +1,15 @@
-package edu.cascadia.mobas.pollinatorpathway.ui.QRcode;
+package edu.cascadia.mobas.pollinatorpathway.UI.QRcode;
 
 import android.Manifest;
-import android.app.Activity;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.util.Size;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.camera.core.Camera;
 import androidx.camera.core.CameraSelector;
@@ -23,9 +19,7 @@ import androidx.camera.lifecycle.ProcessCameraProvider;
 import androidx.camera.view.PreviewView;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
-import androidx.fragment.app.Fragment;
 import androidx.lifecycle.LifecycleOwner;
-import androidx.lifecycle.ViewModelProvider;
 
 import com.google.common.util.concurrent.ListenableFuture;
 
@@ -33,8 +27,6 @@ import java.util.concurrent.ExecutionException;
 
 import edu.cascadia.mobas.pollinatorpathway.MainActivity;
 import edu.cascadia.mobas.pollinatorpathway.R;
-import edu.cascadia.mobas.pollinatorpathway.ui.QRcode.QRcodeFoundListener;
-import edu.cascadia.mobas.pollinatorpathway.ui.QRcode.QRcodeImageAnalyzer;
 
 public class QRcode extends AppCompatActivity {
     private static final int PERMISSION_REQUEST_CAMERA = 0;

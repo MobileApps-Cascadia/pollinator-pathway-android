@@ -1,4 +1,4 @@
-package edu.cascadia.mobas.pollinatorpathway.ui.Maps;
+package edu.cascadia.mobas.pollinatorpathway.UI.Maps;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

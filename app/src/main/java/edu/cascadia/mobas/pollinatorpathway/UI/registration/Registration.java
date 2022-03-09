@@ -1,4 +1,4 @@
-package edu.cascadia.mobas.pollinatorpathway.ui.registration;
+package edu.cascadia.mobas.pollinatorpathway.UI.registration;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
