@@ -36,4 +36,5 @@
     <string name="planting_name">Planting Name</string>
     <string name="planting_image">TODO</string>
     <string name="cardbackground">cardBackground</string>
+    <string name="test_QR">Test QR</string>
 </resources>

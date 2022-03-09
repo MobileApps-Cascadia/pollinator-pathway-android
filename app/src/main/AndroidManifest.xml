@@ -10,6 +10,10 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
+    <!-- Camera Permissions -->
+    <uses-feature android:name="android.hardware.camera.any" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/main_icon"
@@ -35,6 +39,10 @@
             android:name=".UI.Maps.MapsActivity"
             android:exported="false"
             android:label="Pollinator Box Locations" />
+        <activity
+            android:name=".UI.QRcode.QRcode"
+            android:exported="false"
+            android:label="QR Code Scanner" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
