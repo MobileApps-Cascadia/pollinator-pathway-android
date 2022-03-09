@@ -34,8 +34,8 @@ public class ProfileFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-       fragmentProfileBinding = FragmentProfileBinding.inflate(inflater, container, false);
-       mViewModel = new ViewModelProvider(this).get(ProfileViewModel.class);
+        fragmentProfileBinding = FragmentProfileBinding.inflate(inflater, container, false);
+        mViewModel = new ViewModelProvider(this).get(ProfileViewModel.class);
         LiveData<List<Planting>> plantinglist = mViewModel.getAllPlantings();
         RecyclerView mRecyclerView = fragmentProfileBinding.recyclerview;
         RecyclerView.LayoutManager mLayoutManager= new GridLayoutManager(getContext(), 2);
@@ -46,7 +46,7 @@ public class ProfileFragment extends Fragment {
         mRecyclerView.setAdapter(mAdapter);
         //checking to see if data has been changed
         plantinglist.observe(getViewLifecycleOwner(), plantings -> {
-           if (plantings != null) mAdapter.updatePlantings(plantings);
+            if (plantings != null) mAdapter.updatePlantings(plantings);
         });
 
         // TODO: Use the ViewModel
