@@ -27,6 +27,10 @@ import java.util.concurrent.ExecutionException;
 
 import edu.cascadia.mobas.pollinatorpathway.MainActivity;
 import edu.cascadia.mobas.pollinatorpathway.R;
+<<<<<<<< HEAD:app/src/main/java/edu/cascadia/mobas/pollinatorpathway/UI/QRcode/QRcode.java
+========
+
+>>>>>>>> origin/issue67-QRScanner2:app/src/main/java/edu/cascadia/mobas/pollinatorpathway/ui/QRcode/QRcode.java
 
 public class QRcode extends AppCompatActivity {
     private static final int PERMISSION_REQUEST_CAMERA = 0;
