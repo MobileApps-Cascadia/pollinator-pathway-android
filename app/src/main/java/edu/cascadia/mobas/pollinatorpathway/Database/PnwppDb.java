@@ -15,6 +15,7 @@ import java.util.concurrent.Executors;
 
 import edu.cascadia.mobas.pollinatorpathway.AppExecutors;
 import edu.cascadia.mobas.pollinatorpathway.Database.Box.Box;
+import edu.cascadia.mobas.pollinatorpathway.Database.Box.BoxDao;
 import edu.cascadia.mobas.pollinatorpathway.Database.Planting.Planting;
 import edu.cascadia.mobas.pollinatorpathway.Database.Planting.PlantingDao;
 import edu.cascadia.mobas.pollinatorpathway.Database.Profile.Profile;
@@ -30,8 +31,8 @@ public abstract class PnwppDb extends RoomDatabase {
 
 
     //Singleton
-    public static PnwppDb getInstance(Context context, AppExecutors mAppExecutor){
-        if (mPnwppDatabase == null){
+    public static PnwppDb getInstance(Context context, AppExecutors mAppExecutor) {
+        if (mPnwppDatabase == null) {
             synchronized (PnwppDb.class) {
 
                 mPnwppDatabase = Room.databaseBuilder(context, PnwppDb.class, DATABASE_NAME)
@@ -45,7 +46,8 @@ public abstract class PnwppDb extends RoomDatabase {
 
     public abstract ProfileDao profileDao();
     public abstract PlantingDao plantingDao();
-    //public abstract BoxDao boxDao();
+    public abstract BoxDao boxDao();
+
 
     private static final RoomDatabase.Callback sRoomDatabaseCallback = new RoomDatabase.Callback() {
         @Override
@@ -114,7 +116,15 @@ public abstract class PnwppDb extends RoomDatabase {
                 planting5.setWebsite("https://redbarnfarm.com/");
                 plantingDao.insertPlantingALL(plantings);
             });
+
+            /*dbExecutor.execute(() -> {
+                BoxDao boxDao = mPnwppDatabase.boxDao();
+                List<Box> boxes = new ArrayList<Box>();
+
+
+        });*/
+
+
         }
     };
-
 }

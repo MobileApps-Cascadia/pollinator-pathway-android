@@ -49,5 +49,6 @@ public class MainActivity extends AppCompatActivity {
     public void qrScanner(View view) {
         Intent intent = new Intent(this, QRcode.class);
         startActivity(intent);
+
     }
 }
