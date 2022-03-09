@@ -120,6 +120,7 @@ public abstract class PnwppDb extends RoomDatabase {
                 p5.setPhone("206.949.3333");
                 p5.setPassword("1234");
                 p5.setType("Farm");
+                p5.setEmail("dummy@gmail.com");
                 p5.setProfDescription("Almost 100 years old and recently restored for the 21st century, The Red Barn Farm is currently raising hens, ducks, goats, honey bees, and harvesting seasonal produce and flowers (green house coming for year-round harvesting!). We’re also a full service venue ready to be host to your next special event, and our small craft whiskey distillery and tasting room is coming soon!");
                 p5.setDateJoined("11/2021");
                 p5.setWebsite("https://redbarnfarm.com/");
@@ -138,7 +139,7 @@ public abstract class PnwppDb extends RoomDatabase {
                 planting.setName("Permaculture Vegetable Garden");
                 planting.setUserId(1);
                 planting.setPlantingId(1);
-                planting.setDescription("First planted in 1978, the vegetable garden provides veggies to the 40+ members of Songaia CoHousing Community.  ");
+                //planting.setDescription("First planted in 1978, the vegetable garden provides veggies to the 40+ members of Songaia CoHousing Community.  ");
                 planting.setImage(R.drawable.hummingbird1_2);
                 plantings.add(planting);
 
@@ -146,16 +147,16 @@ public abstract class PnwppDb extends RoomDatabase {
                 planting2.setName("Herbal Gerbil Garden");
                 planting2.setUserId(1);
                 planting2.setPlantingId(2);
-                planting2.setDescription("Vegetable and medicinal herb garden");
-                planting2.setImage(R.drawable.bee3_2);
+               // planting2.setDescription("Vegetable and medicinal herb garden");
+                planting2.setImage(R.drawable.bee2_2);
                 plantings.add(planting2);
 
                 Planting planting3 = new Planting();
                 planting3.setName("Native Garden");
                 planting3.setUserId(1);
                 planting3.setPlantingId(3);
-                planting3.setDescription("Features a large variety of plants that are significant to the Coast Salish tribes.   ");
-                planting3.setImage(R.drawable.butterfly1_2);
+                //planting3.setDescription("Features a large variety of plants that are significant to the Coast Salish tribes.   ");
+                planting3.setImage(R.drawable.bee4_2png);
                 plantings.add(planting3);
 
                 plantingDao.insertPlantingALL(plantings);

@@ -24,13 +24,11 @@ private Context context;
 
     public static class PlantingsViewHolder extends RecyclerView.ViewHolder{
     public TextView mTextView;
-    public TextView mTextView2;
     public ImageView mImageView;
 
         public PlantingsViewHolder(@NonNull View itemView) {
             super(itemView);
             mTextView = itemView.findViewById(R.id.plantings_title);
-            mTextView2 = itemView.findViewById(R.id.plantings_description);
             mImageView = itemView.findViewById(R.id.cardViewImage);
         }
     }
@@ -59,7 +57,6 @@ private Context context;
         if (currentItem != null)
         {
             holder.mTextView.setText(currentItem.getName());
-            holder.mTextView2.setText(currentItem.getDescription());
             holder.mImageView.setBackground(AppCompatResources.getDrawable(context, currentItem.getImage()));
         }
     }
