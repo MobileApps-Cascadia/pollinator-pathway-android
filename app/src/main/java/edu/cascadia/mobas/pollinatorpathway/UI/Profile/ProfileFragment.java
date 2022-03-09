@@ -42,7 +42,7 @@ public class ProfileFragment extends Fragment {
         RecyclerView mRecyclerView = fragmentProfileBinding.recyclerview;
         RecyclerView.LayoutManager mLayoutManager= new GridLayoutManager(getContext(), 2);
 
-        PlantingsAdapter mAdapter= new PlantingsAdapter(plantinglist.getValue());
+        PlantingsAdapter mAdapter= new PlantingsAdapter(getContext(), plantinglist.getValue());
 
         mRecyclerView.setLayoutManager(mLayoutManager);
         mRecyclerView.setAdapter(mAdapter);
