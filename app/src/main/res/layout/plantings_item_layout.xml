@@ -27,7 +27,7 @@
             android:padding="5dp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
-            android:scaleType="fitCenter" />
+            android:scaleType="center" />
 
         <TextView
             android:id="@+id/plantings_title"
