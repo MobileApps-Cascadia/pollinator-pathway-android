@@ -14,8 +14,27 @@
     <string name="newsite">new site?</string>
     <string name="scanQR">SCAN QR CODE</string>
     <string name="login">Login to Your Account</string>
-    <string name="email">Email:</string>
+    <string name="email">Email Address</string>
     <string name="password">Password:</string>
     <string name="submit">SUBMIT</string>
-
+    <string name="organization">Organization Name</string>
+    <string name="website">Website: https://www.betterbuzz.com</string>
+    <string name="edit">EDIT ACCOUNT</string>
+    <string name="cancel">CANCEL</string>
+    <string name="facebook">Facebook:</string>
+    <string name="insta">Instagram:</string>
+    <string name="gps">GPS</string>
+    <string name="plantings">Plantings</string>
+    <string name="visible">visible to public</string>
+    <string name="phone">(206)000-0000</string>
+    <string name="address">18345 Campus Way NE, Bothell</string>
+    <string name="email2">BetterBuzz@gmail.com</string>
+    <string name="profile">Profile</string>
+    <string name="organization_description">Organization Description</string>
+    <string name="save_changes">SAVE CHANGES</string>
+    <string name="add_photos">ADD PHOTOS</string>
+    <string name="planting_name">Planting Name</string>
+    <string name="planting_image">TODO</string>
+    <string name="cardbackground">cardBackground</string>
+    <string name="test_QR">REGISTER</string>
 </resources>

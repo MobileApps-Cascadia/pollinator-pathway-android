@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="edu.cascadia.mobas.pollinatorpathway.ui.SetUp.SetUpFragment">
+    tools:context="edu.cascadia.mobas.pollinatorpathway.UI.SetUp.SetUpFragment">
 
 
     <TextView
@@ -107,7 +107,6 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="108dp"
         android:text="@string/scanQR"
-        android:textColor="#4E342E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

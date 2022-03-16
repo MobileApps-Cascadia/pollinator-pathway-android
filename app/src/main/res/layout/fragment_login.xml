@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="edu.cascadia.mobas.pollinatorpathway.ui.login.LoginFragment">
+    tools:context="edu.cascadia.mobas.pollinatorpathway.UI.Login.LoginFragment">
 
 
     <TextView
@@ -21,11 +21,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/emailInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
-        android:autofillHints=""
         android:ems="10"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
@@ -41,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="160dp"
         android:text="@string/email"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintEnd_toStartOf="@+id/emailInput"
         app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -58,7 +57,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.786"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/emailInput"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardview"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="231dp"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/cardViewImage"
+            android:layout_width="wrap_content"
+            android:layout_height="174dp"
+            android:background="@drawable/bee1_2"
+            android:backgroundTintMode="src_over"
+            android:contentDescription="@string/cardbackground"
+            android:cropToPadding="false"
+            android:padding="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:scaleType="center" />
+
+        <TextView
+            android:id="@+id/plantings_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="36dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/planting_name"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
